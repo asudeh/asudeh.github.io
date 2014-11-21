@@ -14,7 +14,7 @@ html, body {
     top:0px;
 	height:210px; 
 	width:100%;
-	background-image:url('backgroud-topN.jpg');
+	background-image:url('imgs/backgroud-topN.jpg');
     background-repeat:repeat-x;
 }
 
@@ -31,7 +31,7 @@ html, body {
     top:174px;
 	height:31px; 
 	width:100%;
-	background-image:url('background-middleSeparator.jpg');
+	background-image:url('imgs/background-middleSeparator.jpg');
     background-repeat:repeat-x;
 }
 
@@ -42,6 +42,7 @@ html, body {
     top:208px;
     width:175px;
     height:100%;
+	background: #333;
 }
 .verticalSparator
 {
@@ -88,4 +89,60 @@ a
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 100px;
 	padding: 0px;
+}
+
+.contentBox
+{
+	width:90%;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 4px;
+	text-align:left;
+	border:1px solid #3b3b3c;
+}
+
+.insideBox
+{
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 4px;
+	text-align:left;
+	border:1px solid #3b3b3c;
+	vertical-align:top;
+}
+
+.separatorDiv
+{
+	height:20px;
+}
+
+#cssmenu {
+  background: #333;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  'width: 100%;
+}
+#cssmenu li {
+  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#cssmenu a {
+  background: #333;
+  border-bottom: 1px solid #393939;
+  color: #ccc;
+  display: block;
+  margin: 0;
+  'padding: 8px 12px;
+  text-decoration: none;
+  font-weight: normal;
+}
+#cssmenu a:hover {
+  background: #2580a2;' url("imgs/hover.gif") left center no-repeat;
+  color: #fff;
+  'padding-bottom: 8px;
 }

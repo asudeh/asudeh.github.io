@@ -2,213 +2,54 @@
 <head>
 <title>Abolfazl Asudeh - Home page</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="icon" href="home-icon1.png" type="image/x-icon">
-
+<link rel="icon" href="imgs/home-icon1.png" type="image/x-icon">
+<script type="text/javascript" src="Jsfiles/menu.js"></script>
+<script type="text/javascript" src="Jsfiles/header.js"></script>
+<script type="text/javascript">
+    function init() {
+        menu();
+		header();
+    }
+</script>
 </head>
-<body>
-<!-- Desgined & implelented by: Abolfazl Asudeh -->
-<a name="about me" style="position:absolute; top:0px;"></a>
-<a name="research interest" style="position:absolute; top:125px;"></a>
-<a name="publications" style="position:absolute; top:270px;"></a>
-<a name="projects" style="position:absolute; top:500px;"></a>
-<a name="teaching" style="position:absolute; top:850px;"></a>
-<a name="courses" style="position:absolute; top:1650px;"></a>
-<a name="devprojects" style="position:absolute; top:1880px;"></a>
-<a name="skills" style="position:absolute; top:2020px;"></a>
-<a name="other" style="position:absolute; top:2300px;"></a>
-<a name="sport" style="position:absolute; top:2300px;"></a>
+<body onload='init()'>
 <table class="All" width="100%" height="*">
 <tr>
-<td class="sidebar" valign="top">
-<a href="#about me">about me</a><br>
-<a href="#research interest">research interests</a><br>
-<a href="#publications">publications</a><br>
-<a href="#projects">projects</a><br>
-<a href="#teaching">teaching experience</a><br>
-<a target="_blank" href="cv_2.pdf">CV</a><br>
-<a href="#courses">graduate level courses</a><br>
-<!--<a href="#devprojects">major dev. projects</a><br>-->
-<a href="#skills">programming skills</a><br>
-<a href="#other">other activities</a><br>
-<a href="#sport">sport/hobbies</a><br>
-</td>
-<td class="verticalSparator"></td>
-
-
-
-
+<td id="menuBar" class="sidebar" valign="top"> </td>
 <td class="container">
-<h3>ABOUT ME</h3>
-<p>I am a Ph.D. student at the<a target="_blank" href="http://cse.uta.edu"> department of Computer Science
-</a>in the <a href="http://www.uta.edu">University of 
-Texas at Arlington</a>. I am very fortunate to have Dr.
-<a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a> as my Ph.D. advisor and to be a member of <a target="_blank" href="http://dbxlab.uta.edu/">DBXLAB</a>.
-I have also done cool projects under <a target="_blank" href="http://crystal.uta.edu/~zaruba/">Gergely Zaruba</a> and Dr. 
-<a target="_parent" href="http://ranger.uta.edu/~cli/">Chengkai Li</a>, while I was a member of
-<a target="_blank" href="https://idir.uta.edu/index.php/Main_Page">IDIR</a> Lab.
-I received my M.Sc. in Computer Engineering - 
-Software&nbsp; from the <a target="_blank" href="http://ce.sharif.edu/">Computer Engineering department</a> at
-<a target="_blank" href="http://www.sharif.edu/web/en">Sharif University of 
-Technology</a> where my advisor was Dr. 
-<a target="_blank" href="http://sharif.edu/~movaghar/">Ali Movaghar</a> at 2008. Before joining UTA, I 
-had the chance of teaching the computer science courses in several universities 
-in Iran from 2008 to 2011.
-During the previous summer (Summer 2014) I was at Seattle, Wa Interning at Microsoft. More information can be found in my 
-<a target="_blank" href="cv_2.pdf">CV</a>.</p>
-
-<h3>RESEARCH INTERESTS</h3>
-<p>
-Crowdsourcing and Human Computation<br>
-Large-scale Knowledge Graph and Information Retrieval<br>
-Network Algorithms, Wireless Sensor Networks<br>
-Design and Analysis of Algorithms<br>
-</p>
-
-<h3>PUBLICATIONS</h3>
-<p>Ning Yan,Abolfazl Asudeh, Chengkai Li, Generating Preview Tables for Entity 
-Graphs, submitted to <a target="_blank" href="http://www.kdd.org/kdd2014/">KDD14</a>.<br>
-Abolfazl Asudeh, Gergely Zruba, and Sajal K. Das, A Generic Model for MAC 
-protocol selection in Sensor Networks, submitted to <a target="_blank" href="http://ees.elsevier.com/comcom/">
-Computer Communications Journal</a>, 2014.<br>
-Abolfazl Asudeh and Ali Movaghar, <a target="_blank" href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4689114&tag=1">
-MEHR: Multi-hop Energy-aware Hierarchical Routing for wireless sensor networks 
-New Technologies</a>, Mobility and Security, 2008, NTMS'08, IEEE, 2008.<br>
-Abolfazl Asudeh, Ali Shiralinia, and Mohammad Ghodsi, <a target="_blank" href="http://www.civilica.com/Paper-ACCSI13-ACCSI13_169.html">
-Accessing Maximum Network Flow in Wireless Sensor Networks with Directed Antenna</a>, (in Persian) 13th CSI Computer Conference (<a target="_blank" href="http://www.springer.com/computer/image+processing/book/978-3-540-89984-6">CSICC'2008</a>), 
-Sharif University of Technology, March 9-11, 2008, Kish Island, Persian Gulf, Iran.<br>
-Abolfazl Asudeh and Ali Movaghar, CEHR: Cluster-based Energy-aware Hierarchical Routing protocol for wireless sensor networks, Sharif University of Technology, Technical report, 2009.</p>
-<h3>PROJECTS</h3>
-<ul>
-	<li>Crowdsouring<p>(i) Crowd Consensus: We are working on the novel problem of finding skyline/top-k objects on multidimensional data using pairwise 
-	crowd questions.</p>
-	<p>(ii) Missing data prediction in knowledge graph: Considering the missing 
-	edges in knowledge graph, we use crowd for predicting the (i) existence of 
-	an edge (ii) the value of the edge.</p></li>
-	<li>Knowledge Graph / Information Retrieval<p>(i) Keyword query to query 
-	graph in knowledge graph: considering the difficulties of producing the 
-	query graph as the search input our aim is producing the query graph using 
-	the user input (keyword).</p>
-	<p>(ii) Preview Table for the knowledge graph: we look for a set of tables 
-	(nodes in the graph) and attributes (edges) that summarizes a (complex) 
-	knowledge graph.</p></li>
-	<li>Wireless Sensor Networks<p>A generic Model for MAC protocol selection in 
-	sensor networks: We present a scalable model for selecting a MAC protocol 
-	for WSNs based on requirements, application and the context. We have 
-	provided an online version of our CPF model
-	<a target="_blank" href="http://crystal.uta.edu/~zaruba/MAC/GemMACs.htm">
-	here</a>.</p></li>
-</ul>
-<h3>TEACHING EXPERIENCE</h3>
-<p>Teacher Assistant, University of Texas at Arlington</p>
-<blockquote>
-	<p>CSE1310, Introduction to Computers and Programming, Spring 2012, Summer 
-	2013.<br>
-	CSE5331/4331, Data Base 1, Summer 2012, Summer 2013.<br>
-	CSE5301, Data Modeling, Fall 2012, Fall 2013.<br>
-	CSE1301, Computer Literacy, Fall 2012, Spring 2013, Fall 2013.</p>
-</blockquote>
-<p>Instructor at Azad University, Payame Noor University, and University of 
-Applied Science and Technology:</p>
-<p align="center"><img src="teaching.jpg" alt="teaching"></p>
-<h3>GRADUATE-LEVEL COURSES</h3>
-<ul>
-	<li>Sharif University of Technology (M.Sc.)<p>&#9679; Network Modeling &amp; Analysis, 
-	&#9679;&nbsp; Advanced Algorithms, &#9679;&nbsp; Operating Systems II (distributed OS), 
-	&#9679;&nbsp; Data Mining, &#9679;&nbsp; Software Engineering II, &#9679; Decision Support 
-	Systems, &#9679;&nbsp; Object Oriented Software Development Methodologies, &#9679;&nbsp; 
-	Database II (distributed DB).</p></li>
-	<li>University of Texas at Arlington (Ph.D.)<p>&#9679; Data Modeling (CSE5301), &#9679; 
-	Advanced Sensor Networks (CSE 6348), &#9679; SecurityII (CSE 5381), &#9679; Data Mining 
-	(CSE5334), &#9679; Multi-agent Systems (Game Theory) (CSE6369), &#9679; Graph Data 
-	Mining (CSE 6339).<br>
-&nbsp;</p></li>
-</ul>
-<!--
-<h3>MAJOR DEV. PROJECTS</h3>
-<ul>
-	<li>Involved in automation projects (Tehran, Iran, 2007-2009) using ASP.net, 
-	C#, Sql Server, Ajax.</li>
-	<li>Design and Implementation of a DE Simulator for wireless sensor network 
-	using C++.</li>
-	<li>Transforming the keyword query to query graph: we implemented the demo 
-	version.</li>
-	<li>Design and implementation of Dynamic Search Engine using neighborhood 
-	graph. (ASP.net, Java script, using Bing API) – Ongoing project.</li>
-</ul>
--->
-<h3>PROGRAMMING SKILLS</h3>
-<p>I truly believe that &quot; imagination is more important than knowledge&quot;. Problem 
-solving skill and finding the efficient solutions is the main skill of an 
-engineer. Though important, learning enough amount of a new program language is 
-a several month effort. By the way, I really enjoy coding in Assembly and C++.</p>
-<p>
-	The following are the languages/environments I have mostly worked with:
-	<ul>
-		<li>Programming Languages: Assembly, C, C++, C#.</li>
-		<li>Web Programming: JavaScript, ASP.NET.</li>
-		<li>Data Base: Microsoft SQL Server.<br>
-	&nbsp;</li>
-	</ul>
-</p>
-<h3>OTHER ACTIVITIES</h3>
-<ul>
-	<li>Member&nbsp;of
-	<a target="_blank" href="http://www.tbp.org/home.cfm">Tau Beta Pai - the National Engineering Honor Society</a>, since Spring  2014.</li>	
-	<li>Vice President&nbsp; of
-	<a target="_blank" href="http://www.uta.edu/studentorgs/PACS/">&quot;Persian 
-	Academic &amp; Cultural Society&quot;</a>, during the Ph.D., Fall 2013 - Fall 2014.</li>
-	<li>President of
-	<a target="_blank" href="http://www.uta.edu/studentorgs/PACS/">&quot;Persian 
-	Academic &amp; Cultural Society&quot;</a>, during the Ph.D., Fall 2012-Fall 2013.</li>
-	<li>Advisor of &quot;Computer Students Scientific Organization&quot;, Azad University 
-	of Kashmar, 2010, 2011.</li>
-	<li>Vice President of &quot;Students Scientific Organization&quot;, during the 
-	bachelor degree, 2005.</li>
-</ul>
-<h3>SPORT/HOBBIES</h3>
-<ul>
-	<li>I started
-	<a target="_blank" href="http://en.wikipedia.org/wiki/Taekwondo">Taekwondo</a> 
-	before going to school (1990) and continued it as a hobby until I started 
-	high school (1998). In 1994, I acquired the gold medal in
-	<a target="_blank" href="http://en.wikipedia.org/wiki/Isfahan">Ifahan</a> 
-	state tournament. Later in 1997, I acquired 4th place in
-	<a target="_blank" href="http://en.wikipedia.org/wiki/Khorasan">Khorasan</a> 
-	state tournament.</li>
-	<li>Volleyball is my favorite sport/hobby. I usually play volleyball several 
-	times a month. Recently
-	<a target="_blank" href="http://www.uta.edu/studentorgs/PACS/SandVolleyball2013.htm">
-	we (PACS) became the champion</a> in 2013 UTA intramural sand volleyball 
-	tournament. </li>
-</ul>
-<p>&nbsp;</p>
-</td >
-</table>
-
-<div class="top">	
-<table style="height:100%; width:100%">
-	<tr>
-		<td width="200px" background="backgroud-topNL.gif">&nbsp;</td>
-		<td>
-		<table  height="100%" width="100%">
-			<tr>				
-				<td>
-				<font color=#FFFFFF size="7">Abolfazl Asudeh</font>
-				<font size="2"  color=#FFFFFF><br>ab[DOT]asudeh[AT]mavs[DOT]uta[DOT]edu</font>
-				</td>
-				<td>
-				<font size="3"  color=#FFFFFF>Ph.D. Student,<a href="http://cse.uta.edu" target=_blank>Department of Computer Science</a>,<br><a href="http://www.uta.edu" target=_blank>University of Texas at Arlington</a></font><br>
-				<font size="2"  color=#FFFFFF>500, UTA Blvd, Engineering Research Building, Room 550<br>Arlington, TX 76019</font>
-				</td>
-			</tr>
-		</table>
-		</td>
-		<td width="175px;"><img src="1.JPG" class="niceBox"></td>
-	</tr>
-</table>	
+<!-- Insert your content from here-->
+<div align="center">
+	<div class="contentBox">
+		<h3>ABOUT ME</h3>
+		<p>I am a Ph.D. student at the<a target="_blank" href="http://cse.uta.edu"> department of Computer Science
+		</a>in the <a href="http://www.uta.edu">University of 
+		Texas at Arlington</a>. I am very fortunate to have Dr.
+		<a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a> as my Ph.D. advisor and to be a member of <a target="_blank" href="http://dbxlab.uta.edu/">DBXLAB</a>.
+		I have worked with <a target="_blank" href="http://crystal.uta.edu/~zaruba/">Gergely Zaruba</a> and Dr. 
+		<a target="_parent" href="http://ranger.uta.edu/~cli/">Chengkai Li</a>, when I was a member of
+		<a target="_blank" href="https://idir.uta.edu/index.php/Main_Page">IDIR</a> Lab.
+		I received my M.Sc. in Computer Engineering - 
+		Software&nbsp; from the <a target="_blank" href="http://ce.sharif.edu/">Computer Engineering department</a> at
+		<a target="_blank" href="http://www.sharif.edu/web/en">Sharif University of 
+		Technology</a> where my advisor was Dr. 
+		<a target="_blank" href="http://sharif.edu/~movaghar/">Ali Movaghar</a> at 2008. Before joining UTA, I 
+		had the chance of teaching the computer science courses in several universities 
+		in Iran from 2008 to 2011.
+		During the previous summer (Summer 2014) I was at Seattle, Wa Interning at Microsoft. <!--More information can be found in my 
+		<a target="_blank" href="cv_2.pdf">CV</a>.--></p>
+	</div>
+	<div class="separatorDiv"></div>
+	<div class="contentBox">
+		<h3>Highlights</h3>
+		<ul>
+		<li>I am the TA of Data Analysis and Modelling (CSE5301) in this (Fall 2014) semesters, which is taught by Dr. Gergely Zaruba. <a target="_blank" href="http://crystal.uta.edu/~zaruba/CSE5301/index.html">Here</a> is the course page. My office hours are Mondays and Fridays from 12:00pm to 1:00pm.</li>
+		</ul>
+	</div>
+	
 </div>
-<!--<div class="middleseparator" >&nbsp;</div>-->
-
-
+<!-- End your content here-->
+</td ></tr>
+</table>
+<div class="top" id="headerDiv"></div>
 </body>
 </html>
