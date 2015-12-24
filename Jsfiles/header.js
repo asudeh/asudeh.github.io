@@ -2,7 +2,7 @@
 function header() {
 st =  '<table style="height:100%; width:100%">';
 st += '<tr>';
-st += '		<td width="200px" background="imgs/logo1.png">&nbsp;</td>';
+st += '		<td width="200px" <!--background="imgs/logo1.png"--> >&nbsp;</td>';
 st += '		<td>';
 st += '		<table  height="100%" width="100%">';
 st += '			<tr>';
