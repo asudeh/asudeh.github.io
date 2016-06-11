@@ -20,19 +20,19 @@
 <div align="center">
 	<div class="contentBox">
 	<H3>Research Interests</H3>
-	<p>Just like many of Computer Science Fans, my major interest is Algorithm Design. Specially, I am interested in Database and Data Mining algorithms. Here are my current research interests:	</p>
+	<p>Just like many of Computer Science fans, my major interest is Algorithm Design. Specially, I am interested in Database and Data Mining algorithms. Here are my current research interests:	</p>
 	<ul>
-	<li>(Big) Data Exploration, Hidden Databases</li>
-	<li> Query Reformulation </li>
+	<li>(Big) Data Exploration, Hidden Databases, and Deep Web</li>
+	<li>Query Reformulation and Top-k Queries/Indices</li>
     <li>Graph Mining</li>
-	<li>Crowdsourcing and Human Computation</li>
+	<!--<li>Crowdsourcing and Human Computation</li>-->
 	<!--<li>Network Algorithms, Wireless Sensor Networks</li>-->
 	</ul>
 	</div>
 	<div class="separatorDiv"></div>
 	<div class="contentBox">
 	<H3>Collaborators</H3>
-	<p>Beside of wonderful advisor, <a target="_blank" href="http://ranger.uta.edu/~gdas/"> Dr. Gautam Das</a>, I have had the chance of collaborating with the following researchers so far (in alphabetic order):</p>
+	<p>In addition to my Ph.D. advisor, <a target="_blank" href="http://ranger.uta.edu/~gdas/"> Dr. Gautam Das</a>, I have collaborated with the following researchers so far (in alphabetic order):</p>
 	<table border='0' >
 		<tr>
             <td style='vertical-align:top'>
@@ -60,7 +60,7 @@
 	<div class="separatorDiv"></div>
 	<div class="contentBox">
 	<h3>Projects</h3>
-        <div class="insideBox">
+<!--        <div class="insideBox">
             <h4>Convex hull - Linear ranking functions<img src="imgs/loader.gif" /></h4>
             <table width="100%">
                 <tr>
@@ -73,10 +73,15 @@
                 </tr>
             </table>
         </div>
-        <div class="separatorDiv"></div>
+        <div class="separatorDiv"></div>-->
 	<div class="insideBox">
-	<h4>Query Reformulation over Hidden Databases<img src="imgs/loader.gif" /></h4>
+	<h4>Query Reformulation: Query Reranking and Top-k indices<img src="imgs/loader.gif" /></h4>
 	<table width="100%"><tr><td><img src="imgs/HDB.jpg"></td><td>
+		<p>
+            <i>Query Reranking As A Service</i><br>
+            Abolfazl Asudeh, <a target="_blank" href="http://www.seas.gwu.edu/~nzhang10/">Nan Zhang</a>, <a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a><br>
+			The ranked retrieval model has rapidly become the de facto way for search query processing in client-server databases, especially those on the web. Despite of the extensive efforts in the database community on designing better ranking functions/mechanisms, many such databases in practice still fail to address the diverse and sometimes contradicting preferences of users on tuple ranking, perhaps (at least partially) due to the lack of expertise and/or motivation for the database owner to design truly effective ranking functions. This paper takes a different route on addressing the issue by defining a novel query reranking problem, i.e., we aim to design a third-party service that uses nothing but the public search interface of a client-server database to enable the on-the-fly processing of queries with any user-specified ranking functions (with or without selection conditions), no matter if the ranking function is supported by the database or not. We analyze the worst-case complexity of the problem and introduce a number of ideas, e.g., on-the-fly indexing, domination detection and virtual tuple pruning, to reduce the average-case cost of the query reranking algorithm. We also present extensive experimental results on real-world datasets, in both offline and live online systems, that demonstrate the effectiveness of our proposed techniques.
+        </p>
 		<p>
             <i><a target="_blank" href="papers/skylineDiscovery.pdf"> Discovering the Skyline of Web Databases</a></i><br>
             Abolfazl Asudeh, <a target="_blank" href="http://saravananthirumuruganathan.appspot.com/">Saravanan Thirumuruganathan</a>, <a target="_blank" href="http://www.seas.gwu.edu/~nzhang10/">Nan Zhang</a>, <a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a><br>
@@ -92,15 +97,6 @@
             enable a wide variety of innovative third-party applications over
             one or multiple web databases.
         </p>
-        <p>
-            In one other paper, we define a novel query re-ranking problem, i.e., a third-party service that uses nothing but the public search interface of a client-server database to enable the on-the-fly processing of queries with user-specified ranking functions (with or without selection conditions), no matter if the ranking function is supported by the database or not.
-        </p>
-	</td></tr></table>
-	</div>
-	<div class="separatorDiv"></div>
-	<div class="insideBox">
-	<h4>CrowdSourcing</h4>
-	<table width="100%"><tr><td><img src="imgs/CrowdSourcing.jpg"></td><td>
 		<p>
             <i><a target="_blank" href="files/crowdpareto-cikm15.pdf"> Crowdsourcing Pareto-Optimal Object Finding by Pairwise Comparisons</a></i><br>
             <a target="_blank" href="files/crowdpareto-cikm15-slides.pdf">[slides]</a><br />
@@ -112,28 +108,28 @@
 	</div>
 	<div class="separatorDiv"></div>
 	<div class="insideBox">
-	<h4>Knowledge Graphs</h4>
+	<h4>Graph Minings</h4>
 	<table width="100%"><tr><td><img src="imgs/TP.jpg"></td><td>
 		<p>
             <i><a target="_blank" href="http://arxiv.org/pdf/1403.5006.pdf">Generating Preview Tables for Entity Graphs</a></i><br>
-            <a target="_blank" href="http://idir.uta.edu/~nyan/">Ning Yan</a>, Abolfazl Asudeh, <a target="_blank" href="http://ranger.uta.edu/~cli/">Chengkai Li</a> <br>
+            <a target="_blank" href="http://idir.uta.edu/~nyan/">Ning Yan</a>, <a target='_blank' href='https://www.linkedin.com/in/sona-hasani-62577b8'>Sona Hasani</a>, Abolfazl Asudeh, <a target="_blank" href="http://ranger.uta.edu/~cli/">Chengkai Li</a> <br>
 		    Users and developers are tapping into big, complex entity graphs for numerous applications. It is challenging to select entity graphs for a particular need, given abundant datasets from many sources and the oftentimes scarce information available for them. We propose methods to automatically produce preview tables for entity graphs, for compact presentation of important entity types and relationships. The preview tables assist users in attaining a quick and rough preview of the data. They can be shown in a limited display space for a user to browse and explore, before she decides to spend time and resources to fetch and investigate the complete dataset. We formulate several optimization problems that look for previews with the highest scores according to intuitive goodness measures, under various constraints on preview size and distance between preview tables. The optimization problem under distance constraint is NP-hard. We design a dynamic-programming algorithm and an Apriori-style algorithm for finding optimal previews. The experiments and user studies on Freebase demonstrated both the scoring measures' accuracy and the discovery algorithms' efficiency.
 		</p>
 	</td></tr></table>
 	</div>
 	<div class="separatorDiv"></div>
 	<div class="insideBox">
-	<h4>Wireless Sensor Networks</h4>
+	<h4>Misc.</h4>
 		<table width="100%"><tr><td><img src="imgs/WSN.jpg"></td><td>
 		<p>
             <i><a href='http://dx.doi.org/10.1016/j.adhoc.2015.07.005' target='_blank'>A General Model for MAC Protocol Selection in Wireless Sensor Networks</a></i><br>
-            Abolfazl Asudeh, <a target="_blank" href="http://crystal.uta.edu/~zaruba/">Gergely V. Zaruba1</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Sajal_K._Das">Sajal K. Das</a><br>
+            Abolfazl Asudeh, <a target="_blank" href="http://crystal.uta.edu/~zaruba/">Gergely V. Zaruba</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Sajal_K._Das">Sajal K. Das</a><br>
 		    Wireless Sensor Networks (WSNs) are being deployed for different applications, each having its own structure, goals and requirements. Medium access control (MAC) protocols play a significant role in WSNs and hence should be tuned to the applications. However, there is no for selecting MAC protocols for different situations. Therefore, it is hard to decide which MAC protocol is good for a given situation. Having a precise model for each MAC protocol, on the other hand, is almost impossible. Using the intuition that the protocols in the same behavioral category perform similarly, our goal in this paper is to introduce a general model that selects the protocol(s) that satisfy the given requirements from the category that performs better for a given context. We define the Combined Performance Function (CPF) to demonstrate the performance of different categories protocols for different contexts. Having the general model, we then discuss the model scalability for adding new protocols, categories, requirements, and performance criteria. Considering energy consumption and delay as the initial performance criteria of the model, we focus on deriving mathematical models for them. The results extracted from CPF are the same as the well-known rule of thumb for the MAC protocols that verifies our model. We validate our models with the help of simulation study. We also implemented the current CPF model in a web page to make the model <a target="_blank" href="http://crystal.uta.edu/~zaruba/MAC/GemMACs.htm">online</a> and useful.
 		</p>
         <p><b>Code:</b> The Discrete Event Simulator and the codes (in C++), are located <a target="_blank" href="https://github.com/asudeh/codes/tree/master/MACSim">here</a>.</p>
 		<br>
 		<p>
-        Related M.Sc. Publications:<br>
+        M.Sc. Publications:<br>
 		<i><a target="_blank" href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=4689114&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D4689114">MEHR: Multi-hop Energy-aware Hierarchical Routing for wireless sensor networks</a></i><br>
 		Abolfazl Asudeh, <a target="_blank" href="http://sharif.edu/~movaghar/">Ali Movaghar</a><br>
 		<i><a target="_blank" href="http://sharif.edu/~ghodsi/papers/aasoodeh-shiralini-csicc08.pdf">Maximizing the Network Flow in Wireless Sensor Networks with Directed Antenna</a>; (in Farsi)</i><br>
