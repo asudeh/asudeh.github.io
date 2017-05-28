@@ -1,0 +1,36 @@
+SIGMOD 2017. VLDB 2016. SIGMOD 2016. VLDB 2016. CIKM 2016.
+SIGMOD
+Service Providers; In Peer-to-peer Marketplaces: Maximizing Gain Over Flexible Attributes.
+Efficient Computation of Subspace Skyline over Categorical Domains.
+Efficient Computation of Regret-ratio Minimizing Set: A Compact Maxima Representative.
+Regret-ratio.
+Top-k.
+Top-k.
+Skyline.
+Big data.
+Query Reranking As A Service.
+Generating preview tables for entity graphs.
+Discovering the Skyline of Web Databases.
+Crowdsourcing pareto-optimal object finding by pairwise comparisons.
+database and data mining algorithms, including Big data Top-k Exploration, Deep Web, Crowdsourcing, and Graph Analytic.
+databases
+maxima of a database; user preference,ranking function; linear combination of the attributes
+convex-hull; linear function. convex-hull;
+minimizes the regret-ratio. higher dimensions, NP-hard. approximation algorithm;
+ranked retrieval model; search query processing; client-server databases; ranking functions; user preference; ranking functions; query reranking; thirdparty service; client-server database; on-the-fly indexing; query reranking; algorithm.
+web databases; hidden web databases;; search interface; Top-k output. skyline discovery over Top-k hidden web databases.
+monotonic order
+skyline discovery from a hidden web database
+third-party applications
+efficient algorithm
+crowdsourcing Pareto-optimal object finding partial orders
+entity graphs
+entity graphs, for compact presentation
+NP-hard
+Peer to peer marketplaces such as AirBnB
+Gain Maximization over Flexible Attributes
+NP-hard
+frequent-item based count; tuples in the database;
+efficient algorithm
+convex-hull
+Regret-ratio
