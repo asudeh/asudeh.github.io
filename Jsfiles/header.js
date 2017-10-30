@@ -11,7 +11,7 @@ st += '				<font color=#FFFFFF size="7">Abolfazl Asudeh</font>';
 st += '				<font size="2"  color=#FFFFFF><br>asudeh[AT]umich[DOT]edu</font>';
 st += '				</td>';
 st += '				<td>';
-st += '				<font size="3"  color=#FFFFFF>Postdoc Research Fellow,&nbsp;<a href="http://www.cse.umich.edu/" target=_blank>Department of Computer Science and Engineering</a>,<br><a href="http://www.umich.edu" target=_blank>University of Michigan Ann Arbor</a></font><br>';
+st += '				<font size="3"  color=#FFFFFF>Research Fellow,&nbsp;<a href="http://www.cse.umich.edu/" target=_blank>Department of Computer Science and Engineering</a>,<br><a href="http://www.umich.edu" target=_blank>University of Michigan Ann Arbor</a></font><br>';
 st += '				<font size="2"  color=#FFFFFF>2260 Hayward St, Bob and Betty Beyster Building, Room 4945<br>Ann Arbor, MI 48109</font>';
 st += '				</td>';
 st += '			</tr>';
