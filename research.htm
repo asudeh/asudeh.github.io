@@ -73,12 +73,28 @@
                         </p>
                     </td>
                 </tr>
+				<tr>
+                <td align="center"><img src="imgs/skyline1.jpg" width="250"></td>
+                    <td>
+                        <p>
+                            <i><a target="_blank" href="papers/skylineDiscovery.pdf"> Discovering the Skyline of Web Databases</a></i><br>
+							Abolfazl Asudeh, <a target="_blank" href="http://saravananthirumuruganathan.appspot.com/">Saravanan Thirumuruganathan</a>, <a target="_blank" href="http://www.seas.gwu.edu/~nzhang10/">Nan Zhang</a>, <a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a><br>
+							<b>In  proceedings of the VLDB Endowment (PVLDB) 2016</b><br/>
+							<a href="http://www.vldb.org/pvldb/vol9/p600-asudeh.pdf">[paper]</a> 
+							<a  target="_blank" href="files/skylinediscovery.pdf">[technical report]</a>
+							<a target='_blank' href='bibtex/skylinediscovery.bib'>[BibTex]</a>
+							<a target='_blank' href='files/SkylineDiscovery-slides.pptx'>[slides]</a><br/>
+							Many web databases are "hidden" behind proprietary search interfaces that enforce the top-k output constraint, i.e., each query returns at most k of all matching tuples, preferentially selected and returned according to a proprietary ranking function.
+							<i>In this paper, we initiate research into the novel problem of skyline discovery over top-k hidden web databases</i>. Since skyline tuples provide critical insights into the database and include the top-ranked tuple for every possible ranking function following the monotonic order of attribute values, skyline discovery from a hidden web database can enable a wide variety of innovative third-party applications over one or multiple web databases.
+                        </p>
+                    </td>
+                </tr>
             </table>
         </div>
         <div class="separatorDiv"></div>
 	<div class="insideBox">
-	<h4>Reranking Queries</h4>
-	<table width="100%"><tr><td><img src="imgs/HDB.jpg"></td><td>
+	<h4>Ranking Queries</h4>
+	<table width="100%"><tr><td><img src="imgs/qr.jpg"></td><td>
 		<p>
             <i>Query Reranking As A Service</i><br>
             Abolfazl Asudeh, <a target="_blank" href="http://www.seas.gwu.edu/~nzhang10/">Nan Zhang</a>, <a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a>
@@ -88,29 +104,37 @@
 				<a target='_blank' href='files/QueryReranking-slides.pptx'>[slides]</a><br/>
 			The ranked retrieval model has rapidly become the de facto way for search query processing in client-server databases, especially those on the web. Despite of the extensive efforts in the database community on designing better ranking functions/mechanisms, many such databases in practice still fail to address the diverse and sometimes contradicting preferences of users on tuple ranking, perhaps (at least partially) due to the lack of expertise and/or motivation for the database owner to design truly effective ranking functions. This paper takes a different route on addressing the issue by defining a novel query reranking problem, i.e., we aim to design a thirdparty service that uses nothing but the public search interface of a client-server database to enable the on-the-fly processing of queries with any user-specified ranking functions (with or without selection conditions), no matter if the ranking function is supported by the database or not. We analyze the worst-case complexity of the problem and introduce a number of ideas, e.g., on-the-fly indexing, domination detection and virtual tuple pruning, to reduce the average-case cost of the query reranking algorithm. We also present extensive experimental results on real-world datasets, in both offline and live online systems, that demonstrate the effectiveness of our proposed techniques.
 		</p>
-		<p>
-            <i><a target="_blank" href="papers/skylineDiscovery.pdf"> Discovering the Skyline of Web Databases</a></i><br>
-            Abolfazl Asudeh, <a target="_blank" href="http://saravananthirumuruganathan.appspot.com/">Saravanan Thirumuruganathan</a>, <a target="_blank" href="http://www.seas.gwu.edu/~nzhang10/">Nan Zhang</a>, <a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a><br>
-			<b>In  proceedings of the VLDB Endowment (PVLDB) 2016</b><br/>
-				<a href="http://www.vldb.org/pvldb/vol9/p600-asudeh.pdf">[paper]</a> 
-				<a  target="_blank" href="files/skylinediscovery.pdf">[technical report]</a>
-				<a target='_blank' href='bibtex/skylinediscovery.bib'>[BibTex]</a>
-				<a target='_blank' href='files/SkylineDiscovery-slides.pptx'>[slides]</a><br/>
-			Many web databases are "hidden" behind proprietary search interfaces
-            that enforce the top-k output constraint, i.e., each query returns
-            at most k of all matching tuples, preferentially selected and
-            returned according to a proprietary ranking function. <i>In this paper,
-            we initiate research into the novel problem of skyline discovery
-            over top-k hidden web databases</i>. Since skyline tuples provide critical
-            insights into the database and include the top-ranked tuple for
-            every possible ranking function following the monotonic order of
-            attribute values, skyline discovery from a hidden web database can
-            enable a wide variety of innovative third-party applications over
-            one or multiple web databases.
-        </p>
 	</td></tr></table>
 	</div>
 	<div class="separatorDiv"></div>
+	<div class="insideBox">
+            <h4>Projects in P2P MarketPlaces</h4>
+            <table width="100%">
+                <tr>
+                    <td align="center"><img src="imgs/p2p1.jpg" width="250"></td>
+                    <td>
+                        <p>
+                            <i><a target="_blank" href="#">Efficient Computation of Subspace Skyline over Categorical Domains</a></i><br>
+							Farhadur Rahman, <i>Abolfazl Asudeh</i>, Nick Koudas, Gautam Das.
+							<br><b>In CIKM 2017</b><br/>
+							Platforms such as AirBnB, Zillow, Yelp, and related sites have transformed the way we search for accommodation, restaurants, etc. The underlying datasets in such applications have numerous attributes that are mostly Boolean or Categorical. Discovering the skyline of such datasets over a subset of attributes would identify entries that stand out while enabling numerous applications. 
+                        </p>
+                    </td>
+                </tr>
+				<tr>
+                <td align="center"><img src="imgs/p2p2.jpg" width="250"></td>
+                    <td>
+                        <p>
+                            <i><a target="_blank" href="#">Assisting Service Providers In Peer to peer Marketplaces: Maximizing Gain Over Flexible Attributes</a></i><br>
+							<i>Abolfazl Asudeh</i>, Azade Nazi, Nick Koudas, Gautam Das.
+							<br><b>ArXiv e-prints 1705.03028</b><br/>
+							Peer to peer marketplaces enable transactional exchange of services directly between people. In such platforms, those providing a service are faced with various choices. For example in travel peer to peer marketplaces, although some amenities (attributes) in a property are fixed, others are relatively flexible and can be provided without significant effort. Providing an attribute is usually associated with a cost. Naturally, different sets of attributes may have a different “gains” (monetary or otherwise) for a service provider. Consequently, given a limited budget, deciding which attributes to offer is challenging. In this project, we propose techniques that help service providers in decision making. 
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <div class="separatorDiv"></div>
 	<div class="insideBox">
 	<h4>CrowdSourcing</h4>
 	<table width="100%"><tr><td><img src="imgs/CrowdSourcing.jpg"></td><td>
@@ -141,7 +165,7 @@
 	</div>
 	<div class="separatorDiv"></div>
 	<div class="insideBox">
-	<h4>Wireless Sensor Networks</h4>
+	<h4>Miscellaneous</h4>
 		<table width="100%"><tr><td><img src="imgs/WSN.jpg"></td><td>
 		<p>
             <i><a href='http://dx.doi.org/10.1016/j.adhoc.2015.07.005' target='_blank'>A General Model for MAC Protocol Selection in Wireless Sensor Networks</a></i><br>
@@ -153,14 +177,7 @@
 		    Wireless Sensor Networks (WSNs) are being deployed for different applications, each having its own structure, goals and requirements. Medium access control (MAC) protocols play a significant role in WSNs and hence should be tuned to the applications. However, there is no for selecting MAC protocols for different situations. Therefore, it is hard to decide which MAC protocol is good for a given situation. Having a precise model for each MAC protocol, on the other hand, is almost impossible. Using the intuition that the protocols in the same behavioral category perform similarly, our goal in this paper is to introduce a general model that selects the protocol(s) that satisfy the given requirements from the category that performs better for a given context. We define the Combined Performance Function (CPF) to demonstrate the performance of different categories protocols for different contexts. Having the general model, we then discuss the model scalability for adding new protocols, categories, requirements, and performance criteria. Considering energy consumption and delay as the initial performance criteria of the model, we focus on deriving mathematical models for them. The results extracted from CPF are the same as the well-known rule of thumb for the MAC protocols that verifies our model. We validate our models with the help of simulation study. We also implemented the current CPF model in a web page to make the model <a target="_blank" href="http://crystal.uta.edu/~zaruba/MAC/GemMACs.htm">online</a> and useful.
 		</p>
         <p><b>Code:</b> The Discrete Event Simulator and the codes (in C++), are located <a target="_blank" href="https://github.com/asudeh/codes/tree/master/MACSim">here</a>.</p>
-		<br>
-		<p>
-        Related M.Sc. Publications:<br>
-		<i><a target="_blank" href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=4689114&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D4689114">MEHR: Multi-hop Energy-aware Hierarchical Routing for wireless sensor networks</a></i><br>
-		Abolfazl Asudeh, <a target="_blank" href="http://sharif.edu/~movaghar/">Ali Movaghar</a><br>
-		<i><a target="_blank" href="http://sharif.edu/~ghodsi/papers/aasoodeh-shiralini-csicc08.pdf">Maximizing the Network Flow in Wireless Sensor Networks with Directed Antenna</a>; (in Farsi)</i><br>
-		Abolfazl Asudeh, Ahmad Shiralinia, <a target="_blank" href="http://sharif.edu/~ghodsi/">Mohammad Ghodsi</a>
-		</p>
+
 	</td></tr></table>
 	</div>
 	</div>
