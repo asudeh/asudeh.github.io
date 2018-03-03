@@ -4,6 +4,8 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="Jsfiles/menu.js"></script>
 <script type="text/javascript" src="Jsfiles/header.js"></script>
+<link rel="stylesheet" type="text/css" href="ppl.css" />
+<script type="text/javascript" src="Jsfiles/myobjects.js"></script>
 <script type="text/javascript">
     function init() {
         menu();
@@ -26,36 +28,29 @@
 	<div class="separatorDiv"></div>
 	<div class="contentBox">
 	<H3>Collaborators</H3>
-	<p>Beside Dr. <a href="http://web.eecs.umich.edu/~jag/">H V Jagadish</a> and Dr. <a target="_blank" href="http://ranger.uta.edu/~gdas/"> Gautam Das</a>, Abolfazl has been fortunate to collaborate with the following researchers so far (in alphabetic order):</p>
-	<table border='0' >
-		<tr>
-            <td style='vertical-align:top'>
-                <ul>
-                    <li><a target='_blank' href='https://sites.google.com/site/azadenazi/'>Azade Nazi</a>, Postdoc Researcher, Microsoft Research</li>
-                    <li><a target='_blank' href='http://sharif.edu/~movaghar/'>Ali Movaghar</a>, Professor, Sharif University of Technology</li>
-                    <li><a target='_blank' href='http://ranger.uta.edu/~cli/'>Chengkai Li</a>, Associate Professor, University of Texas at Arlington</li>
-					<li><a target='_blank' href='http://www.research.att.com/people/Srivastava_Divesh/custom/index.html'>Divesh Srivastava</a>, Head of the Database Research Department, AT&T Labs</li>
-					<li><a target='_blank' href='https://sites.google.com/site/farhadrahmanbappy/'>Farhadur Rahman</a>, PhD Candidate, University of Texas at Arlington</li>
-                    <li><a target='_blank' href='http://crystal.uta.edu/~zaruba/'>Gergely V. Zaruba</a>, Professor, University of Texas at Arlington</li>
-                    <li><a target='_blank' href='http://idir.uta.edu/~zhang/'>Gensheng Zhang</a>, Software Eng., Google</li>
-					<li><a target='_blank' href='https://www.cs.drexel.edu/~julia/'>Julia Stoyanovich</a>, Assistant Professor, Drexel University</li>
-					<li><a target="_blank" href="https://www.microsoft.com/en-us/research/people/krisgan/">Kris Gangam</a>, Principal Engineer, Microsoft Research</li>
-                    <li><a target='_blank' href='https://faculty.ist.psu.edu/nan/'>Nan Zhang</a>, Professor, Penn State University</li>
-                    <li><a target='_blank' href='http://cs.olemiss.edu/~nhassan'>Naeemul Hassan</a>, Assistant Professor, University of Mississippi</li>
-                </ul>
-            </td>
-            <td style='vertical-align:top'>
-                <ul>
-					<li><a target='_blank' href='http://koudas01.utsc.utoronto.ca/~koudas/'>Nick Koudas</a>, Professor, University of Toronto</li>
-					<li><a target='_blank' href='http://idir.uta.edu/~nyan/'>Ning Yan</a>, Software Eng., Huawei U.S. R&D Center</li>
-                    <li><a target='_blank' href='http://en.wikipedia.org/wiki/Sajal_K._Das'>Sajal K. Das</a>, Professor, Missouri University of Science and Technology</li>
-                    <li><a target='_blank' href='http://saravananthirumuruganathan.appspot.com/'>Saravanan Thirumuruganathan</a>, Research Scientist, Qatar Computing Research Institute</li>
-                    <li><a target='_blank' href='https://www.linkedin.com/in/sona-hasani-62577b8'>Sona Hasani</a>, PhD Student, University of Texas at Arlington</li>
-					<li><a target="_blank" href="https://www.microsoft.com/en-us/research/people/yeyehe/">Yeye He</a>, Researcher, Microsoft Research</li>
-                </ul>
-            </td>
-		</tr>
-	</table>
+	I have been fortunate to collaborate with the following researchers so far:</p>
+	<div class="person jag" onmouseover="setup(this,'jag')"></div>&nbsp;
+	<div class="person gautam" onmouseover="setup(this,'gautam')"></div>&nbsp;
+	<div class="person divesh" onmouseover="setup(this,'divesh')"></div>&nbsp;
+	<div class="person nan" onmouseover="setup(this,'nan')"></div>&nbsp;
+	<div class="person nick" onmouseover="setup(this,'nick')"></div>&nbsp;
+	<div class="person azade" onmouseover="setup(this,'azade')"></div>&nbsp;
+	<div class="person sara" onmouseover="setup(this,'sara')"></div>&nbsp;
+	<div class="person zaruba" onmouseover="setup(this,'zaruba')"></div>&nbsp;
+	<div class="person cli" onmouseover="setup(this,'cli')"></div>&nbsp;
+	<div class="person julia" onmouseover="setup(this,'julia')"></div>&nbsp;
+	<div class="person yeye" onmouseover="setup(this,'yeye')"></div>&nbsp;
+	<div class="person kris" onmouseover="setup(this,'kris')"></div>&nbsp;
+	<div class="person farhad" onmouseover="setup(this,'farhad')"></div>&nbsp;
+	<div class="person sona" onmouseover="setup(this,'sona')"></div>&nbsp;
+	<div class="person jees" onmouseover="setup(this,'jees')"></div>&nbsp;
+	<div class="person yeshwanth" onmouseover="setup(this,'yeshwanth')"></div>&nbsp;
+	<div class="person ning" onmouseover="setup(this,'ning')"></div>&nbsp;
+	<div class="person movaghar" onmouseover="setup(this,'movaghar')"></div>&nbsp;
+	<div class="person sajal" onmouseover="setup(this,'sajal')"></div>&nbsp;
+	<div class="person ali1" onmouseover="setup(this,'ali1')"></div>&nbsp;
+	<div class="person gensheng" onmouseover="setup(this,'gensheng')"></div>&nbsp;
+	<div class="person nafi" onmouseover="setup(this,'nafi')"></div>&nbsp;
 	</div>
 	<div class="separatorDiv"></div>
 	<div class="contentBox">
@@ -72,10 +67,10 @@
                     <td>
                         <p>
                             <i><a target="_blank" href="https://arxiv.org/abs/1712.09752">Designing Fair Ranking Schemes</a></i><br>
-							Abolfazl Asudeh,
-							<a href="http://web.eecs.umich.edu/~jag/">H. V. Jagadish</a>, 
-							<a target='_blank' href='https://www.cs.drexel.edu/~julia/'>Julia Stoyanovich</a>,
-							<a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a>
+							<div class="person abol" onmouseover="setup(this,'abol')"></div>&nbsp;
+							<div class="person jag" onmouseover="setup(this,'jag')"></div>&nbsp;
+							<div class="person julia" onmouseover="setup(this,'julia')"></div>&nbsp;
+							<div class="person gautam" onmouseover="setup(this,'gautam')"></div>&nbsp;
 							<br>
 							Items from a database are often ranked based on a combination of multiple criteria. A user may have the flexibility to accept combinations that weigh these criteria differently, within limits. On the other hand, this choice of weights can greatly affect the fairness of the produced ranking.
 							We develop a system that helps users choose criterion weights that lead to greater fairness. We consider ranking functions that compute the score of each item as a weighted sum of (numeric) attribute values, and then sort items on their score. Each ranking function can be expressed as a vector of weights, or as a point in a multi-dimensional space. For a broad range of fairness criteria, we show how to efficiently identify regions in this space that satisfy these criteria. Using this identification method, our system is able to tell users whether their proposed ranking function satisfies the desired fairness criteria and, if it does not, to suggest the smallest modification that does. We develop user-controllable approximation that and indexing techniques that are applied during preprocessing, and support sub-second response times during the online phase.
@@ -94,14 +89,14 @@
                     <td>
                         <p>
                             <i><a target="_blank" href="#">Leveraging Similarity Joins for Signal Reconstruction</a></i><br>
-							Abolfazl Asudeh,
-							<a target='_blank' href='https://sites.google.com/site/azadenazi/'>Azade Nazi</a>,
-							<a target='_blank' href='https://www.linkedin.com/in/jeesaugustine/'>Jees Augustine</a>,
-							<a target="_blank" href="http://saravananthirumuruganathan.appspot.com/">Saravanan Thirumuruganathan</a>,
-							<a target="_blank" href="https://faculty.ist.psu.edu/nan/">Nan Zhang</a>,
-							<a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a>,
-							<a target="_blank" href="http://www.research.att.com/people/Srivastava_Divesh/custom/index.html">Divesh Srivastava</a>
-							<br>accepted in <b>PVLDB 2018</b><br/>
+							<div class="person abol" onmouseover="setup(this,'abol')"></div>&nbsp;
+							<div class="person azade" onmouseover="setup(this,'azade')"></div>&nbsp;
+							<div class="person jees" onmouseover="setup(this,'jees')"></div>&nbsp;
+							<div class="person sara" onmouseover="setup(this,'sara')"></div>&nbsp;
+							<div class="person nan" onmouseover="setup(this,'nan')"></div>&nbsp;
+							<div class="person gautam" onmouseover="setup(this,'gautam')"></div>&nbsp;
+							<div class="person divesh" onmouseover="setup(this,'divesh')"></div>&nbsp;
+							<br>under shepherding in <b>PVLDB 2018</b><br/>
 							Signal reconstruction problem (SRP) is an important optimization problem where the objective is to identify a solution to an underdetermined system of linear equations that is closest to a given prior. It has a substantial number of applications in diverse areas including network traffic engineering, medical image reconstruction, acoustics, astronomy and many more. Most common approaches for SRP do not scale to large problem sizes. We propose a dual formulation of this problem and show how adapting database techniques developed for scalable similarity joins provides a significant speedup.
 							
                         </p>
@@ -119,10 +114,10 @@
                     <td>
                         <p>
                             <i><a target="_blank" href="files/EfficientRegretRatio.pdf">Efficient Computation of Regret-ratio Minimizing Set: A Compact Maxima Representative</a></i><br>
-							Abolfazl Asudeh, 
-							<a target='_blank' href='https://sites.google.com/site/azadenazi/'>Azade Nazi</a>, 
-							<a target="_blank" href="https://faculty.ist.psu.edu/nan/">Nan Zhang</a>, 
-							<a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a>
+							<div class="person abol" onmouseover="setup(this,'abol')"></div>&nbsp;
+							<div class="person azade" onmouseover="setup(this,'azade')"></div>&nbsp;
+							<div class="person nan" onmouseover="setup(this,'nan')"></div>&nbsp;
+							<div class="person gautam" onmouseover="setup(this,'gautam')"></div>&nbsp;
 							<br><b>In  SIGMOD 2017</b><br/>
 							Finding the maxima of a database based on a user preference, especially when the ranking function is a linear combination of the attributes, has been the subject of recent research. A critical observation is that the convex hull is the subset of tuples that can be used to find the maxima of any linear function. However, in real world applications the convex hull can be a significant portion of the database, and thus its performance is greatly reduced. Thus, computing a subset limited to r tuples that minimizes the regret ratio (a measure of the user’s dissatisfaction with the result from the limited set versus the one from the entire database) is of interest. In this paper, we make several fundamental theoretical as well as practical advances in developing such a compact set. In the case of two dimensional databases, we develop an optimal linearithmic time algorithm by leveraging the ordering of skyline tuples. In the case of higher dimensions, the problem is known to be NP-complete. As one of our main results of this paper, we develop an approximation algorithm that runs in linearithmic time and guarantees a regret ratio, within any arbitrarily small user-controllable distance from the optimal regret ratio. The comprehensive set of experiments on both synthetic and publicly available real datasets confirm the efficiency, quality of output, and scalability of our proposed algorithms.
                         </p>
@@ -133,11 +128,11 @@
                     <td>
                         <p>
                             <i><a target="_blank" href="papers/skylineDiscovery.pdf"> Discovering the Skyline of Web Databases</a></i><br>
-							Abolfazl Asudeh, 
-							<a target="_blank" href="http://saravananthirumuruganathan.appspot.com/">Saravanan Thirumuruganathan</a>, 
-							<a target="_blank" href="https://faculty.ist.psu.edu/nan/">Nan Zhang</a>, 
-							<a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a><br>
-							<b>In  proceedings of the VLDB Endowment (PVLDB) 2016</b><br/>
+							<div class="person abol" onmouseover="setup(this,'abol')"></div>&nbsp;
+							<div class="person sara" onmouseover="setup(this,'sara')"></div>&nbsp;
+							<div class="person nan" onmouseover="setup(this,'nan')"></div>&nbsp;
+							<div class="person gautam" onmouseover="setup(this,'gautam')"></div>&nbsp;
+							<br/><b>In  proceedings of the VLDB Endowment (PVLDB) 2016</b><br/>
 							<a href="http://www.vldb.org/pvldb/vol9/p600-asudeh.pdf">[paper]</a> 
 							<a  target="_blank" href="files/skylinediscovery.pdf">[technical report]</a>
 							<a target='_blank' href='bibtex/skylinediscovery.bib'>[BibTex]</a>
@@ -150,9 +145,9 @@
 				<tr><td><img src="imgs/qr.jpg"></td><td>
 						<p>
 						<i><a href='www.vldb.org/pvldb/vol9/p888-asudeh.pdf' target='_blank'>Query Reranking As A Service</a></i><br>
-						Abolfazl Asudeh, 
-						<a target="_blank" href="https://faculty.ist.psu.edu/nan/">Nan Zhang</a>, 
-						<a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a>
+							<div class="person abol" onmouseover="setup(this,'abol')"></div>&nbsp;
+							<div class="person nan" onmouseover="setup(this,'nan')"></div>&nbsp;
+							<div class="person gautam" onmouseover="setup(this,'gautam')"></div>&nbsp;
 						<br><b>In  proceedings of the VLDB Endowment (PVLDB) 2016</b><br/>
 						<a href="http://www.vldb.org/pvldb/vol9/p888-asudeh.pdf">[paper]</a>
 						<a target='_blank' href='bibtex/queryReranking.bib'>[BibTex]</a>
@@ -163,12 +158,12 @@
 				<tr><td><img src="imgs/qr2.png"></td><td>
 						<p>
 						<i>(Demo paper) <a href='#' target='_blank'>QR2: A Third-party Query Reranking Service Over Web Databases</a></i><br>
-						<a target="_blank" href="https://yeshwanth1993.github.io/">Yeshwanth D. Gunasekaran</a>,
-						Abolfazl Asudeh, 
-						<a target="_blank" href="http://sonahasani.wixsite.com/homepage">Sona Hasani</a>, 
-						<a target="_blank" href="https://faculty.ist.psu.edu/nan/">Nan Zhang</a>, 
-						<a target="_blank" href="http://www.qu.edu.qa/engineering/computer/faculty/ali.php">Ali Jaoua</a>, 
-						<a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a>
+							<div class="person yeshwanth" onmouseover="setup(this,'yeshwanth')"></div>&nbsp;
+							<div class="person abol" onmouseover="setup(this,'abol')"></div>&nbsp;
+							<div class="person sona" onmouseover="setup(this,'sona')"></div>&nbsp;
+							<div class="person nan" onmouseover="setup(this,'nan')"></div>&nbsp;
+							<div class="person ali1" onmouseover="setup(this,'ali1')"></div>&nbsp;
+							<div class="person gautam" onmouseover="setup(this,'gautam')"></div>&nbsp;
 						<br>accepted in <b>ICDE 2018</b> Demo Track<br/>
 						The ranked retrieval model has rapidly become the de-facto way for search query processing in web databases.  Despite the extensive efforts on designing better ranking mechanisms, in practice, many such databases fail to address the diverse and sometimes contradicting preferences of users. 
 						We present QR2, a third-party service that uses nothing but the public search interface of a web database and enables the on-the-fly processing of queries with any user-specified ranking functions, no matter if the ranking function is supported by the database or not.
@@ -186,7 +181,11 @@
                     <td>
                         <p>
                             <i><a target="_blank" href="#">Efficient Computation of Subspace Skyline over Categorical Domains</a></i><br>
-							Farhadur Rahman, <i>Abolfazl Asudeh</i>, Nick Koudas, Gautam Das.
+							<div class="person farhad" onmouseover="setup(this,'farhad')"></div>&nbsp;
+							<div class="person abol" onmouseover="setup(this,'abol')"></div>&nbsp;
+							<div class="person nick" onmouseover="setup(this,'nick')"></div>&nbsp;
+							<div class="person gautam" onmouseover="setup(this,'gautam')"></div>&nbsp;
+							
 							<br><b>In CIKM 2017</b><br/>
 							Platforms such as AirBnB, Zillow, Yelp, and related sites have transformed the way we search for accommodation, restaurants, etc. The underlying datasets in such applications have numerous attributes that are mostly Boolean or Categorical. Discovering the skyline of such datasets over a subset of attributes would identify entries that stand out while enabling numerous applications. 
                         </p>
@@ -197,7 +196,10 @@
                     <td>
                         <p>
                             <i><a target="_blank" href="#">Assisting Service Providers In Peer to peer Marketplaces: Maximizing Gain Over Flexible Attributes</a></i><br>
-							<i>Abolfazl Asudeh</i>, Azade Nazi, Nick Koudas, Gautam Das.
+							<div class="person abol" onmouseover="setup(this,'abol')"></div>&nbsp;
+							<div class="person azade" onmouseover="setup(this,'azade')"></div>&nbsp;
+							<div class="person nick" onmouseover="setup(this,'nick')"></div>&nbsp;
+							<div class="person gautam" onmouseover="setup(this,'gautam')"></div>&nbsp;
 							<br><b>ArXiv e-prints 1705.03028</b><br/>
 							Peer to peer marketplaces enable transactional exchange of services directly between people. In such platforms, those providing a service are faced with various choices. For example in travel peer to peer marketplaces, although some amenities (attributes) in a property are fixed, others are relatively flexible and can be provided without significant effort. Providing an attribute is usually associated with a cost. Naturally, different sets of attributes may have a different “gains” (monetary or otherwise) for a service provider. Consequently, given a limited budget, deciding which attributes to offer is challenging. In this project, we propose techniques that help service providers in decision making. 
                         </p>
@@ -211,12 +213,12 @@
 	<table width="100%"><tr><td><img src="imgs/CrowdSourcing.jpg"></td><td>
 		<p>
             <i><a target="_blank" href="files/crowdpareto-cikm15.pdf"> Crowdsourcing Pareto-Optimal Object Finding by Pairwise Comparisons</a></i><br>
-            Abolfazl Asudeh, 
-			<a target="_blank" href="http://idir.uta.edu/~zhang/">Gensheng Zhang</a>, 
-			<a target="_blank" href="http://idir.uta.edu/~naeemul/">Naeemul Hassan</a>, 
-			<a target="_blank" href="http://ranger.uta.edu/~cli/">Chengkai Li</a>, 
-			<a target="_blank" href="http://crystal.uta.edu/~zaruba/">Gergely V Zaruba</a> <br>
-			<b>In  CIKM 2015</b><br/>
+            <div class="person abol" onmouseover="setup(this,'abol')"></div>&nbsp;
+			<div class="person gensheng" onmouseover="setup(this,'gensheng')"></div>&nbsp;
+			<div class="person nafi" onmouseover="setup(this,'nafi')"></div>&nbsp;
+			<div class="person cli" onmouseover="setup(this,'cli')"></div>&nbsp;
+			<div class="person zaruba" onmouseover="setup(this,'zaruba')"></div>&nbsp;
+			<br/><b>In  CIKM 2015</b><br/>
 				<a target="_blank" href="files/crowdpareto-cikm15.pdf">[paper]</a>
 				<a target="_blank" href="files/crowdpareto-cikm15-slides.pdf">[slides]</a>
 				<a target='_blank' href='bibtex/2806451.bib'>[BibTex]</a><br />
@@ -231,10 +233,11 @@
 	<table width="100%"><tr><td><img src="imgs/TP.jpg"></td><td>
 		<p>
             <i><a target="_blank" href="http://arxiv.org/pdf/1403.5006.pdf">Generating Preview Tables for Entity Graphs</a></i><br>
-            <a target="_blank" href="http://idir.uta.edu/~nyan/">Ning Yan</a>, 
-			<a target='_blank' href='https://www.linkedin.com/in/sona-hasani-62577b8'>Sona Hasani</a>, 
-			Abolfazl Asudeh, 
-			<a target="_blank" href="http://ranger.uta.edu/~cli/">Chengkai Li</a> <br>
+            <div class="person ning" onmouseover="setup(this,'ning')"></div>&nbsp;
+			<div class="person sona" onmouseover="setup(this,'sona')"></div>&nbsp;
+			<div class="person abol" onmouseover="setup(this,'abol')"></div>&nbsp;
+			<div class="person cli" onmouseover="setup(this,'cli')"></div>&nbsp;
+			<br>
 			<b>In  SIGMOD 2016</b><br/>
 				<a target="_blank" href="files/mod946-yan.pdf">[paper]</a><br />
 		    Users and developers are tapping into big, complex entity graphs for numerous applications. It is challenging to select entity graphs for a particular need, given abundant datasets from many sources and the oftentimes scarce information available for them. We propose methods to automatically produce preview tables for entity graphs, for compact presentation of important entity types and relationships. The preview tables assist users in attaining a quick and rough preview of the data. They can be shown in a limited display space for a user to browse and explore, before she decides to spend time and resources to fetch and investigate the complete dataset. We formulate several optimization problems that look for previews with the highest scores according to intuitive goodness measures, under various constraints on preview size and distance between preview tables. The optimization problem under distance constraint is NP-hard. We design a dynamic-programming algorithm and an Apriori-style algorithm for finding optimal previews. The experiments and user studies on Freebase demonstrated both the scoring measures' accuracy and the discovery algorithms' efficiency.
@@ -247,10 +250,10 @@
 		<table width="100%"><tr><td><img src="imgs/WSN.jpg"></td><td>
 		<p>
             <i><a href='http://dx.doi.org/10.1016/j.adhoc.2015.07.005' target='_blank'>A General Model for MAC Protocol Selection in Wireless Sensor Networks</a></i><br>
-            Abolfazl Asudeh, 
-			<a target="_blank" href="http://crystal.uta.edu/~zaruba/">Gergely V. Zaruba1</a>, 
-			<a target="_blank" href="http://en.wikipedia.org/wiki/Sajal_K._Das">Sajal K. Das</a><br>
-			<b>In  Ad-Hoc Networks Journal, 2016</b><br/>
+			<div class="person abol" onmouseover="setup(this,'abol')"></div>&nbsp;
+			<div class="person zaruba" onmouseover="setup(this,'zaruba')"></div>&nbsp;
+			<div class="person sajal" onmouseover="setup(this,'sajal')"></div>&nbsp;
+			<br/><b>In  Ad-Hoc Networks Journal, 2016</b><br/>
 				<a target='_blank' href='files/MACSELECTION.pdf'>[pre-print version]</a>
 				<a target='_blank' href='bibtex/MACSELECTION.bib'>[BibTex]</a>
 				<a target='_blank' href='files/UsageReport.pdf'> [Usage Report]</a><br />
