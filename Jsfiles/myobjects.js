@@ -1,11 +1,13 @@
 // Abolfazl Asudeh, 3/2/2018
 function setup(ele,name)
 {
-	ele.classList.add('person');
-	ele.classList.add(name);
 	ele.innerHTML = '<a class="text" target="_blank" href="'+getURL(name)+'">'+getname(name)+', '+getaff(name)+'</a>';
-	//ele.getElementsByTagName("a")[0].href=getURL(name); 
-	//ele.getElementsByTagName("a")[0].target="_blank"; 
+	//ele.addEventListener("click", function(){clear(ele)});
+}
+
+function clear(ele)
+{
+	ele.innerHTML='';
 }
 
 function getURL(name){
