@@ -45,6 +45,10 @@ switch(name){
 		return "http://idir.uta.edu/~zhang/";
 	case "movaghar":
 		return "http://sharif.edu/~movaghar/";
+	case "izzy":
+		return "https://www.linkedin.com/in/izzyg/";
+	case "sanjay":
+		return "https://www.linkedin.com/in/sanjaysarkar/";
 	default:
 		return "#";
 	}
@@ -94,6 +98,10 @@ switch(name){
 		return "Sharif University of Technology";
 	case "ali1":
 		return "Qatar University";
+	case "izzy":
+		return "Microsoft";
+	case "sanjay":
+		return "Microsoft";
 	default:
 		return "University of Texas at Arlington";
 	}
@@ -147,5 +155,9 @@ switch(name){
 		return "Yeshwanth D Gunasekaran";
 	case "ali1":
 		return "Ali Jaoua";
+	case "izzy":
+		return "Izzy Gryko";
+	case "sanjay":
+		return "Sanjay Sarkar";
 	}
 }		
