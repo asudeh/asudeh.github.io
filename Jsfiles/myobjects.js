@@ -5,11 +5,6 @@ function setup(ele,name)
 	//ele.addEventListener("click", function(){clear(ele)});
 }
 
-function clear(ele)
-{
-	ele.innerHTML='';
-}
-
 function getURL(name){
 switch(name){
 	case "gautam":
