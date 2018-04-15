@@ -1,21 +1,25 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Segoe UI Light;
+    font-family: Bevan;
     font-size: 100%;
-    line-height: 1.4;
+    line-height: normal;
     height:100%;
 }
 
 .top
 {
     position:fixed;
-    left:0px;
-    top:0px;
-	height:208px; 
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    left:2px;
+    top:2px;
+	height:70px; 
 	width:100%;
-	background-image:url('imgs/backgroud-topN.jpg');
-    background-repeat:repeat-x;
+	color: #FFFFFF;
+	font-size:3;
+	background-color: #1f618d;
 }
 
 .top a
@@ -38,17 +42,20 @@ html, body {
 .sidebar
 {
     position:fixed;
-    left:5px;
-    top:208px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    left:2px;
+    top:75px;
     width:175px;
     height:100%;
-	background: #333;
+	background:  #34495e;
 }
 .verticalSparator
 {
     position:fixed;
     left:175px;
-    top:208px;
+    top:75px;
     width:1px;
     height:100%;
     background-color:#D05218;
@@ -56,8 +63,8 @@ html, body {
 .container
 {
     position:absolute;
-    left:176px;
-    top:208px;
+    left:180px;
+    top:80px;
 }
 
 h1, h2, h3,h4, h5, h6 {
@@ -119,7 +126,8 @@ a
 }
 
 #cssmenu {
-  background: #333;
+  border-radius: 10px;
+  background:  #34495e 
   list-style: none;
   margin: 0;
   padding: 0;
@@ -132,7 +140,7 @@ a
   list-style: none;
 }
 #cssmenu a {
-  background: #333;
+  background: #34495e 
   border-bottom: 1px solid #393939;
   color: #ccc;
   display: block;
