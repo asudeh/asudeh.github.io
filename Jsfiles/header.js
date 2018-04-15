@@ -3,7 +3,8 @@ function header() {
 st =  '<table  height="100%" width="100%">';
 st+= '				<tr align="center"><td width="5px;">&nbsp;</td>';
 st+= ' 				<td align="left">';
-st+= ' 				<font size="6.5vm" color="#FFFFFF">Abolfazl Asudeh</font>';
+st+= ' 				<font size="6vm" color="#FFFFFF">Abolfazl Asudeh</font>';
+st+= ' 				<br><font size="2.5vm" color="#FFFFFF">Ph.D., Computer Science</font>';
 st+= ' 				</td>';
 st+= ' 				<td align="left">';
 st+= '				<font size="3vm" color="#FFFFFF">Research Fellow';
