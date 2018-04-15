@@ -17,7 +17,7 @@ st += '				</td>';
 st += '			</tr>';
 st += '		</table>';
 st += '		</td>';
-st += '		<td width="175px;"><img height="163px;" src="imgs/1.JPG" class="niceBox"></td>';
+st += '		<td width="175px;"><img height="163px" src="ppl/abol.jpg" class="niceBox"></td>';
 st += '	</tr>';
 st += '</table>';
 headerDiv.innerHTML = st;
