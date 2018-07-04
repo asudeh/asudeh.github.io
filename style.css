@@ -5,7 +5,7 @@ html, body {
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
     font-size: 100%;
-    line-height: normal;
+    line-height:1.7;
     height:100%;
 }
 
@@ -69,11 +69,11 @@ html, body {
     top:80px;
 }
 
-h1, h2, h3,h4, h5, h6 {
+h1, h2, h3,h4,h5,h6{
     margin: 10; 
     padding-right: 15px;
     padding-left: 10px;
-    color:#F58026;
+    color:#527bbd;
 }
 
 p
@@ -89,7 +89,7 @@ a img {
 
 a
 {
-    color:Green;
+    color:#224b8d;
     text-decoration:underline;
 }
 .niceBox
@@ -136,7 +136,7 @@ a
   'width: 100%;
 }
 #cssmenu li {
-  font: 100% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  font: 100% "Georgia", "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   list-style: none;
