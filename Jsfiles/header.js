@@ -1,5 +1,7 @@
 // Written by Abolfazl Asudeh, 3/12/2013
 function header() {
+}
+function header_old() {
 st =  '<table  height="100%" width="100%">';
 st+= '				<tr align="center"><td width="5px;">&nbsp;</td>';
 st+= ' 				<td align="left">';

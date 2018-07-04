@@ -17,7 +17,7 @@ html, body {
 	-webkit-border-radius: 10px;
     left:2px;
     top:2px;
-	height:0px; 
+	height:70px; 
 	width:100%;
 	color: #FFFFFF;
 	font-size:3;
@@ -48,25 +48,25 @@ html, body {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
     left:2px;
-    top:5px;
-    width:20%;
+    top:75px;
+    width:175px;
     height:100%;
-	background:  #eeeeee;
+	background:  #34495e;
 }
 .verticalSparator
 {
     position:fixed;
-    left:20%;
-    top:5px;
-    width:3px;
+    left:175px;
+    top:75px;
+    width:1px;
     height:100%;
-    background-color:#dddddd;
+    background-color:#D05218;
 }
 .container
 {
     position:absolute;
-    left:18%;
-    top:5px;
+    left:180px;
+    top:80px;
 }
 
 h1, h2, h3,h4,h5,h6{
@@ -128,12 +128,12 @@ a
 }
 
 #cssmenu {
-  border-radius: 1px;
-  background:  #999; 
+  border-radius: 2px;
+  background:  #34495e 
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 80%;
+  'width: 100%;
 }
 #cssmenu li {
   font: 100% "Georgia", "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
@@ -144,7 +144,7 @@ a
 #cssmenu a {
   background: #34495e 
   border-bottom: 1px solid #393939;
-  color: #222;
+  color: #ccc;
   display: block;
   margin: 0;
   'padding: 2px 2px;
@@ -153,6 +153,6 @@ a
 }
 #cssmenu a:hover {
   background: #2580a2;' url("imgs/hover.gif") left center no-repeat;
-  color: #ffffff;
+  color: #fff;
   'padding-bottom: 8px;
 }
