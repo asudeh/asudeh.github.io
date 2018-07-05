@@ -5,7 +5,7 @@ html, body {
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
     font-size: 100%;
-    line-height:1.7;
+    line-height:1.5;
     height:100%;
 }
 
@@ -49,14 +49,14 @@ html, body {
 	-webkit-border-radius: 10px;
     left:2px;
     top:5px;
-    width:20%;
+    width:30%;
     height:100%;
 	background:  #eeeeee;
 }
 .verticalSparator
 {
     position:fixed;
-    left:20%;
+    left:30%;
     top:5px;
     width:3px;
     height:100%;
@@ -65,7 +65,7 @@ html, body {
 .container
 {
     position:absolute;
-    left:18%;
+    left:28%;
     top:5px;
 }
 
@@ -128,18 +128,27 @@ a
 }
 
 #cssmenu {
-  border-radius: 1px;
-  background:  #999; 
+  line-height:1;
+  font-size: 1.2em;
+  border-radius: 0px;
+  background:  #ccc; 
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-bottom:10px;
   width: 80%;
+  border-top: 1px gray solid;
+  border-left: 1px gray solid;
+  border-right: 1px gray solid;
+  text-align:left;
+  text-vertical-align:middle;
 }
 #cssmenu li {
   font: 100% "Georgia", "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   list-style: none;
+  border-bottom: 1px gray solid;
 }
 #cssmenu a {
   background: #34495e 
