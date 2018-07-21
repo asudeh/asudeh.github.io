@@ -69,9 +69,9 @@
 	<div class="contentBox">
 	<h3>Projects</h3>
 		<div class="insideBox" id="RDM">
-            <h4>Data Ethics and Responsible Data Management: Ranking</h4>
+            <h4>Data Ethics and Responsible Data Management</h4>
             <table width="100%">
-				<tr>
+				<tr style="border-bottom: 1px solid #000;">
                     <td align="center">
 						<img src="imgs/fifa.jpg" width="250">
 						<!--<br> <img src="imgs/2d1.jpg" width="250" >-->
@@ -90,13 +90,13 @@
                     </td>
                 </tr>
 			
-                <tr>
-                    <td align="center">
+                <tr style="border-bottom: 1px solid #000;">
+                    <td align="center"  style="border-bottom: 1px solid #000;">
 						<img src="imgs/fair.jpg" width="250">
 						<!--<br> <img src="imgs/2d1.jpg" width="250" >-->
 						<br> <img src="imgs/dual3.png" width="250" >
 					</td>
-                    <td>
+                    <td  style="border-bottom: 1px solid #000;">
                         <p>
                             <i><a target="_blank" href="https://arxiv.org/abs/1712.09752">Designing Fair Ranking Schemes</a></i><br>
 							<p class="person abol" onmouseover="setup(this,'abol')"></p>&nbsp;
@@ -106,6 +106,26 @@
 							<br>
 							Items from a database are often ranked based on a combination of multiple criteria. A user may have the flexibility to accept combinations that weigh these criteria differently, within limits. On the other hand, this choice of weights can greatly affect the fairness of the produced ranking.
 							We develop a system that helps users choose criterion weights that lead to greater fairness. We consider ranking functions that compute the score of each item as a weighted sum of (numeric) attribute values, and then sort items on their score. Each ranking function can be expressed as a vector of weights, or as a point in a multi-dimensional space. For a broad range of fairness criteria, we show how to efficiently identify regions in this space that satisfy these criteria. Using this identification method, our system is able to tell users whether their proposed ranking function satisfies the desired fairness criteria and, if it does not, to suggest the smallest modification that does. We develop user-controllable approximation that and indexing techniques that are applied during preprocessing, and support sub-second response times during the online phase.
+                        </p>
+                    </td>
+                </tr>
+				
+				<tr>
+                    <td align="center"  style="border-bottom: 1px solid #000;">
+					</td>
+                    <td  style="border-bottom: 1px solid #000;">
+                        <p>
+                            <i><a target="_blank" href="https://arxiv.org/pdf/1804.07890">A Nutritional Label for Rankings</a></i><br>
+							<p class="person ke" onmouseover="setup(this,'ke')"></p>&nbsp;
+							<p class="person julia" onmouseover="setup(this,'julia')"></p>&nbsp;
+							<p class="person abol" onmouseover="setup(this,'abol')"></p>&nbsp;
+							<p class="person bill" onmouseover="setup(this,'bill')"></p>&nbsp;
+							<p class="person jag" onmouseover="setup(this,'jag')"></p>&nbsp;
+							<p class="person gerome" onmouseover="setup(this,'gerome')"></p>&nbsp;
+							<br>in <b>SIGMOD 2018</b> Demo Track<br/>
+							<br>
+							Algorithmic decisions often result in scoring and ranking individuals to determine credit worthiness, qualifications for college admissions and employment, and compatibility as dating partners. While automatic and seemingly objective, ranking algorithms can low diversity. Furthermore, ranked results are often unstable — small changes in the input data or in the ranking methodology may lead to drastic changes in the output, making the result uninformative and easy to manipulate. Similar concerns apply in cases where items other than individuals are ranked, including colleges, academic departments, or products.
+							In this demonstration we present Ranking Facts, a Web-based application that generates a “nutritional label” for rankings. RankingFacts is made up of a collection of visual widgets that implement our latest research results on fairness, stability, and transparency for rankings, and that communicate details of the ranking methodology, or of the output, to the end user. We will showcase Ranking Facts on real datasets from different domains, including college rankings, criminal risk assessment, and financial services.
                         </p>
                     </td>
                 </tr>

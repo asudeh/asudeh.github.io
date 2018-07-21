@@ -53,6 +53,10 @@ switch(name){
 		return "https://www.linkedin.com/in/sanjaysarkar/";
 	case "gerome":
 		return "https://people.cs.umass.edu/~miklau/";
+	case "ke":
+		return "https://keyangatdrexel.github.io/";
+	case "bill":
+		return "https://faculty.washington.edu/billhowe/";
 	default:
 		return "#";
 	}
@@ -108,6 +112,10 @@ switch(name){
 		return "Microsoft";
 	case "gerome":
 		return "University of Massachusetts, Amherst";
+	case "bill":
+		reutrn "University of Washington";
+	case "ke":
+		return "Drexel University";
 	default:
 		return "University of Texas at Arlington";
 	}
@@ -167,5 +175,9 @@ switch(name){
 		return "Sanjay Sarkar";
 	case "gerome":
 		return "Gerome Miklau";
+	case "bill":
+		return "Bill Howe";
+	case "ke":
+		return "Ke Yang";
 	}
 }		
