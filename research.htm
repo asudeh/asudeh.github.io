@@ -10,6 +10,19 @@
     function init() {
         menu();
 		header();
+		rm = document.getElementById("researchmenu");
+		st = '<ul>';
+		st += '   <li><a href="#RDM">Data Ethics and Responsible Data Management</a></li>';
+		st += '   <li><a href="#SR">Signal Reconstruction</a></li>';
+		st += '   <li><a href="#TKR">Compact Top-k Representatives</a></li>';
+		st += '   <li><a href="#HWD">Hidden Web Databases</a></li>';
+		st += '   <li><a href="#TKR">Compact Top-k Representatives</a></li>';
+		st += '   <li><a href="#P2P">P2P MarketPlaces</a></li>';
+		st += '   <li><a href="#CS">CrowdSourcing</a></li>';
+		st += '   <li><a href="#EG">Entity Graphs</a></li>';
+		st += '   <li><a href="#MIS">Miscellaneous</a></li>';
+		st+='</ul>';
+		rm.innerHTML = st;
     }
 </script>
 </head>
@@ -22,7 +35,7 @@
 <div align="center">
 	<div class="contentBox">
 	<H3>Research Interests</H3>
-	<p>include Responsible Data Management and Data Ethics, Ranking Queries and Compact Representatives, , Data Mining, Algorithm Design, Deep Web, Information Retrieval, Graph Analytics, Combinatorial Geometry, Machine Learning, Signal Reconstruction, and Crowdsourcing.</p>
+	<p>include Responsible Data Management and Data Ethics, Ranking Queries and Compact Representatives, , Data Mining, Algorithm Design, Web Databases, Information Retrieval, Graph Analytics, Combinatorial Geometry, Machine Learning, Signal Reconstruction, and Crowdsourcing.</p>
 	<p align='center'><img width="50%" src = "imgs/wordcloud/nice.png"/></p>
 	</div>
 	<div class="separatorDiv"></div>
@@ -55,7 +68,7 @@
 	<div class="separatorDiv"></div>
 	<div class="contentBox">
 	<h3>Projects</h3>
-		<div class="insideBox">
+		<div class="insideBox" id="RDM">
             <h4>Data Ethics and Responsible Data Management: Ranking</h4>
             <table width="100%">
 				<tr>
@@ -100,7 +113,7 @@
         </div>
         <div class="separatorDiv"></div>
 		
-		<div class="insideBox">
+		<div class="insideBox" id="SR">
             <h4>Signal Reconstruction</h4>
             <table width="100%">
                 <tr>
@@ -125,7 +138,7 @@
         </div>
         <div class="separatorDiv"></div>
 		
-		<div class="insideBox">
+		<div class="insideBox"id="TKR">
             <h4>Compact Top-k Representatives</h4>
             <table width="100%">
 				</tr><td align="center" style="border-bottom: 1px solid #000;"><img src="imgs/wine_rating3.jpg" width="250"> <br> <img src="imgs/ksets.jpg" width="190" ><br><img src="imgs/practicalrun.jpg" width="190" ></td>
@@ -160,8 +173,8 @@
         </div>
         <div class="separatorDiv"></div>
 		
-		<div class="insideBox">
-            <h4>Reranking in Web Databases</h4>
+		<div class="insideBox" id="HWD">
+            <h4>Hidden Web Databases</h4>
             <table width="100%">
 				<tr><td style="border-bottom: 1px solid #000;"><img src="imgs/qr.jpg"></td>
 				<td style="border-bottom: 1px solid #000;">
@@ -216,8 +229,8 @@
         </div>
         <div class="separatorDiv"></div>
 		
-		<div class="insideBox">
-            <h4>Projects in P2P MarketPlaces</h4>
+		<div class="insideBox" id="P2P">
+            <h4>P2P MarketPlaces</h4>
             <table width="100%">
                 <tr>
                     <td align="center" style="border-bottom: 1px solid #000;"><img src="imgs/p2p1.jpg" width="250"></td>
@@ -251,7 +264,7 @@
             </table>
         </div>
     <div class="separatorDiv"></div>
-	<div class="insideBox">
+	<div class="insideBox"  id="CS">
 	<h4>CrowdSourcing</h4>
 	<table width="100%"><tr><td><img src="imgs/CrowdSourcing.jpg"></td><td>
 		<p>
@@ -270,7 +283,7 @@
         <p><b>Code:</b> The framework and instantiations implemantation (in C++) is located <a target="_blank" href="https://github.com/asudeh/codes/tree/master/CrowdSourcingParetoOptimalObjectFinding">here</a>.</p>
 	</td></tr></table>
 	</div>
-	<div class="separatorDiv"></div>
+	<div class="separatorDiv" id="EG"></div>
 	<div class="insideBox">
 	<h4>Entity Graph Compact Presentation</h4>
 	<table width="100%"><tr><td><img src="imgs/TP.jpg"></td><td>
@@ -288,7 +301,7 @@
 	</td></tr></table>
 	</div>
 	<div class="separatorDiv"></div>
-	<div class="insideBox">
+	<div class="insideBox" id="MIS">
 	<h4>Miscellaneous</h4>
 		<table width="100%"><tr><td><img src="imgs/WSN.jpg"></td><td>
 		<p>
