@@ -1,7 +1,9 @@
 // Abolfazl Asudeh, 3/2/2018
 function setup(ele,name)
 {
-	ele.innerHTML = '<a class="text" target="_blank" href="'+getURL(name)+'">'+getname(name)+', '+getaff(name)+'</a>';
+	ele.innerHTML = '<a class="persontext" target="_blank" href="'+getURL(name)+'">'+getname(name)+'<br/>'+getaff(name)+'</a>';
+	//ele.innerHTML = '<span class="tooltiptext"><a class="text" target="_blank" href="'+getURL(name)+'">'+getname(name)+', '+getaff(name)+'</a></span>';
+	//ele.innerHTML = '<a class="text" target="_blank" href="'+getURL(name)+'">'+getname(name)+', '+getaff(name)+'</a>';
 	//ele.addEventListener("click", function(){clear(ele)});
 }
 
