@@ -113,9 +113,9 @@ switch(name){
 	case "gerome":
 		return "University of Massachusetts, Amherst";
 	case "bill":
-		reutrn "University of Washington";
+		return "University of Washington";
 	case "ke":
-		return "Drexel University";
+		return"Drexel University";
 	default:
 		return "University of Texas at Arlington";
 	}
