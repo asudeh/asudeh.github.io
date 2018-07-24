@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc>http://asudeh.github.io/education.htm</loc> 
-  </url>
-  <url>
     <loc>http://asudeh.github.io/research.htm</loc> 
   </url>
   <url>
     <loc>http://asudeh.github.io/exp.htm</loc> 
   </url>
   <url>
-    <loc>http://asudeh.github.io/misc.htm</loc> 
-  </url>
-  <url>
-    <loc>http://asudeh.github.io/codes.htm</loc> 
+    <loc>http://asudeh.github.io/farsi.htm</loc> 
   </url>
   <url>
     <loc>http://asudeh.github.io/files/EfficientRegretRatio.pdf</loc> 
