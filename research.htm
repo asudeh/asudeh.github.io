@@ -15,6 +15,7 @@
 		st += '   <li><a href="#RDM">Data Ethics and Responsible Data Management</a></li>';
 		st += '   <li><a href="#SR">Signal Reconstruction</a></li>';
 		st += '   <li><a href="#TKR">Compact Top-k Representatives</a></li>';
+		st += '   <li><a href="#ML">Data Management for Machine Learning</a></li>';
 		st += '   <li><a href="#HWD">Hidden Web Databases</a></li>';
 		st += '   <li><a href="#P2P">P2P MarketPlaces</a></li>';
 		st += '   <li><a href="#CS">CrowdSourcing</a></li>';
@@ -215,6 +216,28 @@ Nan Zhang, Gautam Das, Divesh Srivastava. <i>Leveraging Similarity Joins for Sig
 							<p class="person gautam" onmouseover="setup(this,'gautam')"></p>&nbsp;
 							<br><b>In  SIGMOD 2017</b><br/>
 							Finding the maxima of a database based on a user preference, especially when the ranking function is a linear combination of the attributes, has been the subject of recent research. A critical observation is that the convex hull is the subset of tuples that can be used to find the maxima of any linear function. However, in real world applications the convex hull can be a significant portion of the database, and thus its performance is greatly reduced. Thus, computing a subset limited to r tuples that minimizes the regret ratio (a measure of the user’s dissatisfaction with the result from the limited set versus the one from the entire database) is of interest. In this paper, we make several fundamental theoretical as well as practical advances in developing such a compact set. In the case of two dimensional databases, we develop an optimal linearithmic time algorithm by leveraging the ordering of skyline tuples. In the case of higher dimensions, the problem is known to be NP-complete. As one of our main results of this paper, we develop an approximation algorithm that runs in linearithmic time and guarantees a regret ratio, within any arbitrarily small user-controllable distance from the optimal regret ratio. The comprehensive set of experiments on both synthetic and publicly available real datasets confirm the efficiency, quality of output, and scalability of our proposed algorithms.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="separatorDiv"></div>
+		
+		<div class="insideBox" id="ML">
+            <h4>Data Management for Machine Learning</h4>
+            <table width="100%">
+                <tr>
+                    <td align="center"><img src="imgs/ml.jpg" width="250"></td>
+                    <td>
+                        <p>
+                            <i><a target="_blank" href="http://www.vldb.org/pvldb/vol11/p1468-hasani.pdf">Efficient Construction of Approximate AdHoc ML models Through Materialization and Reuse</a></i><br>
+							<p class="person sona" onmouseover="setup(this,'sona')"></p>&nbsp;
+							<p class="person sara" onmouseover="setup(this,'sara')"></p>&nbsp;
+							<p class="person abol" onmouseover="setup(this,'abol')"></p>&nbsp;
+							<p class="person nick" onmouseover="setup(this,'nick')"></p>&nbsp;
+							<p class="person gautam" onmouseover="setup(this,'gautam')"></p>&nbsp;
+							<br>in <b>PVLDB 2018</b><br/>
+							Machine learning has become an essential toolkit for complex analytic processing. Data is typically stored in large data warehouses with multiple dimension hierarchies. Often, data used for building an ML model are aligned on OLAP hierarchies such as location or time. In this paper, we investigate the feasibility of efficiently constructing approximate ML models for new queries from previously constructed ML models by leveraging the concepts of model materialization and reuse. For example, is it possible to construct an approximate ML model for data from the year 2017 if one already has ML models for each of its quarters? We propose algorithms that can support a wide variety of ML models such as generalized linear models for classification along with K-Means and Gaussian Mixture models for clustering. We propose a cost based optimization framework that identifies appropriate ML models to combine at query time and conduct extensive experiments on real-world and synthetic datasets. Our results indicate that our framework can support analytic queries on ML models, with superior performance, achieving dramatic speedups of several orders in magnitude on very large datasets.
                         </p>
                     </td>
                 </tr>
