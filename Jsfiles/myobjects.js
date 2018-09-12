@@ -26,7 +26,7 @@ switch(name){
 	case "cli":
 		return "http://ranger.uta.edu/~cli/";
 	case "zaruba":
-		return "http://crystal.uta.edu/~zaruba/";
+		return "https://www.wichita.edu/academics/engineering/eecs/faculty/Gergely.php";
 	case "julia":
 		return "https://www.cs.drexel.edu/~julia/";
 	case "sajal":
@@ -77,13 +77,13 @@ switch(name){
 	case "sara":
 		return "QCRI";
 	case "azade":
-		return "Microsoft Research";
+		return "Google AI";
 	case "nick":
 		return "University of Toronto";
 	case "cli":
 		return "University of Texas at Arlington";
 	case "zaruba":
-		return "University of Texas at Arlington";
+		return "Wichita State University";
 	case "julia":
 		return "Drexel University";
 	case "sajal":
@@ -116,6 +116,8 @@ switch(name){
 		return "University of Washington";
 	case "ke":
 		return"Drexel University";
+	case "yeshwanth":
+		return "Google";
 	default:
 		return "University of Texas at Arlington";
 	}
