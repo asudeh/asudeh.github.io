@@ -57,6 +57,8 @@ switch(name){
 		return "https://keyangatdrexel.github.io/";
 	case "bill":
 		return "https://faculty.washington.edu/billhowe/";
+	case "mark":
+		return "https://markjin1990.github.io/";
 	default:
 		return "#";
 	}
@@ -118,6 +120,8 @@ switch(name){
 		return"Drexel University";
 	case "yeshwanth":
 		return "Google";
+	case "mark":
+		return "University of Michigan";
 	default:
 		return "University of Texas at Arlington";
 	}
@@ -181,5 +185,7 @@ switch(name){
 		return "Bill Howe";
 	case "ke":
 		return "Ke Yang";
+	case "mark":
+		return "Zhongjun (Mark) Jin"
 	}
 }		
