@@ -16,13 +16,61 @@ function ReadBib(bibFile, divToFill)
     }
 }
 
+function Format()
+{ // play with this file to change the formatting
+    groupby = document.getElementById("GroupBy").value;
+    var hash = {};
+    var counts = {};
+    for(i=0;i<mypubs.length;i++)
+    {
+        var pub = mypubs[i];
+        if(!('author' in pub)) continue;
+        st = '<li>';
+        st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
+        if('volume' in pub) st+=', Vol. '+ pub['volume'];
+        if('number' in pub) st+='('+ pub['number']+')';
+        if('pages' in pub) st+=', pages '+ pub['pages'];
+        if('year' in pub) st+=', '+ pub['year'];
+        if('publisher' in pub) st+=', '+ pub['publisher'];
+        st+='.</li>';
+        key = pub[groupby];
+        if(typeof(key)=='object')
+        {
+            for(j=0;j<key.length;j++)
+            {
+                if(!(key[j] in hash)) {hash[key[j]]=st; counts[key[j]]=1;} 
+                else {hash[key[j]]= hash[key[j]]+ st; counts[key[j]]=counts[key[j]] + 1;} 
+            }
+        }
+        else{
+            if(!(key in hash)) {hash[key]=st; counts[key]=1;} 
+            else {hash[key]= hash[key]+ st; counts[key]=counts[key] + 1;} 
+        }
+    }
+    if(groupby=='year') Skeys = sortedkeys(hash,false);
+    else sorted_keys = sortedkeys(counts,true);
+
+    // create/format the return string
+    retSt='';
+    for(i=0;i<sorted_keys.length;i++)
+    {
+        retSt+='<div><H3>'+sorted_keys[i]+'</H3><ol>';
+        retSt+= hash[sorted_keys[i]]+'</ol></div>';
+    }
+    return retSt;
+}
+
 
 
 //--------------------- private functions, you don't need to use these ------------------------
 
 function Parse(st, divToFill)
 { //Converts a bib file to its publication entries
+    // reset the global variables
     mypubs = [];
+    myhashIndex = [];
+    myhashVals = [];
+    // start arsing the string
     entries = st.trim().split('@');
     for(var l in entries)
     {
@@ -60,8 +108,7 @@ function Parse(st, divToFill)
                     if(j<auothrs.length-1) val+=', ';
                 }
             }
-            else if(mykey=='booktitle'){mykey = 'venue'; val = 'in '+ val;}
-            else if(mykey=='journal') mykey = 'venue';
+            else if(mykey=='journal'||mykey=='booktitle') mykey = 'venue';
             else if(mykey=='organization') mykey = 'publisher';
             pub[mykey] = val;
         }
@@ -70,67 +117,17 @@ function Parse(st, divToFill)
     document.getElementById(divToFill).innerHTML = Format();
 }
 
-function Format()
+function sortedkeys(dict,SortByVal=true)
 {
-    var st='';
-    for(i=0;i<mypubs.length;i++)
-    {
-        var pub = mypubs[i];
-        if(!('author' in pub)) continue;
-        st += '<p>';
-        st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
-        if('volume' in pub) st+=', Vol. '+ pub['volume'];
-        if('number' in pub) st+='('+ pub['number']+')';
-        if('pages' in pub) st+=', pages '+ pub['pages'];
-        if('year' in pub) st+=', '+ pub['year'];
-        if('publisher' in pub) st+=', '+ pub['publisher'];
-        st+='.</p>';
+    var items = Object.keys(dict).map(function(key) {return [key, dict[key]];});
+    if(SortByVal) 
+        items.sort(function(first, second) {return second[1] - first[1];});
+    else 
+        items.sort(function(first, second) {return second[0] - first[0];});
+    sorted_keys = [];
+    for(i=0; i<items.length; i++){
+        sorted_keys.push(items[i][0]);
     }
-    return st;
+    return sorted_keys;
 }
 
-
-
-
-/*
-
-
-function Format()
-{
-    var st='';
-    for(i=0;i<mypubs.length;i++)
-    {
-        var pub = mypubs[i];
-        st += '<p>';
-        for(key in pub) st+=key+': '+ pub[key]+', ';
-        st+='.</p>';
-    }
-    return st;
-}
-
-class Author{
-    constructor(AuthorSt) {
-        var res = AuthorSt.trim().split(",");
-        this.name = res[1];
-        this.lastname = res[0];
-    }
-    sayHi() {alert('Hi, I am '+this.name+ ' ' + this.lastname);}
-    print(){return this.name+ ' ' + this.lastname;}
-}
-
-class Pub {
-    constructor(title=null, authors=null,venue=null,year=null,type=null,topicString=null,page=null,vol=null,number=null,publisher=null,awardString=null) {
-        this.title = title;
-        this.authors = authors;
-        this.venue = venue;
-        this.year=year;
-        this.type=type;
-        this.topics=topicString.trim().split(";");
-        this.page=page;
-        this.vol = vol;
-        this.number = number;
-        this.publisher = publisher;
-        this.awards = awardString.trim().split(";");
-    }
-}
-*/
