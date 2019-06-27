@@ -31,8 +31,12 @@ function Format()
         if('number' in pub) st+='('+ pub['number']+')';
         if('pages' in pub) st+=', pages '+ pub['pages'];
         if('year' in pub) st+=', '+ pub['year'];
-        if('publisher' in pub) st+=', '+ pub['publisher'];
-        st+='.</li>';
+        if('publisher' in pub) st+=', '+ pub['publisher']+'.';
+        if('type' in pub) st+='&nbsp;<span class="pubtype">'+ pub['type']+'</span>';
+        if('award' in pub)
+            for(j=0;j<pub['award'].length;j++)
+                st+='&nbsp;&#x1F3C6;<span class="pubaward">'+ pub['award'][j]+' </span>';
+        st+='</li>';
         key = pub[groupby];
         if(typeof(key)=='object')
         {
@@ -54,7 +58,7 @@ function Format()
     retSt='';
     for(i=0;i<sorted_keys.length;i++)
     {
-        retSt+='<div><H3>'+sorted_keys[i]+'</H3><ol>';
+        retSt+='<div><H3>'+sorted_keys[i]+'</H3><ol class="publist">';
         retSt+= hash[sorted_keys[i]]+'</ol></div>';
     }
     return retSt;
