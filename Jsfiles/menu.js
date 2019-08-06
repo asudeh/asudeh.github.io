@@ -7,7 +7,7 @@ st += '<div style="width:100%;" align="right"><ul id="cssmenu">';
 st += '            <li><a href="index.htm">Home</a></li>';
 st += '            <li><a href="pub.htm">Publications</a></li>';
 //st+='            <li><a href="research.htm">Research</a><span id="researchmenu"></span></li>';
-st+='            <li><a href="exp.htm">Experience</a></li>';
+//st+='            <li><a href="exp.htm">Experience</a></li>';
 st+='</ul></div>';
 /*
 st+='<div>&nbsp;</div>';
