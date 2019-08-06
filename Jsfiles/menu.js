@@ -2,7 +2,7 @@
 
 function menu() {
 st='<p align="center"><img width="60%" src="ppl/abol.jpg" class="niceBox"></p>';
-st+='<p style="padding-bottom:10px;border-bottom: 1px gray solid;" align="center"><font size="6vm">Abolfazl Asudeh</font><br><font size="vm">Ph.D., Computer Science</font><br><font size="3vm">Postdoctoral Research Fellow<br><a href="http://www.cse.umich.edu/" target=_blank>Department of Computer Science and Engineering</a><br><a href="http://www.umich.edu" target=_blank>University of Michigan Ann Arbor</a></font></p>';
+st+='<p style="padding-bottom:10px;border-bottom: 1px gray solid;" align="center"><font size="6vm">Abolfazl Asudeh</font><br><font size="vm">Ph.D., Computer Science</font><br><font size="3vm">Assistant Professor<br><a href="http://cs.uic.edu/" target=_blank>Department of Computer Science</a><br><a href="http://www.uic.edu" target=_blank>University of Michigan Illinois at Chicago</a></font></p>';
 st += '<div style="width:100%;" align="right"><ul id="cssmenu">';
 st += '            <li><a href="index.htm">Home</a></li>';
 st += '            <li><a href="pub.htm">Publications</a></li>';
