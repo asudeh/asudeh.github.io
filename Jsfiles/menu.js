@@ -6,11 +6,12 @@ st+='<p style="padding-bottom:10px;border-bottom: 1px gray solid;" align="center
 st += '<div style="width:100%;" align="right"><ul id="cssmenu">';
 st += '            <li><a href="index.htm">Home</a></li>';
 st += '            <li><a href="pub.htm">Publications</a></li>';
-//st+='            <li><a href="research.htm">Research</a><span id="researchmenu"></span></li>';
-st+='            <li><a href="exp.htm">Professional Experiences</a></li>';
+// st+='            <li><a href="research.htm">Research</a><span id="researchmenu"></span></li>';
+// st+='            <li><a href="exp.htm">Professional Experiences</a></li>';
 st+='</ul></div>';
 st+='<h3>Links</h3>';
 st += '<div style="width:100%;" align="right"><ul id="cssmenu">';
+st += '            <li><a href="teaching/cs401fall19/index.html" target="_blank">CS401 Fall 2019</a></li>';
 st += '            <li><a href="http://mithra.eecs.umich.edu" target="_blank">Mithra</a></li>';
 st+='</ul></div>';
 st+='<div>&nbsp;</div>';
