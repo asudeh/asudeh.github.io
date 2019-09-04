@@ -21,5 +21,8 @@ st+='<h3>Link to Projects:</h3>';
 st+='<p style="text-align:center;"><a target="_blank" href="http://mithra.eecs.umich.edu"><img src="imgs/mithra.png" width="30%"/></a></p>';
 st+='</div>';
 */
+st+='<div width="80%" style="padding-top:10px;border-top: 1px gray solid;">'
+st+='<p style="text-align:left;"><a target="_blank" href="http://cs.uic.edu"><img src="imgs/uic.png" width="30%"/></a></p>';
+st+='</div>';
 menuBar.innerHTML = st;
 }
