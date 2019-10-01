@@ -26,12 +26,7 @@ function Format()
         var pub = mypubs[i];
         if(!('author' in pub)) continue;
         st = '<li>';
-        st+=pub['author']+'. ';
-        if('url' in pub) st+='<a target="_blank" href="'+pub['url']+'">';
-        st+=pub['title'];
-        if('url' in pub) st+='</a>'
-        //+ pub['title']+'. <i>'+ pub['venue']+'</i>';
-        st+='. <i>'+ pub['venue']+'</i>';
+        st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
         if('volume' in pub) st+=', Vol. '+ pub['volume'];
         if('number' in pub) st+='('+ pub['number']+')';
         if('pages' in pub) st+=', pages '+ pub['pages'];
@@ -105,9 +100,7 @@ function Parse(st, divToFill)
             spl = line.split('=');
             if(spl.length<2) continue;
             var mykey = spl[0].toLowerCase().trim();
-            tmp = mergeall(spl);
-            //alert(tmp);
-            var val = tmp.trim().split('}')[0].replace('{', '');
+            var val = spl[1].trim().split('}')[0].replace('{', '');
             if(mykey=='author')
             {
                 var auothrs = val.split('and');
@@ -142,11 +135,3 @@ function sortedkeys(dict,SortByVal=true)
     return sorted_keys;
 }
 
-function mergeall(st) { 
-  
-    // Original string 
-    var output="";
-    for(i = 1; i<st.length;i++)
-        output = str.concat(output,st[i]);
-    return output;    
-} 
