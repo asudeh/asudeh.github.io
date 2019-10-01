@@ -77,7 +77,6 @@ function Format()
 function Parse(st, divToFill)
 { //Converts a bib file to its publication entries
     // reset the global variables
-    alert('test')
     mypubs = [];
     myhashIndex = [];
     myhashVals = [];
