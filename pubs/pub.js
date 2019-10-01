@@ -26,7 +26,12 @@ function Format()
         var pub = mypubs[i];
         if(!('author' in pub)) continue;
         st = '<li>';
-        st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
+        st+=pub['author']+'. ';
+        if('url' in pub) st+='<a target="_blank" href="'+pub['url']+'">';
+        st+=pub['title'];
+        if('url' in pub) st+='</a>'
+        //+ pub['title']+'. <i>'+ pub['venue']+'</i>';
+        st+='. <i>'+ pub['venue']+'</i>';
         if('volume' in pub) st+=', Vol. '+ pub['volume'];
         if('number' in pub) st+='('+ pub['number']+')';
         if('pages' in pub) st+=', pages '+ pub['pages'];
