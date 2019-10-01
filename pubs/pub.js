@@ -105,7 +105,9 @@ function Parse(st, divToFill)
             spl = line.split('=');
             if(spl.length<2) continue;
             var mykey = spl[0].toLowerCase().trim();
-            var val = spl[1].trim().split('}')[0].replace('{', '');
+            tmp = mergeall(spl);
+            //alert(tmp);
+            var val = tmp.trim().split('}')[0].replace('{', '');
             if(mykey=='author')
             {
                 var auothrs = val.split('and');
@@ -140,3 +142,11 @@ function sortedkeys(dict,SortByVal=true)
     return sorted_keys;
 }
 
+function mergeall(st) { 
+  
+    // Original string 
+    var output="";
+    for(i = 1; i<st.length;i++)
+        output = str.concat(output,st[i]);
+    return output;    
+} 
