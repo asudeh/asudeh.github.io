@@ -8,6 +8,7 @@ function ReadBib(bibFile, divToFill)
 { // Reads a bib file and passes it to the parser
     var request = new XMLHttpRequest();
     request.open('GET', bibFile, true);
+    //request.open('GET', 'https://asudeh.github.io/pubs/abol.bib', true);
     request.send(null);
     request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
@@ -26,7 +27,12 @@ function Format()
         var pub = mypubs[i];
         if(!('author' in pub)) continue;
         st = '<li>';
-        st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
+        st+=pub['author']+'. ';
+        if('url' in pub)  st+='<a target="_blank" href="'+ pub['url']+'">';
+        st+=pub['title'];
+        if('url' in pub)  st+='</a>';
+        st+='. <i>'+ pub['venue']+'</i>';
+        //st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
         if('volume' in pub) st+=', Vol. '+ pub['volume'];
         if('number' in pub) st+='('+ pub['number']+')';
         if('pages' in pub) st+=', pages '+ pub['pages'];
@@ -71,6 +77,7 @@ function Format()
 function Parse(st, divToFill)
 { //Converts a bib file to its publication entries
     // reset the global variables
+    alert('test')
     mypubs = [];
     myhashIndex = [];
     myhashVals = [];
@@ -97,7 +104,8 @@ function Parse(st, divToFill)
                 continue;
             }
             //spl = line.replace(/[{}]/g, '')
-            spl = line.split('=');
+            spl = line.split(/=(.+)/);
+            //spl = line.split('=');
             if(spl.length<2) continue;
             var mykey = spl[0].toLowerCase().trim();
             var val = spl[1].trim().split('}')[0].replace('{', '');
