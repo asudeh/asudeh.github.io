@@ -1,5 +1,8 @@
 function header(path='') {
 st = '<nav class="navbar navbar-expand-lg navbar-light bg-light"> ';
+st += '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> ';
+st += '  <span class="navbar-toggler-icon"></span> ';
+st += '</button> ';
 st += '<div class="collapse navbar-collapse" id="navbarSupportedContent"> ';
 st += '  <ul class="navbar-nav mr-auto"> ';
 st += '    <li class="nav-item active"> ';
