@@ -1,6 +1,6 @@
 function header(path='') {
 st = '<nav class="navbar navbar-expand-lg navbar-light bg-light"> ';
-st += '<div class="container collapse navbar-collapse" id="navbarSupportedContent"> ';
+st += '<div class="collapse navbar-collapse" id="navbarSupportedContent"> ';
 st += '  <ul class="navbar-nav mr-auto"> ';
 st += '    <li class="nav-item active"> ';
 st += '      <a class="nav-link" href="'+path+'index.htm">Home <span class="sr-only">(current)</span></a> ';
