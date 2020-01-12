@@ -1,30 +1,49 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>Abolfazl Asudeh - Home page</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="icon" href="imgs/home-icon1.png" type="image/x-icon">
-<script type="text/javascript" src="Jsfiles/menu.js"></script>
-<script type="text/javascript" src="Jsfiles/header.js"></script>
-<script type="text/javascript">
-    function init() {
-        menu();
-		header();
-    }
-</script>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	
+    <title>Abolfazl Asudeh - Home page</title>
+    <link rel="stylesheet" type="text/css" href="ppl.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="js/myobjects.js"></script>
+    <script type="text/javascript" src="js/start.js"></script>
+    <script type="text/javascript">
+        function init() {
+            header();
+        }
+    </script>
 </head>
+
 <body onload='init()'>
-<table class="All" width="100%" height="*">
-<tr>
-<td id="menuBar" class="sidebar" valign="top"></td>
-<!--<td id="verticalSparator" class="verticalSparator" valign="top"> </td>-->
-<td class="container">
-<!-- Insert your content from here-->
-<div align="center">
-	<div style="width: 90%; display: table;"><div style="display: table-row">
-		<div class="contentBox" style="display: table-cell;width: 60%;">
-			<h3>Contact</h3>
-			<p style="line-height:1.5">
-				851 S. Morgan St., 11th Floor SEO, Room 1131, Chicago, IL 60607 <br>
+    <div id="headerDiv"></div>
+    <!-- Your code starts here -->
+    <div class="container">
+        <table class="contentBoxNB jumbotron jumbotron-fluid text-center">
+        <tr style="text-align: left;">
+            <td style="text-align: center;width: 20%;vertical-align:text-top;">
+                <p></p><img class="person abol" onmouseover="setup(this,'abol')"/>
+            </td>
+            <td>
+                <h1>Abolfazl Asudeh</h1>
+                <h6>Ph.D., Computer Science</h6>
+                <h6>Assistant Professor</h6>
+                <h6><a href="http://cs.uic.edu/" target="_blank">Department of Computer Science</a></h6>
+                <h6><a href="http://www.uic.edu" target="_blank">University of Illinois at Chicago</a></h6>
+                <hr></td>
+        </tr>
+        <tr style="text-align: left;">
+            <td style="text-align: right;">
+                <p><a target="_blank" href="http://cs.uic.edu"><img src="imgs/uic.png" width="50%"/></a></p>
+            </tdstyle="text-align: center;>
+            <td>
+                <h4>Contact</h4>
+                851 S. Morgan St., 11th Floor SEO, Room 1131, Chicago, IL 60607 <br>
 				&#x260F;: (312) 996-4860
 				&#9993;: <i style="line-height:2">asudeh[AT]uic[DOT]edu</i><br>
 				<a href="https://scholar.google.com/citations?user=cJXIgasAAAAJ" target="_blank"><img height="30pt" src="imgs/logos/scholar.png" title="Google Scholar" /></a>
@@ -34,191 +53,104 @@
 				<a href="https://twitter.com/ab_asudeh" target="_blank"><img height="30pt" src="imgs/logos/twitter.png" title="Twitter" /></a>
 				<a href="https://github.com/asudeh" target="_blank"><img height="30pt" src="imgs/logos/github.png" title="Github" /></a>
 				<a href="https://www.researchgate.net/profile/Abolfazl_Asudeh" target="_blank"><img height="30pt" src="imgs/logos/researchgate.png" title="ResearchGate" /></a>
-				<!--<a href="https://medium.com/@a.asudeh" target="_blank"><img height="30pt" src="imgs/logos/medium.png" title="Medium" /></a>-->
-			</p>
-		</div>
-		<!--<div class="contentBox" style="display: table-cell;">
-				<h3>Link to Project</h3>
-				<p style="text-align:center;">
-					<a target="_blank" href="http://mithra.eecs.umich.edu">
-						<img src="imgs/mithra.png" width="50%"/>
-					</a>
-				</p>
-		</div>-->
-	</div></div>
-	<!--<div class="contentBox">
-		<h3>Contact</h3>
-		<p style="line-height:1.5">
-			2260 Hayward St, Bob and Betty Beyster Building<br>
-			Room 4945, <br> Ann Arbor, MI 48109 <br>
-			&#9993;: <i style="line-height:2">asudeh[AT]umich[DOT]edu</i><br>
-			<a href="https://scholar.google.com/citations?user=cJXIgasAAAAJ" target="_blank"><img height="30pt" src="imgs/logos/scholar.png" title="Google Scholar" /></a>
-			<a href="https://dblp.uni-trier.de/pers/hd/a/Asudeh:Abolfazl" target="_blank"><img height="30pt" src="imgs/logos/dblp.png" title="DBLP" /></a>
-			<a href="https://www.linkedin.com/in/abolfazl-asudeh-891b7172/" target="_blank"><img height="30pt" src="imgs/logos/linkedin.png" title="Linkedin" /></a>
-			<a href="https://twitter.com/ab_asudeh" target="_blank"><img height="30pt" src="imgs/logos/twitter.png" title="Twitter" /></a>
-			<a href="https://www.researchgate.net/profile/Abolfazl_Asudeh" target="_blank"><img height="30pt" src="imgs/logos/researchgate.png" title="ResearchGate" /></a>
-		</p>
-	</div>-->
-	<div class="separatorDiv"></div>
-	<div class="contentBox">
-		<!--<h3>Bio.</h3>-->
-		<table><tr>
-			<td>
-			<!--<p style="line-height:1.5">
-				I am a Research Fellow, and a member of the <a href="http://dbgroup.eecs.umich.edu/">Database Research Group</a>, at the<a target="_blank" href="http://cse.umich.edu"> Computer Science and Engineering department </a> of the <a href="http://www.uta.edu">University of Michigan</a>, working with Dr. <a href="http://web.eecs.umich.edu/~jag/">H V Jagadish</a>.
-				Here at U-M, I lead <a href="http://mithra.eecs.umich.edu" target="_blank">Mithra</a>, our project on Responsible Data Management and Data Ethics.
-				I received my PhD in Computer Science from the <a target="_blank" href="http://cse.uta.edu">University of Texas at Arlington</a>, where I was supervised by Dr. <a target="_blank" href="http://ranger.uta.edu/~gdas/">Gautam Das</a> as a member of <a target="_blank" href="http://dbxlab.uta.edu/">Database Exploration Lab (DBXLAB)</a>.
-				I finished my academic educations with the Outstanding PhD Student Award.
-			</p>
-			<p style="line-height:1.5">
-			My <a href='research.htm'>research</a> interests include Responsible Data Science and Data Ethics, Big Data Management and Analysis, Data Mining, Machine Learning, Ranking and Top-k Query Processing, Compact Maxima Representatives, Algorithm Design, Combinatorial Geometry, and Web Data Retrieval. 
-			I have a strong publication record in SIGMOD and VLDB in the past few years, including recognitions such as invitation to the "Best of VLDB".
-				My <a target='_blank' href='https://en.wikipedia.org/wiki/Erd%C5%91s_number'> erd&ouml;s number </a> is <a target='_blank' href='erdos.htm'>3</a>.
-				<br>
-				I was a research intern at Microsoft Research, <a target="_blank" href="http://research.microsoft.com/en-us/groups/dmx/">DMX group</a>, in Summer 2016. In summer 2014, I was a software engineering intern at Microsoft. I also have the experience of teaching different CS courses.
-				</p>-->
-			<p style="line-height:1.5">
-				<!--Dr. Abolfazl (Abol) Asudeh is an assistant professor at the <a target='_blank' href='https://cs.uic.edu'>Computer Science department</a> of the <a target='_blank' href='https://www.uic.edu'>University of Illinois at Chicago</a>.
-				Before joining UIC, he was a post-doc at the <a target="_blank" href="http://cse.umich.edu">University of Michigan, Ann Arbor</a>. He obtained his Ph.D. from the <a target="_blank" href="http://cse.uta.edu">University of Texas at Arlington</a> in 2017.
-				<br>
-				To face the challenges of the ever-growing Big Data, I aim to find efficient, accurate, and scalable algorithmic solutions for data science problems. This includes designing approximation and randomized algorithms, as well as applying techniques from domains such as computational geometry. -->
-				My research spans to different aspects of Big Data and Data Science, including data management, analytics, and mining, for which I aim to find efficient, accurate, and scalable algorithmic solutions.
-				<br>
-				Focusing on Responsible Data Science, I see ``responsibility'' (including fairness, diversity, transparency, and equity) an important dimension in the development of data-driven technologies.
-				<br>
-				My projects also intersect with ranking and top-k query processing, compact data representatives, machine learning, web databases, knowledge graphs, and signal reconstruction.
-				<br>
-				I (mainly) publish in database flagship venues: SIGMOD, VLDB, and ICDE. 
-				My research has caught attentions including multiple awards such as SIGMOD 2019 Research Highlight Award and the special issue of VLDBJ on the Best of VLDB'18.
-			</p>
-					
-		<br />
-		<!-- More info @ <a target="_blank" href="cv_2.pdf">my CV</a>. -->
-		</td>
-		<!--<td width="175px;"><img height="163px" src="ppl/abol.jpg" class="niceBox"></td>-->
-		</tr></table>
-		<p>
-	</div>
-	<div class="separatorDiv"></div>
-	<div class="contentBox">
-		<h3><span class="pubtype">Students:</h3>
-			<ul style="line-height:1.7">
-			<li><a target="_blank" href="opening.html">I have several open positions.</a></li>
-			<li>
-				I will teach CS 501 (Computer Algorithms II) in Spring 2020. The course aims at exploring advanced computation models, theory and advanced algorithm design and analysis techniques 
-				that have broad applicability in solving real-life problems in cross-disciplinary areas such as big data, data mining, web search engines, bioinformatics, computer networks, distributed computing, and social networking.
-				The course will cover the following topics: (i) Theory of NP-completeness, (ii) Approximation Techniques, (iii) Randomized Techniques.
-			</li>
-			<li>
-				Stay tuned for the special topics course (CS 594): <i>Responsible Data Science</i> in Fall 2020. 
-			</li>
-			</ul>
-			<p> </p>
-			<p>
-				
-			</p>
-	</div>
-	<div class="separatorDiv"></div>
-	<div class="contentBox"  style="height: 300pt; overflow-y: scroll;">	
-		<h3>Timeline</h3>
-		<ul style="line-height:1.7">
-			<li><span style="">Oct. 2019:</span><i> &ldquo;A Unified Optimization Algorithm For Solving ``Regret-Minimizing Representative'' Problems&rdquo;</i> has been accepted in <b><a target="_blank" href="https://vldb2020.org/">VLDB 2020</a></b>.
-			<li><span style="">Sep. 2019:</span><i> &ldquo;Towards Responsible Data-driven Decision Making in Score-Based Systems&rdquo;</i> has been published in 
-				<b><a target="_blank" href="http://sites.computer.org/debull/bull_issues.html">Data Engineering Bulletin</a></b> 2019 (Vol. 42 No. 3), <i><a target="_blank" href="http://sites.computer.org/debull/A19sept/issue1.htm">Special Issue on Fairness, Diversity, and Transparency in Data Systems</a></i>.
-			<li><span style="">Aug. 2019:</span><i> &ldquo;MithraLabel: Flexible Dataset Nutritional Labels for Responsible Data Science&rdquo;</i> has been accepted in <b>
-				<a target="_blank" href="http://www.cikm2019.net/">CIKM 2019</a></b> (Demo Track). 
-				[<a target="_blank" href="files/MithraLabel.pdf">pdf</a>]
-				[<a target="_blank" href="http://mithra.eecs.umich.edu/demo/label/">Link to System</a>]
-			<li><span style="">Aug. 2019:</span> Joined Univeristy of Illinois at Chicago.</li>
-			<li><span style="">July 2019:</span><i><a target="_blank" href="https://dl.acm.org/citation.cfm?id=3371327">&ldquo;Efficient Signal Reconstruction for a Broad Range of Applications&rdquo;</a></i> was awarded the <b>&ldquo;ACM SIGMOD 2019 Research Highlight Award&rdquo;</b><a target="_blank" href="https://sigmodrecord.org/2019/07/29/efficient-signal-reconstruction-for-a-broad-range-of-applications-2/">[link].</a>
-			The editor's report of our work is available
-			<a href="https://sigmodrecord.org/2019/07/29/efficient-signal-reconstruction-for-a-broad-range-of-applications/" target="_blank">here</a>.
-			</li>
-			<li><span style="">March 2019:</span><i> &ldquo;MithraRanking: A System for Responsible Ranking Design&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2019.org/">SIGMOD 2019</b></a> (Demo Track). <a target="_blank" href="http://mithra.eecs.umich.edu/demo/ranking/">[Link to System]</a>
-			<li><span style="">Feb. 2019:</span><i> &ldquo;Assessing and Remedying Coverage for a Given Dataset&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2019.org/">ICDE 2019</b></a>.
-			<li><span style="">Feb. 2019:</span><i> &ldquo;Maximizing Gain Over Flexible Attributes In Peer to peer Marketplaces&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2019.org/">PAKDD 2019</b></a>.
-			<li><span style="">Dec. 2018:</span><i> &ldquo;Leveraging Similarity Joins for Signal Reconstruction&rdquo; </i> was awarded <b><a target="_blank" href="https://vldb-repro.com/">PVLDB Reproducibility 2018</a></b>.</li>
-			<li><span style="">Nov. 2018:</span><i> &ldquo;Designing Fair Ranking Schemes&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2019.org/">SIGMOD 2019</b></a>.
-			<li><span style="">Oct. 2018:</span><i> &ldquo;On Obtaining Stable Rankings&rdquo;</i> has been accepted in <b><a target="_blank" href="http://vldb.org/2019/">VLDB 2019</b></a>.
-			<li><span style="">Oct. 2018:</span><i> &ldquo;RRR: Rank-Regret Representative&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2019.org/">SIGMOD 2019</b></a>. It was <i> among the 3</i> (out of 159) submissions that were accepted directly in the first submission round of SIGMOD'19.</li>
-			<li><span style="">Aug. 2018:</span><i> &ldquo;Leveraging Similarity Joins for Signal Reconstruction&rdquo; </i> was invited to the <b> Best of VLDB</b>'18 -- the special issue of VLDB Journal.</li>
-			<li><span style="">June 2018:</span><i> &ldquo;Efficient Construction of Approximate Ad-Hoc ML models Through Materialization and Reuse&rdquo;</i> has been accepted in <b><a target="_blank" href="http://vldb2018.lncc.br/">VLDB 2018</b></a>.</li>
-			<li><span style="">March 2018:</span><i> &ldquo;Leveraging Similarity Joins for Signal Reconstruction&rdquo;</i> has been accepted in <b><a target="_blank" href="http://vldb2018.lncc.br/">VLDB 2018</b></a>.
-			[<a href="http://www.vldb.org/pvldb/vol11/p1276-asudeh.pdf">link</a>] </li>
-			<!--
-			<li><span style="">Dec. 2017:</i></span> Demo paper <b>"QR2: A Third-party Query Reranking Service Over Web Databases"</b> has been accepted in <b><a target="_blank" href="http://icde2018.org/">ICDE 2018</b></a>!-->
-			<li><span style="">Oct. 2017:</i></span> Defended my PhD and joined University of Michigan.
-			</li>
-			<li><span style="">Aug. 2017:</span><i> &ldquo;Efficient Computation of Subspace Skyline over Categorical Domains&rdquo;</i> has been accepted in <b><a target="_blank" href="http://cikm2017.org/">CIKM 2017</a>.</b>
-			</li>
-			<li><span style="">April 2017:</i></span> 
-			I was awarded the &ldquo;John S. Schuchman <b>Outstanding PhD Student Award</b>&rdquo; at 2017 College of Engineering Academic Excellence Ceremony.
-			</li>
-			<li><span style="">April 2017:</i></span> We were awarded the <b>&ldquo;Most Reproducible Paper Award&rdquo;</b> of SIGMOD, for the paper <i>Generating Preview Tables for Entity Graphs</i> <a target="_blank" href="https://sigmod.org/2017-reproducibility-award/">[link]</a>.
-			</li>
-			<li><span style="">Nov. 2016:</span><i>&ldquo;Efficient Computation of Regret-ratio Minimizing Set: A Compact Maxima Representative&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2017.org/">SIGMOD 2017</a>.</b>
-			[<a href="files/EfficientRegretRatio.pdf">link</a>] 
-			[<a href="files/RRMS-SIGMOD.pptx">slides</a>]
-			</li>
-			<li><span style="">May 2016:</i></span> <i>&ldquo;Query Reranking As A Service&rdquo;</i> has been accepted in <b><a target="_blank" href="http://vldb2016.persistent.com/">VLDB 2016</a>.</b> 
-				[<a href="http://www.vldb.org/pvldb/vol9/p888-asudeh.pdf">link</a>] 
-				<a target='_blank' href='files/QueryReranking-slides.pptx'>[slides]</a>
-			</li>
-			<li><span style="">April 2016:</i></span> Will be interning with <b><a target="_blank" href="http://research.microsoft.com/en-us/groups/dmx/">DMX</a></b> group at <b><a target="_blank" href="http://research.microsoft.com/en-us/">Microsoft Research</a></b>, Seattle, in Summer 2016.</li>
-			<li><span style="">April. 2016:</i></span> <i>&ldquo;Generating Preview Tables for Entity Graphs&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2016.org/">SIGMOD 2016</a>.</b> 
-				[<a target="_blank" href="files/mod946-yan.pdf">link</a>]
-			</li>
-			<li><span style="">Jan. 2016:</i></span> <i>&ldquo;Discovering the Skyline of Web Databases&rdquo;</i> has been accepted in <b><a target="_blank" href="http://vldb2016.persistent.com/">VLDB 2016</a>.</b> 
-				[<a href="http://www.vldb.org/pvldb/vol9/p600-asudeh.pdf">link</a>] 
-				[<a  target="_blank" href="files/skylinediscovery.pdf">tech report</a>]
-				<a target='_blank' href='files/SkylineDiscovery-slides.pptx'>[slides]</a>
-			</li>
-			<li><span style="">July 2015:</i></span> <i>&ldquo;Crowdsourcing Pareto-Optimal Object Finding by Pairwise Comparisons&rdquo;</i> has been accepted in <b><a target="_blank" href="http://www.cikm-2015.org/">CIKM 2015</a>.</b>
-				[<a target="_blank" href="files/crowdpareto-cikm15.pdf">link</a>]
-				[<a target="_blank" href="files/crowdpareto-cikm15-slides.pdf">slides</a>]
-			</li>
-			<li><span style="">July 2015:</i></span> <i>&ldquo;A General Model for MAC Protocol Selection in Wireless Sensor Networks&rdquo;</i> has been accepted in <b><a target="_blank" href="http://dx.doi.org/10.1016/j.adhoc.2015.07.005">Ad-Hoc Networks Journal</a>.</b>
-				<a target='_blank' href='files/MACSELECTION.pdf'>[pre-print version]</a>
-			</li>
-			<li><span style="">Jan. 2014:</i></span> Will be interning at <b><a href="industry.htm">Microsoft</a></b>, Seattle, in Summer 2014.</li>
-		</ul>
-	</div>
-	<div class="separatorDiv"></div>
-	<!--<div class="contentBox">	
-		<h3>Favourite Videos</h3>
-		<ul style="line-height:1.7">
-			<li><a target="_blank" href="https://www.youtube.com/watch?v=jaJ-xDLB_C8">Carl Sagan: &ldquo;The pale blue dot, the only home we've ever known&rdquo;</a></li>
-			<li><a target="_blank" href="https://www.youtube.com/watch?v=75Ju0eM5T2c">Donald Knuth's advice to young people</a></li>
-			<li><a taret="_blank" href="https://www.youtube.com/watch?v=w8HdOHrc3OQ">The Great Dictator Speech - Charlie Chaplin: "Let us fight for a world of reason, a world where science and progress will lead to all men's happiness."</a></li>
-		</ul>
-	</div>
-    <div class="separatorDiv"></div>-->
-    <!--<table border="0" width="50%">
-		<tr>
-			<td colspan="3" width="10%" align="center"><img width="30%" src='imgs/logos/CSatUIC.png' /></td>
-		</tr>
-		<tr>
-			<td width="10%"><img width="100%" src='imgs/logos/um_seal.gif' /></td>
-            <td width ="10%"><img width="98%" src='imgs/logos/uta2.png' /></td>
-            <td width="10%"><img width="100%" src='imgs/logos/sharif_logo_small.png' /></td>
-        </tr> -->
-        <!--<tr>
-            <td width ="10%"><img width="100%" src='imgs/logos/CSEatUM.png' /></td>
-            <td width="10%"><img width="100%" src='imgs/logos/cseuta1_small.png' /></td>
-            <td width="10%"><img width="100%" src='imgs/logos/DBXLAB.png' /></td>
-        </tr>-->
-	<!--</table>
-	<table border="0" width="50%">
-        <tr>
-            <td width="45%" ><img width="90%" src='imgs/logos/msr.jpg' /></td>
-			<td width="55%" ><img width="100%" src='imgs/logos/att.jpg' /></td>
+                <p></p>
+            </td>
         </tr>
-    </table><br/>
-</div> -->
-<!-- End your content here-->
-</td ></tr>
-</table>
-<div class="top" id="headerDiv"></div>
-<script src="Jsfiles/googletracking.js"></script>
+        </table>
+        <div class="contentBox" style="padding-left: 5pt;">
+            <p class="lead">
+                My research spans to different aspects of Big Data and Data Science, including data management, analytics, and mining, for which I aim to find efficient, accurate, and scalable algorithmic solutions.<br>
+                Responsible Data Science (including Algorithmic Fairness) is my current focus in research.
+                Besides, my research intersects with topics such as ranking and top-k query processing, compact data representatives, machine learning, web databases, knowledge graphs, and signal reconstruction.<br>
+                I (mainly) publish in database flagship venues: SIGMOD, VLDB, and ICDE. My research has caught attentions including multiple awards such as SIGMOD 2019 Research Highlight Award and the special issue of VLDBJ on the Best of VLDB'18.
+            </p>
+        </div>
+        <p></p>
+        <div class="card contentBoxNB">
+            <div class="card-header">Timeline</div>
+            <div class="card-body" style="height: 150pt; overflow-y: scroll;">
+                <ul style="line-height:1.7">
+                    <li><span style="">Oct. 2019:</span><i> &ldquo;A Unified Optimization Algorithm For Solving ``Regret-Minimizing Representative'' Problems&rdquo;</i> has been accepted in <b><a target="_blank" href="https://vldb2020.org/">VLDB 2020</a></b>.
+                    <li><span style="">Sep. 2019:</span><i> &ldquo;Towards Responsible Data-driven Decision Making in Score-Based Systems&rdquo;</i> has been published in 
+                        <b><a target="_blank" href="http://sites.computer.org/debull/bull_issues.html">Data Engineering Bulletin</a></b> 2019 (Vol. 42 No. 3), <i><a target="_blank" href="http://sites.computer.org/debull/A19sept/issue1.htm">Special Issue on Fairness, Diversity, and Transparency in Data Systems</a></i>.
+                    <li><span style="">Aug. 2019:</span><i> &ldquo;MithraLabel: Flexible Dataset Nutritional Labels for Responsible Data Science&rdquo;</i> has been accepted in <b>
+                        <a target="_blank" href="http://www.cikm2019.net/">CIKM 2019</a></b> (Demo Track). 
+                        [<a target="_blank" href="files/MithraLabel.pdf">pdf</a>]
+                        [<a target="_blank" href="http://mithra.eecs.umich.edu/demo/label/">Link to System</a>]
+                    <li><span style="">Aug. 2019:</span> Joined Univeristy of Illinois at Chicago.</li>
+                    <li><span style="">July 2019:</span><i><a target="_blank" href="https://dl.acm.org/citation.cfm?id=3371327">&ldquo;Efficient Signal Reconstruction for a Broad Range of Applications&rdquo;</a></i> was awarded the <b>&ldquo;ACM SIGMOD 2019 Research Highlight Award&rdquo;</b><a target="_blank" href="https://sigmodrecord.org/2019/07/29/efficient-signal-reconstruction-for-a-broad-range-of-applications-2/">[link].</a>
+                    The editor's report of our work is available
+                    <a href="https://sigmodrecord.org/2019/07/29/efficient-signal-reconstruction-for-a-broad-range-of-applications/" target="_blank">here</a>.
+                    </li>
+                    <li><span style="">March 2019:</span><i> &ldquo;MithraRanking: A System for Responsible Ranking Design&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2019.org/">SIGMOD 2019</b></a> (Demo Track). <a target="_blank" href="http://mithra.eecs.umich.edu/demo/ranking/">[Link to System]</a>
+                    <li><span style="">Feb. 2019:</span><i> &ldquo;Assessing and Remedying Coverage for a Given Dataset&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2019.org/">ICDE 2019</b></a>.
+                    <li><span style="">Feb. 2019:</span><i> &ldquo;Maximizing Gain Over Flexible Attributes In Peer to peer Marketplaces&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2019.org/">PAKDD 2019</b></a>.
+                    <li><span style="">Dec. 2018:</span><i> &ldquo;Leveraging Similarity Joins for Signal Reconstruction&rdquo; </i> was awarded <b><a target="_blank" href="https://vldb-repro.com/">PVLDB Reproducibility 2018</a></b>.</li>
+                    <li><span style="">Nov. 2018:</span><i> &ldquo;Designing Fair Ranking Schemes&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2019.org/">SIGMOD 2019</b></a>.
+                    <li><span style="">Oct. 2018:</span><i> &ldquo;On Obtaining Stable Rankings&rdquo;</i> has been accepted in <b><a target="_blank" href="http://vldb.org/2019/">VLDB 2019</b></a>.
+                    <li><span style="">Oct. 2018:</span><i> &ldquo;RRR: Rank-Regret Representative&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2019.org/">SIGMOD 2019</b></a>. It was <i> among the 3</i> (out of 159) submissions that were accepted directly in the first submission round of SIGMOD'19.</li>
+                    <li><span style="">Aug. 2018:</span><i> &ldquo;Leveraging Similarity Joins for Signal Reconstruction&rdquo; </i> was invited to the <b> Best of VLDB</b>'18 -- the special issue of VLDB Journal.</li>
+                    <li><span style="">June 2018:</span><i> &ldquo;Efficient Construction of Approximate Ad-Hoc ML models Through Materialization and Reuse&rdquo;</i> has been accepted in <b><a target="_blank" href="http://vldb2018.lncc.br/">VLDB 2018</b></a>.</li>
+                    <li><span style="">March 2018:</span><i> &ldquo;Leveraging Similarity Joins for Signal Reconstruction&rdquo;</i> has been accepted in <b><a target="_blank" href="http://vldb2018.lncc.br/">VLDB 2018</b></a>.
+                    [<a href="http://www.vldb.org/pvldb/vol11/p1276-asudeh.pdf">link</a>] </li>
+                    <!--
+                    <li><span style="">Dec. 2017:</i></span> Demo paper <b>"QR2: A Third-party Query Reranking Service Over Web Databases"</b> has been accepted in <b><a target="_blank" href="http://icde2018.org/">ICDE 2018</b></a>!-->
+                    <li><span style="">Oct. 2017:</i></span> Defended my PhD and joined University of Michigan.
+                    </li>
+                    <li><span style="">Aug. 2017:</span><i> &ldquo;Efficient Computation of Subspace Skyline over Categorical Domains&rdquo;</i> has been accepted in <b><a target="_blank" href="http://cikm2017.org/">CIKM 2017</a>.</b>
+                    </li>
+                    <li><span style="">April 2017:</i></span> 
+                    I was awarded the &ldquo;John S. Schuchman <b>Outstanding PhD Student Award</b>&rdquo; at 2017 College of Engineering Academic Excellence Ceremony.
+                    </li>
+                    <li><span style="">April 2017:</i></span> We were awarded the <b>&ldquo;Most Reproducible Paper Award&rdquo;</b> of SIGMOD, for the paper <i>Generating Preview Tables for Entity Graphs</i> <a target="_blank" href="https://sigmod.org/2017-reproducibility-award/">[link]</a>.
+                    </li>
+                    <li><span style="">Nov. 2016:</span><i>&ldquo;Efficient Computation of Regret-ratio Minimizing Set: A Compact Maxima Representative&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2017.org/">SIGMOD 2017</a>.</b>
+                    [<a href="files/EfficientRegretRatio.pdf">link</a>] 
+                    [<a href="files/RRMS-SIGMOD.pptx">slides</a>]
+                    </li>
+                    <li><span style="">May 2016:</i></span> <i>&ldquo;Query Reranking As A Service&rdquo;</i> has been accepted in <b><a target="_blank" href="http://vldb2016.persistent.com/">VLDB 2016</a>.</b> 
+                        [<a href="http://www.vldb.org/pvldb/vol9/p888-asudeh.pdf">link</a>] 
+                        <a target='_blank' href='files/QueryReranking-slides.pptx'>[slides]</a>
+                    </li>
+                    <li><span style="">April 2016:</i></span> Will be interning with <b><a target="_blank" href="http://research.microsoft.com/en-us/groups/dmx/">DMX</a></b> group at <b><a target="_blank" href="http://research.microsoft.com/en-us/">Microsoft Research</a></b>, Seattle, in Summer 2016.</li>
+                    <li><span style="">April. 2016:</i></span> <i>&ldquo;Generating Preview Tables for Entity Graphs&rdquo;</i> has been accepted in <b><a target="_blank" href="http://sigmod2016.org/">SIGMOD 2016</a>.</b> 
+                        [<a target="_blank" href="files/mod946-yan.pdf">link</a>]
+                    </li>
+                    <li><span style="">Jan. 2016:</i></span> <i>&ldquo;Discovering the Skyline of Web Databases&rdquo;</i> has been accepted in <b><a target="_blank" href="http://vldb2016.persistent.com/">VLDB 2016</a>.</b> 
+                        [<a href="http://www.vldb.org/pvldb/vol9/p600-asudeh.pdf">link</a>] 
+                        [<a  target="_blank" href="files/skylinediscovery.pdf">tech report</a>]
+                        <a target='_blank' href='files/SkylineDiscovery-slides.pptx'>[slides]</a>
+                    </li>
+                    <li><span style="">July 2015:</i></span> <i>&ldquo;Crowdsourcing Pareto-Optimal Object Finding by Pairwise Comparisons&rdquo;</i> has been accepted in <b><a target="_blank" href="http://www.cikm-2015.org/">CIKM 2015</a>.</b>
+                        [<a target="_blank" href="files/crowdpareto-cikm15.pdf">link</a>]
+                        [<a target="_blank" href="files/crowdpareto-cikm15-slides.pdf">slides</a>]
+                    </li>
+                    <li><span style="">July 2015:</i></span> <i>&ldquo;A General Model for MAC Protocol Selection in Wireless Sensor Networks&rdquo;</i> has been accepted in <b><a target="_blank" href="http://dx.doi.org/10.1016/j.adhoc.2015.07.005">Ad-Hoc Networks Journal</a>.</b>
+                        <a target='_blank' href='files/MACSELECTION.pdf'>[pre-print version]</a>
+                    </li>
+                    <li><span style="">Jan. 2014:</i></span> Will be interning at <b><a href="industry.htm">Microsoft</a></b>, Seattle, in Summer 2014.</li>
+                </ul>   
+            </div>
+        </div>
+        <p></p>
+        <div class="card contentBoxNB">
+            <div class="card-header">Students</div>
+            <div class="card-body">
+                <ul style="line-height:1.7">
+                    <li><a target="_blank" href="opening.html">I have several open positions.</a></li>
+                    <li>
+                        Stay tuned for the special topics course (CS 594): <i>Responsible Data Science</i> in Fall 2020. 
+                    </li>
+                </ul>    
+            </div>
+        </div>
+        <p></p>
+    </div>
+    <!-- Your code ends here -->
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
