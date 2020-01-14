@@ -1,52 +1,98 @@
 <html>
 <head>
   <title>CS 501 -- Spring 2020</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
-<h1 align="center">CS 501: Computer Algorithms II</h1>
-<h2 align="center">Spring 2020: T-Th 9:30 am -- 10:45 am, Thomas Beckham Hall 180D</h2>
-<div>
-    <table style="font-size: 16pt;">
-        <tr><td><b>Instructor:</b></td><td>Abolfazl Asudeh, Assistant Professor</td></tr>
-        <tr><td><b>Office:</b></td><td>SEO 1131 (<a href="mailto:asudeh@uic.edu">email</a>, <a href="http://asudeh.github.io">home page</a>)</td></tr>
-        <tr><td><b>Office Hours:</b></td><td>TBA</td></tr>
-        <tr><td><b>GTA:</b></td><td>TBA</td></tr>
-        <tr><td><b>Office:</b></td><td>TBA</td></tr>
-        <tr><td><b>Office Hours:</b></td><td>TBA</td></tr>
-    </table>
-</div>
-<div>
-    <table style="font-size: 16pt;">
-        <tr>
-            <td><a href="CS501_Syllabus_Fall19.pdf">Course Syllabus</a>  || </td>
-            <td><a href="CS501_Course_Topics.pdf">Course Topics</a></td>
-        </tr>
-    </table>
-</div>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid text-center">
+            <h1 class="display-4">CS 501: Computer Algorithms II</h1>
+            <p class="lead">Spring 2020: T-Th 9:30 am -- 10:45 am, Thomas Beckham Hall 180D</p>
+            <hr class="my-4">
+            <dl class="lead" style="text-align: left;padding-left: 10pt;">
+                <dt>Instructor:</dt>
+                    <dd>Abolfazl (Abol) Asudeh</dd>
+                    <dd><i>Office:</i></td><td> SEO 1131 (<a href="mailto:asudeh@uic.edu">email</a>, <a href="http://asudeh.github.io">home page</a>)</dd>
+                    <dd><i>Office Hours:</i></td><td> TBA</dd>
+                <dt>TA:<dt>
+                    <dd>TBA</dd>
+            </dl>
+            <hr class="my-4">
+            <div class="lead" style="text-align: left;padding-left: 10pt;">
+                <a href="CS501_Syllabus_Fall19.pdf">Course Syllabus</a>  || <a href="CS501_Course_Topics.pdf">Course Topics</a>
+            </div>
+        </div>
+    </div>
 
-<div>
-<h2  align="center">Lecture Notes</h2>
-<table border="1" align="center">
-    <thead> 
-     <tr valign="middle" align="left">
-         <th>Week</th><th>Date</th><th>Topic</th><th>Reading</th><th>Notes</th></tr>
-     <!--<tr valign="middle" align="left">
-         <td>1</td> <td>8/27</td> <td>Intro and Review<br>Analysis and Design</td> <td>KT 1</td> 
-		 <td> 
-		 <a href="http://compgeom.cs.uiuc.edu/~jeffe/teaching/373/notes/00-intro.pdf" target="_top">Jeff Erickson's Intro</a> <span style="background-color: transparent;"> <a href="https://www.cs.uic.edu/pub/CS401/LectureNotes/01stable-matching.pdf" target="_top">KT: Intro</a></span><span style="background-color: transparent;">,</span><span style="background-color: transparent;"> <a href="https://www.cs.uic.edu/pub/CS401/LectureNotes/01demo-propose-and-reject.ppt" target="_top">KT: Stable matching demo</a></span></td> </tr>
-        <tr valign="middle" align="left">
-         <td> </td> <td>8/29</td> <td>Analysis of algorithms Intro Review: recurrences</td> <td>KT 1</td> 
-         <td></td>
-         <td><span style="background-color: transparent;"> <a href="https://www.cs.uic.edu/pub/CS401/LectureNotes/01stable-matching.pdf" target="_top">KT: Intro</a></span>
-            <span style="background-color: transparent;">,</span><span style="background-color: transparent;"> <a href="https://www.cs.uic.edu/pub/CS401/LectureNotes/01demo-propose-and-reject.ppt" target="_top">KT: Stable matching demo</a></span> 
-            <span style="color: #0000ff; text-decoration: underline; background-color: transparent;"> <a href="https://www.cs.uic.edu/pub/CS401/LectureNotes/recurrences.pdf" target="_top">Notes on Recurrences</a></span> 
-            <br><span style="color: #0000ff; text-decoration: underline; background-color: transparent;"> <a href="https://www.cs.uic.edu/pub/CS401/LectureNotes/cmbntrcs_mitch.pdf" target="_top">Combinarorial cheat sheet</a></span></td>
-        </tr>
-    -->
-    </thead> 
-</table>
-</div>
-
-
+    <div class="container">
+        <h3 class="alert alert-info" role="alert"> Lecture Notes</h3>
+        <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Date</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>T. 1/14</td>
+            <td>Course Introduction</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Th. 1/16</td>
+            <td>Complexity Hierarchy</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>T. 1/21</td>
+            <td>Polynomial Reductions</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Th. 1/23</td>
+            <td>NP Complete problems: 3SAT, Clique, Vertex Cover, Max Independent Set</td>
+            <td></td>
+          </tr>
+          <tr><td></td><td>F. 1/24</td><td colspan="2"><i>
+              Last day to complete late registration; last day to add a course(s) or make section changes;
+              last day to drop individual courses via XE Registration without receiving W (Withdrawn) grade on academic record.
+              Last day to Web Drop courses via XE Registration and receive 100% cancellation of tuition and fees.</i>
+            </td></tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>T. 1/28</td>
+            <td>Subset Sum,3 dimensional matching, Exact cover by 3 sets</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Th. 1/30</td>
+            <td>Graph coloring, Subgraph isomorphism,Steiner tree</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>T. 2/4</td>
+            <td>CHamiltonian Cycle/Path, Scheduling</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Th. 6/2</td>
+            <td>TSP, Knapsack, Bin Packing</td>
+            <td></td>
+          </tr>
+        </tbody>
+        </table>
+    </div>
 </body>
 </html>
