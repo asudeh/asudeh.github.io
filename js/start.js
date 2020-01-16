@@ -21,7 +21,7 @@ st+= '        </a>';
 st+= '        <div class="dropdown-menu" aria-labelledby="navbarDropdown">';
 st+= '          <a class="dropdown-item" href="'+path+'teaching/cs501spring20/index.html" target="_blank">CS501 Spring 2020</a>';
 st+= '          <hr>';
-st+= '          <a class="dropdown-item" href="'+path+'teaching/cs401fall19/index.html" target="_blank">CS401 Fall 2019</a>';
+st+= '          <a class="dropdown-item" href="'+path+'teaching/archive.html" target="_blank">Archive</a>';
 st+= '        </div>';
 st += '  </ul> ';
 st += '</div> ';
