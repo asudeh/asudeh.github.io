@@ -23,6 +23,10 @@ st+= '          <a class="dropdown-item" href="'+path+'teaching/cs501spring20/in
 st+= '          <hr>';
 st+= '          <a class="dropdown-item" href="'+path+'teaching/archive.html" target="_blank">Archive</a>';
 st+= '        </div>';
+st += '    </li> ';
+st += '    <li class="nav-item active"> ';
+st += '      <a class="nav-link" href="'+path+'awards.htm">Awards<span class="sr-only">(current)</span></a> ';
+st += '    </li> ';
 st += '  </ul> ';
 st += '</div> ';
 st += '</nav> ';
