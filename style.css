@@ -102,3 +102,16 @@ h1, h3{
 	padding: 4px;
 	text-align:left;
 }
+
+.roundphoto{
+	height:200px; 
+	width:200px;
+	background-size:  cover;	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 100px;
+	padding: 0px;
+	text-align: center;
+    position: relative;
+    display: inline-block;
+}

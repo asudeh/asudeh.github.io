@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc>http://asudeh.github.io/pub.htm</loc> 
+    <loc>http://asudeh.github.io/projects.htm</loc> 
+	<loc>http://asudeh.github.io/pub.htm</loc> 
+	<loc>http://asudeh.github.io/awards.htm</loc> 
+	<loc>http://asudeh.github.io/teaching/archive.html</loc> 
   </url>
 </urlset>
