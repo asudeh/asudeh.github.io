@@ -9,16 +9,98 @@
 </ul>
 <div class="tab-content" id="FRContent">
 	<div class="tab-pane active" id="FRAbstract" role="tabpanel" aria-labelledby="FRA-tab">
-	
+		Items from a database are often ranked based on a combination
+		of criteria. The weight given to each criterion in the
+		combination can greatly affect the fairness of the produced
+		ranking, for example, preferring men over women. A user
+		may have the flexibility to choose combinations that weigh
+		these criteria differently, within limits. In this project, we develop
+		a system that helps users choose criterion weights
+		that lead to greater fairness.
 	</div>
 	<div class="tab-pane " id="FRIntro" role="tabpanel" aria-labelledby="FRI-tab">
-	
+			<p>
+					Ranking of individuals is commonplace today, and is used, for example, to establish credit worthiness, desirability for college admissions and employment, and attractiveness as dating partners. 
+					A prominent family of ranking schemes are score-based rankers, which compute the score of each individual from some database D, sort the individuals in decreasing order of score, and finally return either the full ranked list, or its highest-scoring sub-set, the top-k.  Many score-based rankers compute the score as a linear combination of attribute values, with non-negative weights.  
+				</p>
+				<p>
+						This sort of linear-weighted scoring and ranking is ubiquitous.  Many sports use such schemes.  For example, tennis players have an ATP rank based on a score that weights each level of success (winner, finalist, semi-finalist, and so on) at each type of tournament, and adds these up.  A score with more serious implications is the credit score that each person has in many countries, meant to indicate creditworthiness. Even in the context of academic research, we see such scoring: many funding agencies compute a score for a research proposal as a weighted sum of scores for its attributes.
+				<!--</p><p>
+						Because of the potential impact of such rankings on individuals and on population groups, issues of algorithmic bias and discrimination are coming to the forefront of societal and technological discourse~\cite{BarocasSelbst}.  In their seminal work Friedman and Nissenbaum~\cite{DBLP:journals/tois/FriedmanN96} define a biased computer system as one that (1) systematically and unfairly discriminates against some individuals or groups in favor of others, and (2) joins this discrimination with an unfair outcome.
+				-->
+				
+				</p><p>
+					We desire a ranking scheme that is fair, in the sense that it mitigates <i>preexisting bias with respect to a protected feature</i> embodied in the data. 
+					In line with prior work, a protected feature denotes membership of an individual in a legally-protected category, such as persons with disabilities, or under-represented minorities by gender or ethnicity.  
+					We refer to such categories (e.g., minority ethnicity) as <i>protected groups</i>, and to the attributes that define them (e.g., ethnicity) as <i>sensitive attributes</i>. 
+					Numerous fairness definitions have been considered in the recent literature.
+					A useful dichotomy is between <i>individual fairness</i> and <i>group fairness</i>, also known as statistical parity. The former requires  that similar individuals be treated similarly, while the latter requires that demographics of those receiving a particular outcome are identical or similar to the demographics of the population as a whole.
+					These two requirements represent intrinsically different world views, and accommodating both requires trade-offs.
+					Our focus in this peoject is on group fairness.
+					<!--While our techniques apply to a broad range of group fairness criteria, to make our discussion concrete we will define fairness in terms of minimum bounds on the number of selected members of a protected group at the top-k, for some reasonable value of $k$~\cite{DBLP:conf/icalp/CelisSV18}.-->
+
+				</p>
+				<p class="text-center"><img src="assets/fair.jpg" /> </p>
+				<p>
+						Designing a ranking scheme amounts to selecting a set of weights, one for each attribute.
+						In many situations, such as to rank tennis players, research proposals, or academic departments, we do not have access to any ground truth and resort to subjectively selected weights in a simple additive scoring function.
+						Such a function is typically defined over a handful of attributes, due to 
+						the cognitive burden of selecting the scoring criteria and coming up with an appropriate weight vector.
+						The question we address in this project is how to introduce fairness into this subjective weight selection process.
+						Consider an example.    
+				</p>
+				<div class="card">
+					<div class="card-header text-center">EXAMPLE</div>
+					<div class="card-body">
+						A college admissions officer is designing a ranking scheme to evaluate a pool of applicants, each with several potentially relevant attributes.
+						For simplicity, let us focus on two of these attributes --- high school GPA and SAT score. Suppose that our fairness criterion is that the admitted class comprise at least 40% women.
+						As the first step, to make the score components comparable, GPA and SAT scores may be normalized and standardized.  We will denote the resulting values <code>g</code> for GPA and <code>s</code> for SAT.  
+						The admissions officer may believe a priori that <code>g</code> and <code>s</code> should have an approximately equal weight, computing the score of an applicant
+						<code>t &isin; D</code> as <code>f(t) = 0.5 &times; s + 0.5 &times g</code>
+						, ranking the applicants, and returning the top 500 individuals.
+						Upon inspection, it may be determined that an insufficient number of women is returned among the top-k: at least 200 women were expected to be among the top-500, and only 150 were returned, violating our fairness constraint. This violation may be due to a gender disparity in the data: in 2014, women scored about 25 points lower on average than men in the SAT test.  
+						Note that the admissions officer was not looking at the sensitive attribute (gender, in our example), and proposed a scoring function that is not obviously biased against women: the lack of fairness is only observed in the outcome.
+						Our goal in this project is to build a system that will assist the admissions officer in identifying alternative scoring functions that meet the fairness constraint and are close to the original function <code>f</code> in terms of attribute weights, thereby reflecting the admission officer's a priori notion of quality.  
+						After a few cycles of such interaction with the system, the admissions officer may choose <code>f'(t) = 0.45 &times; s + 0.55 &times; g</code> as the final scoring function.
+					</div>
+				</div>
+				<p>
+						As underscored by the above Example, we wish to produce results that are both fair ---  as stated by the fairness constraints, and of high quality --- as stated by the initial scoring function weights.
+						These initial  scoring function weights will only approximate quality, for two reasons.
+						First, observational data usually contains imperfect proxies of "true" aspects of quality (e.g., SAT score vs. intelligence, and GPA vs. grit).
+						Second, future outcomes cannot be perfectly predicted based on present observations, irrespective of whether a simple score-based rankers or a complex learned model is used.
+				</p>
+				<p>
+						Rather than adjusting the scoring function, one could meet fairness constraints by having different cutoff scores for different demographic groups.  For example, the admissions officer in the above Example could have stuck with the original function, and used a lower score threshold for admitting women compared to the one for men.
+						While such a fix is technically easy, it is illegal in many jurisdictions, because it amounts to <span class="bg-warning">disparate treatment</span> --- to the explicit use of a protected characteristic such as gender or race to make decisions. Our proposal in this project navigates the trade-off between disparate treatment
+						and <span class="bg-warning">disparate impact</span> ---  providing outputs that hurt members of a protected group more frequently than members of other groups.
+						If a small adjustment to the weights of the scoring function can achieve fairness, that may be both preferable for legal reasons, and acceptable from the point of view of utility, particularly since the original weights likely were approximate values chosen subjectively.
+				</p>
+				<p>
+						Of course, our proposed methods will not prevent institutional racism and other kinds of intentional discrimination.
+						That said, it is increasingly recognized that this challenge cannot be addressed by technology alone, and that responsibility to determine the context of use of a tool should fall  squarely on legal and policy frameworks.  Rather than dictating a particular choice of policy, we enable decision makers to <i> transparently enact a policy</i> of their choosing, by supporting an explicit specification of fairness constraints, and incorporating them into ranking scheme design. Mechanisms that embody <i> transparency by design </i> are now required by legal and policy frameworks, such as the New York City algorithmic transparency law (Local Law 1696-2017).
+				</p>
+				<p>
+						Our technical goal is to build <span class="bg-success">a system that assists a human designer of a scoring function in tuning attribute weights to achieve fairness</span>.  Since this tuning process does not occur too often, it may be acceptable for it to take some time. However, we know that humans are able to produce superior results when they get quick feedback in a design or analysis loop.  Indeed, it is precisely this need that is a central motivation for OLAP, rather than having only long-running analytics queries. Ideally, a  designer of a ranking scheme would want the system to support her work through interactive response times.  Our goal is to meet this need, to the extent possible.
+				</p>
+				<p>
+						Unfortunately, it is computationally challenging to find a scoring function that is both fair and close to the user-specified scoring function, particularly when more than two scoring attributes must be considered.
+						In order to over come this challenge, we introduce techniques from combinatorial geometry and, since the direct application of the existing algorithm does not scale in practice, we propose the  arrangement tree data structure. We then propose a grid-partitioning preprocessing that enables approximate query answering.
+				</p>
+				<p>
+						In addition to the offline preprocessing method, we also study sampling for on-the-fly query answering.
+						We provide a negative result that the methods based on function sampling, cannot provide any guarantees for the discovery of an approximate solution.
+				</p>
 	</div>
 	<div class="tab-pane " id="FRPubs" role="tabpanel" aria-labelledby="FRP-tab">
-	
+			Abolfazl Asudeh, H.V. Jagadish, Julia Stoyanovich, Gautam Das. <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3300079">Designing Fair Ranking Schemes</a>. <i>SIGMOD</i>, 2019, ACM.
 	</div>
 	<div class="tab-pane " id="FRCol" role="tabpanel" aria-labelledby="FRC-tab">
-	
+		<ul>
+			<li>H.V. Jagadish, University of Michigan</li>
+			<li>Julia Stoyanovich, New York University</li>
+			<li>Gautam Das, University of Texas at Arlington</li>
+		</ul>
 	</div>
 </div>
 </div><!-- class="card" -->
