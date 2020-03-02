@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	
+    <title>InDeX-Lab: Mithra Project: Responsible Data Science and Algorithmic Fairness</title>
+    <link rel="stylesheet" type="text/css" href="../ppl.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script type="text/javascript" src="../js/myobjects.js"></script>
+    <script type="text/javascript" src="../js/start.js"></script>
+    <!--<script type="text/javascript" src="../js/MyFunctions.js"></script>-->
+    <script type="text/javascript">
+        function init() {
+            //header2();
+            //alert(1);
+            fillContent("content/FairRanking.txt","Franking");
+            //alert(2);
+        }
+    </script>
+</head>
+
+<body onload='init()'>
+    <div id="headerDiv"></div>
+    <!-- Your code starts here -->
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid text-center" style="padding-block-start: 10pt;">
+        <img class="roundphoto" src="../imgs/mithra_1.jpg"/>
+        <h3 class="display-4"><a href="">Mithra</a></h3>
+        <p class="lead">Projects related to Responsible Data Science and Algorithmic Fairness</p>       
+      </div>
+      <div class="text-left">
+        <ul class="list-group text-left" style="display:inline-block">
+            <li class="list-group-item"><a href="#Franking">Ranking and Scoring</a>
+                <ul>
+                    <li><a href="#FairR">Fair Ranking Schemes</a></li>
+                    <li><a href="#StableR">Stable Rankings</a></li>
+                    <li><a href="#MithraR">Responsbile Scoring, MithraRanking</a></li>
+                </ul>
+            </li>
+            <li class="list-group-item"><a href="#coverage">Data Covreage/Population Bias Investigation</a></li>
+            <li class="list-group-item"><a href="#nl">Nutritional Labels</a></li>
+        </ul>
+       </div>
+
+       <div>&nbsp;</div>
+       <h3 class="alert alert-info" role="alert">Ranking and Scoring</h3>
+       <div id="Franking"></div>
+
+       <div>&nbsp;</div>
+       <h3 class="alert alert-info" role="alert">Data Covreage/Population Bias Investigation</h3>
+       <div id="coverage"></div>
+
+       <div>&nbsp;</div>
+       <h3 class="alert alert-info" role="alert">Nutritional Labels</h3>
+       <div id="nl"></div>
+    </div>
+    <!-- Your code ends here -->
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
