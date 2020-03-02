@@ -94,8 +94,10 @@
             </p>	
 	</div>
 	<div class="tab-pane " id="SRPubs" role="tabpanel" aria-labelledby="SRP-tab">
-			Abolfazl Asudeh, HV Jagadish, Gerome Miklau, Julia Stoyanovich. <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3308984">On obtaining stable rankings</a>. PVLDB, Vol. 12(3), pages 237--250, 2019, VLDB Endowment.
-			(Invited Paper) Abolfazl Asudeh, H.V. Jagadish, Julia Stoyanovich. <a target="_blank" href="http://sites.computer.org/debull/A19sept/issue1.htm">Towards Responsible Data-driven Decision Making in Score-Based Systems</a>. Data Engineering Bulletin, Vol. 42(3), pages 76&#8211;87, 2019, Special Issue on Fairness, Diversity, and Transparency in Data Systems.
+		<ul>
+			<li>Abolfazl Asudeh, HV Jagadish, Gerome Miklau, Julia Stoyanovich. <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3308984">On obtaining stable rankings</a>. PVLDB, Vol. 12(3), pages 237--250, 2019, VLDB Endowment.</li>
+			<li>(Invited Paper) Abolfazl Asudeh, H.V. Jagadish, Julia Stoyanovich. <a target="_blank" href="http://sites.computer.org/debull/A19sept/issue1.htm">Towards Responsible Data-driven Decision Making in Score-Based Systems</a>. Data Engineering Bulletin, Vol. 42(3), pages 76&#8211;87, 2019, Special Issue on Fairness, Diversity, and Transparency in Data Systems.</li>
+		</ul>
 	</div>
 	<div class="tab-pane " id="SRCol" role="tabpanel" aria-labelledby="SRC-tab">
 		<ul>

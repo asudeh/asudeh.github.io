@@ -93,8 +93,10 @@
 				</p>
 	</div>
 	<div class="tab-pane " id="FRPubs" role="tabpanel" aria-labelledby="FRP-tab">
-			Abolfazl Asudeh, H.V. Jagadish, Julia Stoyanovich, Gautam Das. <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3300079">Designing Fair Ranking Schemes</a>. <i>SIGMOD</i>, 2019, ACM.
-			(Invited Paper) Abolfazl Asudeh, H.V. Jagadish, Julia Stoyanovich. <a target="_blank" href="http://sites.computer.org/debull/A19sept/issue1.htm">Towards Responsible Data-driven Decision Making in Score-Based Systems</a>. Data Engineering Bulletin, Vol. 42(3), pages 76&#8211;87, 2019, Special Issue on Fairness, Diversity, and Transparency in Data Systems.
+		<ul>
+			<li>Abolfazl Asudeh, H.V. Jagadish, Julia Stoyanovich, Gautam Das. <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3300079">Designing Fair Ranking Schemes</a>. <i>SIGMOD</i>, 2019, ACM.</li>
+			<li>(Invited Paper) Abolfazl Asudeh, H.V. Jagadish, Julia Stoyanovich. <a target="_blank" href="http://sites.computer.org/debull/A19sept/issue1.htm">Towards Responsible Data-driven Decision Making in Score-Based Systems</a>. Data Engineering Bulletin, Vol. 42(3), pages 76&#8211;87, 2019, Special Issue on Fairness, Diversity, and Transparency in Data Systems.</li>
+		</ul>
 	</div>
 	<div class="tab-pane " id="FRCol" role="tabpanel" aria-labelledby="FRC-tab">
 		<ul>
