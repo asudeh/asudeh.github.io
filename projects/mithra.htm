@@ -23,6 +23,10 @@
             fillContent("content/FairRanking.txt","FairR");
             fillContent("content/StableRanking.txt","StableR");
             fillContent("content/MithraRanking.txt","MithraR");
+            fillContent("content/coverage.txt","coverage");
+            fillContent("content/MithraCov.txt","mithracoverage");
+            fillContent("content/nl1.txt","nl1");
+            fillContent("content/nl2.txt","nl2");
         }
     </script>
 </head>
@@ -38,15 +42,25 @@
       </div>
       <div class="text-left">
         <ul class="list-group text-left" style="display:inline-block">
-            <li class="list-group-item"><a href="#ranking">Ranking and Scoring</a>
+            <li class="list-group-item"><a href="#ranking">Responsible Ranking and Scoring</a>
                 <ul>
                     <li><a href="#FairR">Fair Ranking Schemes</a></li>
                     <li><a href="#StableR">Stable Rankings</a></li>
                     <li><a href="#MithraR">MithraRanking (Demo)</a></li>
                 </ul>
             </li>
-            <li class="list-group-item"><a href="#coverage">Data Covreage/Population Bias Investigation</a></li>
-            <li class="list-group-item"><a href="#nl">Nutritional Labels</a></li>
+            <li class="list-group-item"><a href="#BiasinData">Bias in Data</a>
+                <ul>
+                    <li><a href="#coverage">Coverage Assessment in a Dataset</a></li>
+                    <li><a href="#mithracoverage">MithraRanking (Demo)</a></li>
+                </ul>            
+            </li>
+            <li class="list-group-item"><a href="#nl">Nutritional Labels</a>
+                <ul>
+                    <li><a href="#nl1">MithraLabel: Flexible Dataset Nutritional Labels (Demo)</a></li>
+                    <li><a href="#nl2">Nutritional Labels for Rankings (Demo)</a></li>
+                </ul> 
+            </li>
         </ul>
        </div>
 
@@ -57,12 +71,16 @@
        <div>&nbsp;</div><div id="MithraR"></div>
 
        <div>&nbsp;</div>
-       <h3 class="alert alert-info" role="alert">Data Covreage/Population Bias Investigation</h3>
+       <h3 id="BiasinData" class="alert alert-info" role="alert">Bias in Data</h3>
        <div id="coverage"></div>
+       <div>&nbsp;</div>
+       <div id="mithracoverage"></div>
 
        <div>&nbsp;</div>
-       <h3 class="alert alert-info" role="alert">Nutritional Labels</h3>
-       <div id="nl"></div>
+       <h3 id="nl" class="alert alert-info" role="alert">Nutritional Labels</h3>
+       <div id="nl1"></div>
+       <div>&nbsp;</div>
+       <div id="nl2"></div>
     </div>
     <!-- Your code ends here -->
 	<!-- Optional JavaScript -->

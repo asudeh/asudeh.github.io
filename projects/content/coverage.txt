@@ -1,0 +1,101 @@
+<div class="card">
+<div class="card-header">Coverage Assessment in Datasets</div>
+<div class="card-body">
+<ul class="nav nav-tabs" id="cov" role="tablist">
+	<li class="nav-item"><a class="nav-link active" id="covA-tab" data-toggle="tab" href="#covAbstract" role="tab" aria-controls="home" aria-selected="true">Abstract</a></li>
+	<li class="nav-item"><a class="nav-link" id="covI-tab" data-toggle="tab" href="#covIntro" role="tab" aria-controls="profile" aria-selected="false">Extended Description</a></li>
+	<li class="nav-item"><a class="nav-link" id="covP-tab" data-toggle="tab" href="#covPubs" role="tab" aria-controls="contact" aria-selected="false">Publications</a></li>
+	<li class="nav-item"><a class="nav-link" id="covC-tab" data-toggle="tab" href="#covCol" role="tab" aria-controls="contact" aria-selected="false">Collaborators</a></li>
+</ul>
+<div class="tab-content" id="covContent">
+	<div class="tab-pane active" id="covAbstract" role="tabpanel" aria-labelledby="covA-tab">
+		Data analysis impacts virtually every aspect of our
+		society today. Often, this analysis is performed on an existing
+		dataset, possibly collected through a process that the data
+		scientists had limited control over. The existing data analyzed
+		may not include the complete universe, but it is expected to
+		cover the diversity of items in the universe. Lack of adequate
+		coverage in the dataset can result in undesirable outcomes such
+		as biased decisions and algorithmic racism, as well as creating
+		vulnerabilities such as opening up room for adversarial attacks.<br>
+		In this work, we assess the coverage of a given dataset
+		over multiple categorical attributes. We first provide efficient
+		techniques for traversing the combinatorial explosion of value
+		combinations to identify any regions of attribute space not
+		adequately covered by the data. Then, we determine the least
+		amount of additional data that must be obtained to resolve
+		this lack of adequate coverage.
+	</div>
+	<div class="tab-pane " id="covIntro" role="tabpanel" aria-labelledby="covI-tab">
+		<p>
+                <a target="_blank" href="https://www.businessinsider.com/google-tags-black-people-as-gorillas-2015-7"><img src="assets/googlegorilla2.png" class="rounded float-right" style="padding-left: 10px;" /></a>
+                In the current age of data science, it is commonplace to have a learning algorithm trained based on some dataset.
+                This dataset could be collected prospectively, such as through a survey or a scientific experiment. In such a case, a data scientist may be able to specify requirements such as representation and coverage.
+                However, more often than not, analyses are done with existing data has been acquired independently, possibly through a process on which the data scientist has limited, or no, control. This is often called ``found data'' in the data science context.
+                It is well-recognized that the training dataset must be representative of the distribution from which the actual test/production data will be drawn.  More recently, it has been recognized that it is not enough for the training data to be representative: it must include enough examples from less popular ``categories'', if these categories are to be handled well by the trained system.
+        </p>
+        <p>
+                <a target="_blank" href="https://www.businessinsider.com/google-tags-black-people-as-gorillas-2015-7"><img src="assets/googlegorilla3.png" class="rounded float-right" style="padding-left: 10px;" /></a>
+                Perhaps the best known story underlining the importance of this inclusion is the case of the <a target="_blank" href="https://www.businessinsider.com/google-tags-black-people-as-gorillas-2015-7">``google gorilla''</a>.
+                An early image recognition algorithm released by Google had not been trained on enough dark-skinned faces.  When presented with an image of a dark African American, the algorithm labeled her as a ``gorilla''.  While Google very quickly patched the software as soon as the story broke, the question is what it could have done beforehand to avoid such a mistake in the first place.
+        </p>
+        <p>
+                The Google incident is not unique: there have been many other such incidents. 
+                For example, Nikon introduced a camera feature to detect whether humans in the image have their eyes open -- to help avoid the all-too-common situation of the camera-subject blinking when the flash goes off resulting in an image with eyes closed. 
+                Paradoxically for a Japanese company, their training data did not include enough East Asians, so that the software classified many (naturally narrow) Asian eyes as closed even when they were open (<a target="_blank" href="http://content.time.com/time/business/article/0,8599,1954643,00.html">ref.</a>).
+                Similarly, <a target="_blank" href="http://www.cnn.com/2009/TECH/12/22/hp.webcams/index.html">HP webcams were not able to detect black faces</a> due to <a target="_blank" href="https://www.recode.net/2017/1/18/14304964/data-facial-recognition-trouble-recognizing-black-white-faces-diversity">inadequate coverage in the training data</a>.
+        </p>
+        <p>
+                The problem becomes critical when it comes to <span class="bg-warning">data-driven algorithmic decision making</span>.
+                For example, judges, probation and parole officers are increasingly using algorithms to assess a criminal defendant's likelihood to re-offend (<a target="_blank" href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">ref.</a>).
+                Consider a tool designed to help the judges in sentencing criminals by predicting how likely an individual is to re-offend. 
+                Such a tool can provide insightful signals for the judge and have the potential to make society safer.
+                On the other hand, a wrong signal can have devastating effects on individuals' lives.
+                So it is important to make sure that the tool is trained on data that includes adequate representation of individuals similar to each criminal that will be scored by it.
+        </p>
+        <p>
+                While Google's resolution to the gorilla incident was to <a target="_blank" href="https://www.dailymail.co.uk/sciencetech/article-5270891/Google-bans-word-gorilla-racist-Photos-app.html">``ban gorillas''</a>, a better solution is to ensure that the training data has enough entries in each category. 
+                If the only category of interest were race, as in (most of) the examples above, there are only a handful of categories and this problem is easy.
+                However, in general, objects can have tens of attributes of interest, all of which could potentially be used to categorize the objects.  
+                For example, survey scientists use multiple demographical variables to characterize respondents, including race, sex, age, economic status, and geographic location.
+                Whatever be the mode of data collection for the analysis task at hand, we must ensure that there are enough entries in the data set for each object category.  
+                Drawing inspiration from the literature on diversity, we refer to this concept as <span class="bg-success">coverage</span>.
+        </p>
+        <p>
+                Lack of coverage in a dataset also opens up the room for <a target="_blank" href="https://blog.openai.com/adversarial-example-research/">adversarial attacks</a>. The goal in an adversarial attack is to generate examples that are misclassified by a trained model.
+                Poorly covered regions in the training data provide the adversary with opportunities to create such examples.
+        </p>
+        <p>
+                Our goal in this project is two-fold.
+                First, we would like to help the dataset users to be able to assess the coverage, as a characterization, of a given dataset, in order to understand such vulnerabilities.
+                For example, we propose to use information about lack of coverage as a widget in the <a target="_blank" href="nl.htm">nutritional label</a> of a dataset.
+                Once the lack of coverage has been identified, next we would like to help data owners improve coverage by identifying the smallest number of additional data points needed to hit all the ``large uncovered spaces''.
+        </p>
+        <p>
+                Given multiple attributes, each with multiple possible values, we have a combinatorial number of possible <span class="bg-success">patterns</span>, as we call  combinations of values for some or all attributes.  Depending on the size and skew in the dataset, the coverage of the patterns will vary.  Given a dataset, our first problem is to efficiently identify patterns that do not have sufficient coverage.
+                The next question (for the dataset owners) is what they can do about lack of coverage.
+                Given a list of patterns with insufficient coverage, they may try to fix these, for example by acquiring additional data.  In the ideal case, they will be able to acquire enough additional data to get sufficient coverage for all patterns.
+                However, acquiring data has costs, for data collection, integration, transformation, storage, etc.
+                Given the combinatorial number of patterns, it may just not be feasible to cover all of them in practice.
+                Therefore, we may seek to make sure that we have adequate coverage for at least any pattern of <code>&ell;</code> attributes, where we call <code>&ell;</code> the maximum covered level.
+                Hence, our next goal becomes to determine the patterns for the minimum number of items we must add to the dataset to reach a desired maximum covered level or to cover all nodes with at least a specified minimum value count.
+        </p>
+        <p>
+                We note that not all combinations of attribute values are of interest.
+                Some may be extremely unlikely, or even infeasible.
+                For example, we may find few people with attribute age as "teen" and attribute education as "graduate degree".
+                We will flag the lack of coverage for this pattern.
+                <span class="bg-warning">A domain expert should then evaluate it and decide to mark it as not a problem.</span>
+        </p>
+	</div>
+	<div class="tab-pane " id="covPubs" role="tabpanel" aria-labelledby="covP-tab">
+			<li>Abolfazl Asudeh, Zhongjun Jin, HV Jagadish. <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8731614">Assessing and Remedying Coverage for a Given Dataset</a>. ICDE, 2019.</li>
+	</div>
+	<div class="tab-pane " id="covCol" role="tabpanel" aria-labelledby="covC-tab">
+		<ul>
+			<li>H.V. Jagadish, University of Michigan</li>
+			<li>Zhongjun Jin, University of Michigan</li>
+		</ul>
+	</div>
+</div>
+</div><!-- class="card" -->

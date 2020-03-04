@@ -1,0 +1,34 @@
+<div class="card">
+<div class="card-header">MithraCoverage for Investigating Population Bias (Demo)</div>
+<div class="card-body">
+<ul class="nav nav-tabs" id="MithraC" role="tablist">
+	<li class="nav-item"><a class="nav-link active" id="MCA-tab" data-toggle="tab" href="#MCAbstract" role="tab" aria-controls="home" aria-selected="true">Abstract</a></li>
+	<li class="nav-item"><a class="nav-link" id="MCP-tab" data-toggle="tab" href="#MCPubs" role="tab" aria-controls="contact" aria-selected="false">Publications</a></li>
+	<li class="nav-item"><a class="nav-link" id="MCC-tab" data-toggle="tab" href="#MCCol" role="tab" aria-controls="contact" aria-selected="false">Collaborators</a></li>
+</ul>
+<div class="tab-content" id="MCContent">
+	<div class="tab-pane active" id="MCAbstract" role="tabpanel" aria-labelledby="MCA-tab">
+		Data-driven technologies are only as good as the data they work with.
+		On the other hand, data scientists have often limited control on how the data is collected.
+		Failing to contain adequate number of instances from minority (sub)groups, known as population bias, is a major reason for model unfairness and disparate performance across different groups.
+		<br>
+		In this paper, we demonstrate \system, a system for investigating population bias over the intersection of multiple attributes.
+		We use the concept of {\em coverage} for identifying intersectional subgroups with inadequate representation in the dataset.
+		\system\ is a web application with an interactive visual interface that allows data scientists to explore the dataset and identify subgroups with poor {\em coverage}.
+	</div>
+	<div class="tab-pane " id="MCPubs" role="tabpanel" aria-labelledby="MCP-tab">
+			<li>Zhongjun Jin, Mengjing Xu, Chenkai Sun, Abolfazl Asudeh, HV Jagadish. <a target="_blank" href="#">MithraCoverage: A System for Investigating Population Bias for Intersectional Fairness</a>. SIGMOD (Demo), 2020, ACM.</li>
+	</div>
+	<div class="tab-pane " id="MCCol" role="tabpanel" aria-labelledby="MCC-tab">
+		<ul>
+			<li>H.V. Jagadish, University of Michigan</li>
+		</ul>
+		Students
+		<ul>
+			<li>Zhongjun Jin, University of Michigan</li>
+			<li>Mengjing Xu, University of Michigan</li>
+			<li>Chenkai Sun, University of Michigan</li>
+		</ul>
+	</div>
+</div>
+</div><!-- class="card" -->
