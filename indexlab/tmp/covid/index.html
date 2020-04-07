@@ -2,16 +2,19 @@
     <head>
         <meta charset="utf-8">
         <link href="d3-geomap/d3-geomap.css" rel="stylesheet">
+        <script src="//unpkg.com/d3@5/dist/d3.min.js"></script>
+        <script src="//unpkg.com/topojson@3/dist/topojson.min.js"></script>
+        <script src="d3-geomap/d3-geomap.min.js"></script>
     </head>
     <body>
         <div class="d3-geomap" id="map"></div>
-        <script>
-            var worldmap = d3.geomap()
-                .geofile('d3-geomap/topojson/world/countries.json');
-            worldmap.draw(d3.select('#map'));
-        </script>
+        <script src="js/main.js"></script>
+        <!--<script>
+            alert('start');
+            var map = d3.geomap()
+    .geofile('d3-geomap/topojson/world/countries.json')
+    .draw(d3.select('#map'));
+            alert('end');
+        </script>-->
     </body>
-    <script src="//unpkg.com/d3@5/dist/d3.min.js"></script>
-    <script src="//unpkg.com/topojson@3/dist/topojson.min.js"></script>
-    <script src="d3-geomap/d3-geomap.min.js"></script>
 </html>
