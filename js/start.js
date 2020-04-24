@@ -13,7 +13,7 @@ st += '    <li class="nav-item active"> ';
 st += '      <a class="nav-link" href="'+path+'index.htm">Home <span class="sr-only">(current)</span></a> ';
 st += '    </li> ';
 st += '    <li class="nav-item active"> ';
-st += '      <a class="nav-link" href="'+path+'indexlab/projects.htm" target="_blank">Projects <span class="sr-only">(current)</span></a> ';
+st += '      <a class="nav-link" href="https://www.cs.uic.edu/~indexlab/projects.htm" target="_blank">Projects <span class="sr-only">(current)</span></a> ';
 st += '    </li> ';
 st += '    <li class="nav-item active"> ';
 st += '      <a class="nav-link" href="'+path+'pub.htm">Publications <span class="sr-only">(current)</span></a> ';
