@@ -1,5 +1,5 @@
 // Abolfazl Asudeh
-// http://asudeh.github.io
+// http://cs.uic.edu/~asudeh
 // June 2019
 
 var mypubs = [];
@@ -8,7 +8,6 @@ function ReadBib(bibFile, divToFill)
 { // Reads a bib file and passes it to the parser
     var request = new XMLHttpRequest();
     request.open('GET', bibFile, true);
-    //request.open('GET', 'https://asudeh.github.io/pubs/abol.bib', true);
     request.send(null);
     request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {

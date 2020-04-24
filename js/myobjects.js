@@ -10,7 +10,7 @@ function setup(ele,name)
 function getURL(name){
 switch(name){
 	case "abol":
-		return "http://asudeh.github.io";
+		return "http://cs.uic.edu/~asudeh";
 	case "gautam":
 		return "http://ranger.uta.edu/~gdas/";
 	case "jag":
