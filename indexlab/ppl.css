@@ -1,0 +1,128 @@
+.person {
+	height:150px; 
+	width:150px;
+	background-size:  cover;	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 100px;
+	padding: 0px;
+	text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.person .persontext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the person */
+    position: absolute;
+    z-index: 1;
+}
+
+.person:hover .persontext {
+    visibility: visible;
+}
+
+.abol{
+	background-image: url('ppl/abol.jpg'); 
+}
+
+.gautam{
+	background-image: url('ppl/gautam.jpg'); 
+}
+.jag{
+	background-image: url('ppl/jag.jpg');
+}
+.divesh{
+	background-image: url('ppl/divesh1.jpg');
+}
+.nan{
+	background-image: url('ppl/nan.jpg');
+}
+.sara{
+	background-image: url('ppl/sara.jpg');
+}
+.azade{
+	background-image: url('ppl/azade.jpg');
+}
+.nick{
+	background-image: url('ppl/nick.jpg');
+}
+.cli{
+	background-image: url('ppl/cli.jpg');
+}
+.zaruba{
+	background-image: url('ppl/zaruba.jpg');
+}
+.julia{
+	background-image: url('ppl/julia.jpg');
+}
+.sajal{
+	background-image: url('ppl/sajal.jpg');
+}
+.yeye{
+	background-image: url('ppl/yeye.jpg');
+}
+.sona{
+	background-image: url('ppl/sona.jpg');
+}
+.farhad{
+	background-image: url('ppl/farhad.jpg');
+}
+.ning{
+	background-image: url('ppl/ning.jpg');
+}
+.nafi{
+	background-image: url('ppl/nafi.jpg');
+}
+.kris{
+	background-image: url('ppl/kris.jpg');
+}
+.gensheng{
+	background-image: url('ppl/gensheng.jpg');
+}
+.movaghar{
+	background-image: url('ppl/movaghar.jpg');
+}
+
+.jees{
+	background-image: url('ppl/jees.jpg'); 
+}
+
+.yeshwanth{
+	background-image: url('ppl/yeshwanth.jpg'); 
+}
+
+.ali1{
+	background-image: url('ppl/ali1.jpg'); 
+}
+
+.sanjay{
+	background-image: url('ppl/sanjay.jpg'); 
+}
+
+.izzy{
+	background-image: url('ppl/izzy.jpg'); 
+}
+
+.gerome{
+	background-image: url('ppl/gerome.jpg'); 
+}
+
+.ke{
+	background-image: url('ppl/ke.jpg'); 
+}
+
+.bill{
+	background-image: url('ppl/bill.jpg'); 
+}
+
+.mark{
+	background-image: url('ppl/mark.jpg'); 
+}

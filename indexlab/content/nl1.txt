@@ -72,7 +72,7 @@
         </p>
 	</div>
 	<div class="tab-pane " id="NL1Pubs" role="tabpanel" aria-labelledby="NL1P-tab">
-			<li>Chenkai Sun, Abolfazl Asudeh, H. V. Jagadish, Bill Howe, Julia Stoyanovich. <a target="_blank" href="../files/MithraLabel.pdf">MithraLabel: Flexible Dataset Nutritional Labels for Responsible Data Science</a>. CIKM (Demo), 2019, ACM.</li>
+			<li>Chenkai Sun, Abolfazl Asudeh, H. V. Jagadish, Bill Howe, Julia Stoyanovich. <a target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3357384.3357853">MithraLabel: Flexible Dataset Nutritional Labels for Responsible Data Science</a>. CIKM (Demo), 2019, ACM.</li>
 	</div>
 	<div class="tab-pane " id="NL1Col" role="tabpanel" aria-labelledby="NL1C-tab">
 		<ul>

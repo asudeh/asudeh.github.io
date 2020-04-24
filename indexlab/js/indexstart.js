@@ -28,7 +28,7 @@ st+= '          <a class="dropdown-item" href="'+path+'orca.htm">Orca</a>';
 st+= '        </div>';
 st += '    </li> ';
 st += '    <li class="nav-item active"> ';
-st += '      <a class="nav-link" href="../pub.htm" target="_blank">Publications<span class="sr-only">(current)</span></a> ';
+st += '      <a class="nav-link" href="https://www.cs.uic.edu/~asudeh/pub.htm" target="_blank">Publications<span class="sr-only">(current)</span></a> ';
 st += '    </li> ';
 st += '    <li class="nav-item active"> ';
 st += '      <a class="nav-link" href="contact.htm">Contact<span class="sr-only">(current)</span></a> ';
