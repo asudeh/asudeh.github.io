@@ -24,7 +24,9 @@ st+= '          <a class="dropdown-item" href="'+path+'projects.htm">Summary</a>
 st+= '          <hr>';
 st+= '          <a class="dropdown-item" href="'+path+'mithra.htm">Mithra</a>';
 st+= '          <a class="dropdown-item" href="'+path+'ranking.htm">Ranking & Representatives</a>';
-st+= '          <a class="dropdown-item" href="'+path+'orca.htm">Orca</a>';
+st+= '          <a class="dropdown-item" href="'+path+'orca.htm">Orca: Solving Problems at Scale</a>';
+st+= '          <a class="dropdown-item" href="'+path+'ml.htm">Data Management for AI&ML</a>';
+st+= '          <a class="dropdown-item" href="'+path+'webdb.htm">Web Data Exploration</a>';
 st+= '        </div>';
 st += '    </li> ';
 st += '    <li class="nav-item active"> ';
