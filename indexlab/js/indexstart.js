@@ -22,7 +22,7 @@ st+= '        </a>';
 st+= '        <div class="dropdown-menu" aria-labelledby="navbarDropdown">';
 st+= '          <a class="dropdown-item" href="'+path+'projects.htm">Summary</a>';
 st+= '          <hr>';
-st+= '          <a class="dropdown-item" href="'+path+'mithra.htm">Mithra</a>';
+st+= '          <a class="dropdown-item" href="'+path+'mithra.htm">Mithra: Responsible Data Science and Algorithmic Fairness</a>';
 st+= '          <a class="dropdown-item" href="'+path+'ranking.htm">Ranking & Representatives</a>';
 st+= '          <a class="dropdown-item" href="'+path+'orca.htm">Orca: Solving Problems at Scale</a>';
 st+= '          <a class="dropdown-item" href="'+path+'ml.htm">Data Management for AI&ML</a>';
