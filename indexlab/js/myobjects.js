@@ -10,7 +10,7 @@ function setup(ele,name)
 function getURL(name){
 switch(name){
 	case "abol":
-		return "http://cs.uic.edu/~asudeh";
+		return "https://www.cs.uic.edu/~asudeh/";
 	case "gautam":
 		return "http://ranger.uta.edu/~gdas/";
 	case "jag":
@@ -38,7 +38,7 @@ switch(name){
 
 function getaff(name){
 switch(name){
-	case "gautam":
+	case "abol":
 		return "University of Illinois at Chicago";
 	case "gautam":
 		return "University of Texas at Arlington";
@@ -55,7 +55,7 @@ switch(name){
 	case "ke":
 		return "Drexel University";
 	default:
-		return "University of Michigan";
+		return "University of Illinois at Chicago";
 	}
 }	
 
@@ -87,5 +87,9 @@ switch(name){
 		return "Yifan Guan";
 	case "pranav":
 		return "Pranav Mayuram";
+	case "hasti":
+		return "Hasti Sharifi";
+	case "danyal":
+		return "Danyal Saeed";
 	}
 }		
