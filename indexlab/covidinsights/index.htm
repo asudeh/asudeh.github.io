@@ -40,8 +40,8 @@
             To confront the difficult Covid-19 crisis, it is critical - for both ordinary citizens as well as policy makers - to be able to get insightful information about the current disease situation at any geographical location, as well as insights about how the situation is going to evolve in the near future.
             Such information can help to make smart decisions, to be prepared, and be strong during this difficult time.
             There have been extensive recent efforts in data collection and in developing exploratory tools for Covid-19 that provide some statistics at different aggregate levels of location, such as country, state, or city.
-            This includes well-known dashboards such as Covid-19 map by John Hopkins University\footnote{\url{coronavirus.jhu.edu/map.html}}, CDC COVID Data Tracker\footnote{\url{covid.cdc.gov/covid-data-tracker/}}, and NYTimes Coronavirus map\footnote{\url{www.nytimes.com/interactive/2020/world/coronavirus-maps.html}}.
-            Alongside, ML\footnote{\url{https://covid19-projections.com/}}, simulation\footnote{\url{https://www.covid19sim.org/}}, and mathematical models~\cite{ndairou2020mathematical} have been built to predict how the situation will evolve.
+            This includes well-known dashboards such as <a href="https://coronavirus.jhu.edu/map.html" target="_blank">Covid-19 map</a>, <a href="https://covid.cdc.gov/covid-data-tracker/" target="_blank">CDC COVID Data Tracker</a>, and NYTimes <a href="https://www.nytimes.com/interactive/2020/world/coronavirus-maps.html" target="_blank">Coronavirus map</a>.
+            Alongside, ML, simulation, and mathematical models have been built to predict how the situation will evolve.
             These models are helpful, especially in showing high-level trends of the disease.
         </p>
         <p>
@@ -52,8 +52,8 @@
         </p>
         <p>
             {\em This shift in the spread of the disease provides a unique opportunity to provide insightful information by searching and exploring  within the available data for ``{\em similar historical examples}'' to the current state of a given location.}
-            In other words, we propose to build a system that searches for cases of specific locations and specific times in past (i.e., {\em \tloc instances}) that are similar to the current state of a queried location.
-            An example of a result for a query location ``Chicago'' could be $\langle$Milan-Italy, 03/19/2020$\rangle$, meaning that the city of Milan experienced a similar situation in March 19 with what Chicago is experiencing now.
+            In other words, we propose to build a system that searches for cases of specific locations and specific times in past (i.e., {\em (location, time) instances}) that are similar to the current state of a queried location.
+            An example of a result for a query location ``Chicago'' could be (Milan-Italy, 03/19/2020), meaning that the city of Milan experienced a similar situation in March 19 with what Chicago is experiencing now.
         </p>
         <p>
             We believe such information has multiple advantages.
@@ -61,7 +61,7 @@
             Second, complex computational models are often difficult to interpret and understand by humans, whereas the use of similar historical examples is very intuitive and  well received by people, and can provide us with insights about the current situation as well how it might evolve in the near future.
         </p>
         <p>
-            To the  best of out knowledge, CovidInsights is the first of its type and it initiates a data exploration framework that provides novel insights through similar \tloc examples for monitoring different states of epidemics.
+            To the  best of out knowledge, CovidInsights is the first of its type and it initiates a data exploration framework that provides novel insights through similar (location, time) examples for monitoring different states of epidemics.
     CovidInsights is an online interactive tool requiring efficient and effective algorithmic solutions from different areas.
     It leverages different techniques from the database  and machine learning research community, including  $k$-nearest neighbor ($k$-NN) query processing and indexing, efficient processing of streaming data, and similarity computation over temporal (time-series) data as well as non-temporal data.
         </p>
