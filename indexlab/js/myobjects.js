@@ -91,5 +91,15 @@ switch(name){
 		return "Hasti Sharifi";
 	case "danyal":
 		return "Danyal Saeed";
+	case "ian":
+		return "Ian Swift";
+	case "nima":
+		return "Nima Shahbazi";
+	case "ainaz":
+		return "Ainaz Jamshidi";
+	case "matteo":
+			return "Matteo Corain";
+	default:
+		return "";
 	}
 }		
