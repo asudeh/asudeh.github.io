@@ -2,8 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
     <loc>projects.htm</loc> 
-	<loc>mithra.htm</loc> 
-	<loc>ranking.htm</loc> 
-	<loc>opening.html</loc> 
+    <loc>mithra.htm</loc> 
+    <loc>ranking.htm</loc> 
+    <loc>orca.htm</loc> 
+    <loc>ml.htm</loc> 
+    <loc>webdb.htm</loc> 
+    <loc>covidinsights/index.htm</loc> 
+    <loc>tutorial20.htm</loc> 
+    <loc>ppl.htm</loc>
+    <loc>opening.html</loc>
+    <loc>contact.htm</loc> 
   </url>
 </urlset>
