@@ -41,6 +41,7 @@ switch(name){
 	case "abol":
 		return "University of Illinois at Chicago";
 	case "gautam":
+	case "suraj":
 		return "University of Texas at Arlington";
 	case "nan":
 		return "Penn State University";
@@ -54,6 +55,8 @@ switch(name){
 		return "University of Washington";
 	case "ke":
 		return "Drexel University";
+	case "yeshwanth":
+		return "Google";
 	default:
 		return "University of Illinois at Chicago";
 	}
@@ -99,6 +102,8 @@ switch(name){
 		return "Ainaz Jamshidi";
 	case "matteo":
 			return "Matteo Corain";
+	case "yeshwanth": return "Yeshwanth D. Gunasekaran";
+	case "suraj": return "Suraj S Shetiya";
 	default:
 		return "";
 	}
