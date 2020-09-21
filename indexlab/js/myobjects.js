@@ -46,15 +46,19 @@ switch(name){
 	case "nan":
 		return "Penn State University";
 	case "azade":
-		return "Google AI";
+		return "Google Brain";
 	case "julia":
+	case "ke":
 		return "New York University";
 	case "gerome":
 		return "University of Massachusetts, Amherst";
 	case "bill":
 		return "University of Washington";
-	case "ke":
-		return "Drexel University";
+	case "jag":
+	case "mark":
+	case "yifan":
+	case "pranav":
+		return "University of Michigan";
 	case "yeshwanth":
 		return "Google";
 	default:
