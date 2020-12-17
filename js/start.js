@@ -26,7 +26,7 @@ st+= '        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" r
 st+= '          Teaching';
 st+= '        </a>';
 st+= '        <div class="dropdown-menu" aria-labelledby="navbarDropdown">';
-st+= '          <a class="dropdown-item" href="'+path+'teaching/cs594fall20/index.html" target="_blank">CS94 Fall 2020</a>';
+st+= '          <a class="dropdown-item" href="'+path+'teaching/cs501spring21/" target="_blank">CS501 Spring 2021</a>';
 st+= '          <hr>';
 st+= '          <a class="dropdown-item" href="'+path+'teaching/archive.html" target="_blank">Archive</a>';
 st+= '        </div>';
