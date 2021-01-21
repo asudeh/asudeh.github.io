@@ -43,6 +43,7 @@ st+= '          Presentations';
 st+= '        </a>';
 st+= '        <div class="dropdown-menu" aria-labelledby="navbarDropdown">';
 st+= '          <a class="dropdown-item" href="'+path+'tutorial20.htm"> <img src="imgs/vldb2020-logo.png" width="50pt"/>Tutorial: "Fairly Evaluating and Scoring Items in a Data Set"</a>';
+st+= '          <a class="dropdown-item" href="http://wp.sigmod.org/?p=3174" target="_blank"> <img src="imgs/ACM1.png" width="50pt"/>"Enabling Responsible Data Science in Practice"</a>';
 st+= '        </div>';
 st += '    </li> ';
 st += '    <li class="nav-item active"> ';
