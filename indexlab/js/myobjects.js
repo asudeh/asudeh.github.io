@@ -109,6 +109,8 @@ switch(name){
 	case "yeshwanth": return "Yeshwanth D. Gunasekaran";
 	case "suraj": return "Suraj S Shetiya";
 	case "niccolo": return "Niccolo Spagnuolo";
+	case "melika": return "Melika Sadat Mousavi";
+	case "sana": return "Sana Ebrahimi";
 	default:
 		return "";
 	}
