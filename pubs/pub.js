@@ -26,7 +26,7 @@ function Format()
         var pub = mypubs[i];
         if(!('author' in pub)) continue;
         st = '<li>';
-        if('type' in pub) st+='&nbsp;<span class="pubtype">'+ pub['type']+'</span>';
+        if('type' in pub) st+='&nbsp;<span class="pubtype">('+ pub['type']+')</span>';
         st+=pub['author']+'. ';
         if('url' in pub)  st+='<a target="_blank" href="'+ pub['url']+'">';
         st+=pub['title'];
