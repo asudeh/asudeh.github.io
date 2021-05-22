@@ -3,7 +3,7 @@
 <div class="card-body">
 <ul class="nav nav-tabs" id="ChP" role="tablist">
 	<li class="nav-item"><a class="nav-link active" id="ChPA-tab" data-toggle="tab" href="#ChPAbstract" role="tab" aria-controls="home" aria-selected="true">Abstract</a></li>
-	<!--<li class="nav-item"><a class="nav-link" id="ChPI-tab" data-toggle="tab" href="#ChPIntro" role="tab" aria-controls="profile" aria-selected="false">Extended Description</a></li>-->
+	<li class="nav-item"><a class="nav-link" id="ChPI-tab" data-toggle="tab" href="#ChPIntro" role="tab" aria-controls="profile" aria-selected="false">Extended Description</a></li>
 	<li class="nav-item"><a class="nav-link" id="ChPP-tab" data-toggle="tab" href="#ChPPubs" role="tab" aria-controls="contact" aria-selected="false">Publications</a></li>
 	<li class="nav-item"><a class="nav-link" id="ChPC-tab" data-toggle="tab" href="#ChPCol" role="tab" aria-controls="contact" aria-selected="false">Collaborators</a></li>
 </ul>
