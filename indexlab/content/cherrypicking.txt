@@ -17,7 +17,7 @@
 		We also study the problem of discovering the most supported statements.
 		Besides theoretical analysis, we conduct extensive experiments on real-world data, that demonstrate the validity of our proposed techniques.
 	</div>
-	<div class="tab-pane " id="ChPIntro" role="tabpanel" aria-labelledby="ChPI-tab">
+	<div class="tab-pane" id="ChPIntro" role="tabpanel" aria-labelledby="ChPI-tab">
 		<p>
                 Fake news is receiving much attention today.  Sometimes fake news may be a complete fabrication.  More often, it is based on a grain of truth, such as a fact reported out of context or analysis on cherry-picked data~\cite{wardle2017fake}.
 				In fact, cherry-picking is prevalent in almost every controversial domain from tax policy to climate change.
@@ -69,7 +69,7 @@
 	</div>
 	<div class="tab-pane " id="ChPPubs" role="tabpanel" aria-labelledby="ChPP-tab">
 			<li>Abolfazl Asudeh, H. V. Jagadish, You Wu, Cong Yu. <a target="_blank" href="https://dl.acm.org/doi/abs/10.14778/3380750.3380762">On Detecting Cherry-picked Trendlines</a>. PVLDB, Vol. 13(6), pages 939--952, 2020, VLDB Endowment.</li>
-			<li>(Demo) Yoko Nagafuchi, Yin Lin, Kaushal Mamgain, Abolfazl Asudeh, H. V. Jagadish, You Wu, Cong Yu. <a target="_blank" href="https://dl.acm.org/doi/abs/10.14778/3380750.3380762">MithraDetective: A System for Cherry-picked Trendlines Detection</a>. arXiv preprint arXiv:2010.08807, 2020.</li>
+			<li>(Demo) Yoko Nagafuchi, Yin Lin, Kaushal Mamgain, Abolfazl Asudeh, H. V. Jagadish, You Wu, Cong Yu. MithraDetective: A System for Cherry-picked Trendlines Detection. arXiv preprint arXiv:2010.08807, 2020.</li>
 	</div>
 	<div class="tab-pane " id="ChPCol" role="tabpanel" aria-labelledby="ChPC-tab">
 		<ul>
