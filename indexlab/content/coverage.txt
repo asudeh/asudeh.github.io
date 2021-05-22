@@ -90,11 +90,17 @@
 	</div>
 	<div class="tab-pane " id="covPubs" role="tabpanel" aria-labelledby="covP-tab">
 			<li>Abolfazl Asudeh, Zhongjun Jin, HV Jagadish. <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8731614">Assessing and Remedying Coverage for a Given Dataset</a>. ICDE, 2019.</li>
+			<li>Zhongjun Jin, Mengjing Xu, Chenkai Sun, Abolfazl Asudeh, HV Jagadish. <a target="_blank" href="#">MithraCoverage: A System for Investigating Population Bias for Intersectional Fairness</a>. SIGMOD (Demo), 2020, ACM.</li>
 	</div>
 	<div class="tab-pane " id="covCol" role="tabpanel" aria-labelledby="covC-tab">
 		<ul>
 			<li>H.V. Jagadish, University of Michigan</li>
 			<li>Zhongjun Jin, University of Michigan</li>
+		</ul>
+		Students
+		<ul>
+			<li>Mengjing Xu, University of Michigan</li>
+			<li>Chenkai Sun, University of Michigan</li>
 		</ul>
 	</div>
 </div>
