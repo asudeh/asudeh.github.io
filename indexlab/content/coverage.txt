@@ -1,5 +1,5 @@
 <div class="card">
-<div class="card-header">Coverage Assessment in Datasets</div>
+<div class="card-header">Coverage over non-ordinal Categorical Attributes</div>
 <div class="card-body">
 <ul class="nav nav-tabs" id="cov" role="tablist">
 	<li class="nav-item"><a class="nav-link active" id="covA-tab" data-toggle="tab" href="#covAbstract" role="tab" aria-controls="home" aria-selected="true">Abstract</a></li>
