@@ -3,9 +3,10 @@
 <div class="card-body">
 <ul class="nav nav-tabs" id="cov2" role="tablist">
 	<li class="nav-item"><a class="nav-link active" id="cov2A-tab" data-toggle="tab" href="#cov2Abstract" role="tab" aria-controls="home" aria-selected="true">Abstract</a></li>
-	<li class="nav-item"><a class="nav-link" id="cov22I-tab" data-toggle="tab" href="#cov2Intro" role="tab" aria-controls="profile" aria-selected="false">Extended Description</a></li>
-	<li class="nav-item"><a class="nav-link" id="cov22P-tab" data-toggle="tab" href="#cov2Pubs" role="tab" aria-controls="contact" aria-selected="false">Publications</a></li>
-	<li class="nav-item"><a class="nav-link" id="cov22C-tab" data-toggle="tab" href="#cov2Col" role="tab" aria-controls="contact" aria-selected="false">External Collaborators</a></li>
+	<li class="nav-item"><a class="nav-link" id="cov2I-tab" data-toggle="tab" href="#cov2Intro" role="tab" aria-controls="profile" aria-selected="false">Extended Description</a></li>
+	<li class="nav-item"><a class="nav-link" id="cov2P-tab" data-toggle="tab" href="#cov2Pubs" role="tab" aria-controls="contact" aria-selected="false">Publications</a></li>
+	<li class="nav-item"><a class="nav-link" id="cov2C-tab" data-toggle="tab" href="#cov2Col" role="tab" aria-controls="contact" aria-selected="false">External Collaborators</a></li>
+	<li class="nav-item"><a class="nav-link" id="cov2V-tab" data-toggle="tab" href="#cov2Video" role="tab" aria-controls="contact" aria-selected="false">Presentation Video</a></li>
 </ul>
 <div class="tab-content" id="cov2Content">
 	<div class="tab-pane active" id="cov2Abstract" role="tabpanel" aria-labelledby="cov2A-tab">
@@ -61,6 +62,11 @@
 			<li>H.V. Jagadish, University of Michigan</li>
 			<li>Zhongjun Jin, University of Michigan</li>
 		</ul>
+	</div>
+	<div class="tab-pane " id="cov2Video" role="tabpanel" aria-labelledby="cov2V-tab">
+		<p class="text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R-jXjsL0hxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
 	</div>
 </div>
 </div><!-- class="card" -->
