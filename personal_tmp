@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	
+    <title>Abolfazl Asudeh -- Personal</title>
+    <link rel="stylesheet" type="text/css" href="ppl.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="js/myobjects.js"></script>
+    <script type="text/javascript" src="js/start.js"></script>
+    <script type="text/javascript">
+        function init() {
+            header();
+        }
+    </script>
+</head>
+
+<body onload='init()'>
+    <div id="headerDiv"></div>
+    <!-- Your code starts here -->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid text-center">
+            <h1 class="display-4">Personal Bio</h1>
+        </div>
+		<div>
+		My view to the life follows the one of <a href="https://plato.stanford.edu/entries/umar-khayyam/">Khayyam</a>.
+		I keep thinking about this single run of the "randomized algorithm" we call life, which does not seem to be important or meaningful but it is all I have.
+		Well, in the end I exist in a sinlge 100-years time slot on small corner of a "pale blue dot", turning around one of the billion stars of a galaxy that its existence does not matter at all, even in the visible universe.
+		But again, while I know "I" am nothing and I don't matter, I is the only thing I have.
+		Time is what I don't like: I can't stop it and keeps getting me and my loved ones closer and closer to the end of our journeis. Cycles of events repeat as one baby borns and the other dies, one star born and one dies, a black hole borns and eventually dies, a universe borns and perhaps others die. Then I keep thinking why does it all matter.
+		I find comfort in reading Khayyam's poetry (called Robeiat -- four verses) as I try to enjoy every moment that is left for me.
+		How do I enjoy? Well, I should confess, I usually waste the precious time. But I enjoy thinking much more than reading. I know many enjoy reading more and I wish I could get that joy as much. I love music (in order: traditional persian& classic, blues, rap) just as much as poetry. Movies are fine (I regularly watch movies and TV series just like any one else).
+		Oh I love when I learn something new and I can't control my emotions when I get excited.
+		
+		</div>
+    </div>
+    <!-- Your code ends here -->
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
