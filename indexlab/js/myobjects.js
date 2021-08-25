@@ -23,14 +23,8 @@ switch(name){
 		return "https://engineering.nyu.edu/faculty/julia-stoyanovich";
 	case "gerome":
 		return "https://people.cs.umass.edu/~miklau/";
-	case "ke":
-		return "https://keyangatdrexel.github.io/";
 	case "bill":
 		return "https://faculty.washington.edu/billhowe/";
-	case "mark":
-		return "https://markjin1990.github.io/";
-	case "pranav":
-		return "https://www.linkedin.com/in/pranavmayuram";
 	default:
 		return "#";
 	}
