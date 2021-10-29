@@ -4,7 +4,6 @@
 <ul class="nav nav-tabs" id="ChP" role="tablist">
 	<li class="nav-item"><a class="nav-link active" id="ChPA-tab" data-toggle="tab" href="#ChPAbstract" role="tab" aria-controls="home" aria-selected="true">Abstract</a></li>
 	<li class="nav-item"><a class="nav-link" id="ChPI-tab" data-toggle="tab" href="#ChPIntro" role="tab" aria-controls="profile" aria-selected="false">Extended Description</a></li>
-	<li class="nav-item"><a class="nav-link" id="ChPP-tab" data-toggle="tab" href="#ChPPubs" role="tab" aria-controls="contact" aria-selected="false">Publications</a></li>
 	<li class="nav-item"><a class="nav-link" id="ChPC-tab" data-toggle="tab" href="#ChPCol" role="tab" aria-controls="contact" aria-selected="false">Collaborators</a></li>
 </ul>
 <div class="tab-content" id="ChPContent">
@@ -65,10 +64,6 @@
 			Similarly, for constrained trendlines, we design the proper data structure and an exact linearithmic algorithm.
 			Next, we use Monte-Carlo methods and design sampling-based approximation algorithms for computing support in scale. Providing a negative result, we also propose a randomized heuristic, effective in practice.
 		</p>
-	</div>
-	<div class="tab-pane " id="ChPPubs" role="tabpanel" aria-labelledby="ChPP-tab">
-			<li>Abolfazl Asudeh, H. V. Jagadish, You Wu, Cong Yu. <a target="_blank" href="https://dl.acm.org/doi/abs/10.14778/3380750.3380762">On Detecting Cherry-picked Trendlines</a>. PVLDB, Vol. 13(6), pages 939--952, 2020, VLDB Endowment.</li>
-			<li>(Demo) Yoko Nagafuchi, Yin Lin, Kaushal Mamgain, Abolfazl Asudeh, H. V. Jagadish, You Wu, Cong Yu. MithraDetective: A System for Cherry-picked Trendlines Detection. arXiv preprint arXiv:2010.08807, 2020.</li>
 	</div>
 	<div class="tab-pane " id="ChPCol" role="tabpanel" aria-labelledby="ChPC-tab">
 		<ul>
