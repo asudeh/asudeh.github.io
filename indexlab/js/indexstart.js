@@ -39,14 +39,14 @@ st+= '          <a class="dropdown-item" href="http://wp.sigmod.org/?p=3174" tar
 st+= '          <a class="dropdown-item" href="'+path+'tutorial20.htm"> <img src="imgs/vldb2020-logo.png" width="50pt"/>Tutorial: "Fairly Evaluating and Scoring Items in a Data Set"</a>';
 st+= '        </div>';
 st += '    </li> ';
-st+= '     <li class="nav-item dropdown">';
+/*st+= '     <li class="nav-item dropdown">';
 st+= '        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
 st+= '          Tools';
 st+= '        </a>';
 st+= '        <div class="dropdown-menu" aria-labelledby="navbarDropdown">';
 st+= '          <a class="dropdown-item" target="_blank" href="'+path+'covidinsights/index.htm"> <img src="imgs/virus.png" width="50pt"/> CovidInsights</a>';
 st+= '        </div>';
-st += '    </li> ';
+st += '    </li> ';*/
 st += '    <li class="nav-item active"> ';
 st += '      <a class="nav-link" href="https://www.cs.uic.edu/~asudeh/pub.htm" target="_blank">Publications<span class="sr-only">(current)</span></a> ';
 st += '    </li> ';
