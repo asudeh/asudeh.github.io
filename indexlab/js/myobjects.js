@@ -11,6 +11,8 @@ function getURL(name){
 switch(name){
 	case "abol":
 		return "https://www.cs.uic.edu/~asudeh/";
+	case "fn":
+			return "https://fnargesian.com/";
 	case "gautam":
 		return "http://ranger.uta.edu/~gdas/";
 	case "jag":
@@ -33,7 +35,9 @@ switch(name){
 function getaff(name){
 switch(name){
 	case "abol":
-		return "University of Illinois at Chicago";
+		return "University of Illinois Chicago";
+	case "fn":
+			return "University of Rochester";
 	case "gautam":
 	case "suraj":
 		return "University of Texas at Arlington";
@@ -56,7 +60,7 @@ switch(name){
 	case "yeshwanth":
 		return "Google";
 	default:
-		return "University of Illinois at Chicago";
+		return "University of Illinois Chicago";
 	}
 }	
 
@@ -64,6 +68,8 @@ function getname(name){
 switch(name){
 	case "abol":
 		return "Abolfazl Asudeh";
+	case "fn":
+			return "Fatemeh Nargesian";
 	case "gautam":
 		return "Gautam Das";
 	case "jag":
