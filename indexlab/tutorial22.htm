@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="js/myobjects.js"></script>
     <script type="text/javascript" src="js/indexstart.js"></script>
+    <link rel="stylesheet" type="text/css" href="tutorial22/pubstyle.css" />
+    <script src="tutorial22/pub.js"></script>
     <script type="text/javascript">
         function init() {
             header();
@@ -52,13 +54,11 @@
               
             </dl>
       </div>
-      <div class="container">
-        <h3>References</h3>
-        <ul>
-          <li>The Chicago Area Patient Centered Outcomes Research Network (CAPriCORN). https://www.capricorncdrn.org/.
-            [] Ziawasch Abedjan, Lukasz Golab, and Felix Naumann. 201</li>
-        </ul>
-      </div>
+      <h3>References</h3>
+      <div class="contentBox" id='fillit'></div>
+      <script type="text/javascript">
+        ReadBib('tutorial22/ref.bib','fillit');
+      </script>
     </div>
     <!-- Your code ends here -->
 	<!-- Optional JavaScript -->
