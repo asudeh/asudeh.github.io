@@ -18,7 +18,7 @@ function ReadBib(bibFile, divToFill)
 
 function Format()
 { // play with this file to change the formatting
-    groupby = 'year';// document.getElementById("GroupBy").value;
+    groupby = 'none';// document.getElementById("GroupBy").value;
     var hash = {};
     var counts = {};
     for(i=0;i<mypubs.length;i++)
@@ -43,6 +43,16 @@ function Format()
             for(j=0;j<pub['award'].length;j++)
                 st+='&nbsp;&#x1F3C6;<span class="pubaward">'+ pub['award'][j]+' </span>';
         st+='</li>';
+
+        if(groupby == 'none')
+        {
+            key = 'References';
+            if(!(key in hash)) {hash[key]=st; counts[key]=1;} 
+            else {hash[key]= hash[key]+ st; counts[key]=counts[key] + 1;} 
+            continue;
+        }
+
+        // --- if groupby is not none ---
         key = pub[groupby];
         if(typeof(key)=='object')
         {
