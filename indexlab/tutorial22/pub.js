@@ -44,16 +44,17 @@ function Format()
                 st+='&nbsp;&#x1F3C6;<span class="pubaward">'+ pub['award'][j]+' </span>';
         st+='</li>';
 
-        if(groupby == 'none')
+        /*if(groupby == 'none')
         {
             key = 'References';
             if(!(key in hash)) {hash[key]=st; counts[key]=1;} 
             else {hash[key]= hash[key]+ st; counts[key]=counts[key] + 1;} 
             continue;
-        }
+        }*/
 
-        // --- if groupby is not none ---
-        key = pub[groupby];
+        if(groupby == 'none') key = 'References';
+        else key = pub[groupby];
+
         if(typeof(key)=='object')
         {
             for(j=0;j<key.length;j++)
