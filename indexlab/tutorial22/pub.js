@@ -126,7 +126,7 @@ function Parse(st, divToFill)
                 for(j=0;j<auothrs.length;j++)
                 {
                     tmp = auothrs[j].split(',');
-                    if (tmp.length<2) val+=tmp;
+                    if (tmp.length<2) val+=tmp[0];
                     else val+=tmp[1]+' '+tmp[0];
                     if(j<auothrs.length-1) val+=', ';
                 }
