@@ -29,9 +29,9 @@ function Format()
         if('type' in pub) st+='&nbsp;<span class="pubtype">('+ pub['type']+')</span>';
         st+=pub['author']+'. ';
         if('url' in pub)  st+='<a target="_blank" href="'+ pub['url']+'">';
-        st+=pub['title'];
+        st+='<b>'+ pub['title']+'</b>';
         if('url' in pub)  st+='</a>';
-        st+='. <b>'+ pub['venue']+'</b>';
+        st+='. <i>'+ pub['venue']+'</i>';
         //st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
         if('volume' in pub) st+=', Vol. '+ pub['volume'];
         if('number' in pub) st+='('+ pub['number']+')';
@@ -75,8 +75,8 @@ function Format()
     retSt='';
     for(i=0;i<sorted_keys.length;i++)
     {
-        retSt+='<div><H3>'+sorted_keys[i]+'</H3><ol class="publist">';
-        retSt+= hash[sorted_keys[i]]+'</ol></div>';
+        retSt+='<div><H3>'+sorted_keys[i]+'</H3><ul class="publist">';
+        retSt+= hash[sorted_keys[i]]+'</ul></div>';
     }
     return retSt;
 }
