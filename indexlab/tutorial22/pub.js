@@ -18,7 +18,7 @@ function ReadBib(bibFile, divToFill)
 
 function Format()
 { // play with this file to change the formatting
-    groupby = document.getElementById("GroupBy").value;
+    groupby = 'year';// document.getElementById("GroupBy").value;
     var hash = {};
     var counts = {};
     for(i=0;i<mypubs.length;i++)
