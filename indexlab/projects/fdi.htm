@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="icon" href="imgs/InDeXLab.gif"/>
+    <title>Fairness-aware Data Integration</title>
+    <link rel="stylesheet" type="text/css" href="ppl.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="js/myobjects.js"></script>
+    <script type="text/javascript" src="js/MyFunctions.js"></script>
+    <script type="text/javascript" src="js/myobjects.js"></script>
+    <script type="text/javascript" src="js/indexstart.js"></script>
+    <script type="text/javascript">
+        function init() {
+            header();
+        }
+    </script>
+</head>
+
+<body onload='init()'>
+    <div id="headerDiv"></div>
+    <!-- Your code starts here -->
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid text-center" style="padding-block-start: 10pt;">
+        <h3 class="display-4">Fairness-aware Data Integration</h3>        
+        <img class="roundphoto" src="assets/fdi.png" height="220pt" />
+            <hr class="my-4">
+            <dl class="lead" style="text-align: left;padding-left: 10pt;">
+            <dt>Collaboration:</dt>
+                <dd>
+                  This is a joint project with Dr. Nargesian and Dr. Jagadish.
+                </dd>
+            </dl>            
+            <div class="person fn" onmouseover="setup(this,'fn')"></div>
+            <div class="person abol" onmouseover="setup(this,'abol')"></div>
+            <div class="person jag" onmouseover="setup(this,'jag')"></div>
+            <dl class="lead" style="text-align: left;padding-left: 10pt;">
+              <dt>Publications:</dt>
+              <dd>[1] Fatemeh  Nargesian,  Abolfazl   Asudeh,  H. V.  Jagadish. <a target="_blank" href="https://doi.org/10.14778/3476249.3476299">Tailoring Data Source Distributions for Fairness-aware Data Integration</a>. VLDB, Vol. 14(11), pages 2519--2532, 2021, VLDB Endowment.</dd>
+              <dd>[2] Fatemeh Nargesian, Abolfazl Asudeh, H. V. Jagadish. In proceedings of the 2022 International Conference on Management of Data (SIGMOD '22), June 12--17, 2022, Philadelphia, PA, USA. DOI: <a target="_blank" href="https://doi.org/10.1145/3514221.3522567">https://doi.org/10.1145/3514221.3522567</a></dd>           
+              <dt>Abstract:</dt>
+              <dd>Data integration has been extensively studied by the data management community and is a core task in the data pre-processing step of ML  pipelines. When the integrated data is used for analysis and model training, responsible data science requires addressing concerns about data quality and bias. We present a tutorial on data integration and responsibility, highlighting the existing efforts in responsible data integration along with research opportunities and challenges.  We encourage the community to audit  data integration tasks  with responsibility measures and develop integration techniques that optimize the requirements of responsible data science.  We focus on three critical aspects: (1) the requirements to be considered for evaluating and auditing data integration tasks for quality and bias;  (2) the data integration tasks that elicit attention to data  responsibility measures and methods to satisfy these requirements;  and, (3) techniques, tasks, and open problems  in data integration that help achieve data responsibility. </dd>
+            </dl>     
+      </div>
+
+      <div id="cherrypicking"></div>
+
+      <div>&nbsp;</div>
+    <div class="card contentBoxNB">
+        <div class="card-header">Description</div>
+        <div class="card-body">
+            <p>
+                AI technologies provide user-friendly solutions at a scale and efficiency that was not imaginable before. In decision making, AI can help to eliminate human bias, and to make wise decisions that benefit human beings and societies. Its many benefits have caused the AI revolution to have a huge impact on all aspects of modern human life. As AI is fusing into our lives, its potential harms have become more evident. We all have perhaps faced or heard many of these concerns.
+                The concept of <i>Responsible AI</i> has been introduced to minimize the drawbacks of AI.
+            </p>
+            <p>
+                It is known that AI is as good as the data it is built on. When data does not contain enough signals to address business needs, no model can achieve a high-enough performance to address those needs, hence,  responsible AI requires that <b>responsible data</b> be collected. Since responsible data is often scattered across multiple sources, responsible data integration is required for collecting the responsible data. Consider the following example in the healthcare domain.
+            </p>
+            <div class="card">
+                <div class="card-header text-center">EXAMPLE</div>
+                <div class="card-body">
+                    Consider an AI company that would like to use Chicago health record data and build an ML model for early detection of breast cancer. The company considers building a model on an in-house data set for training the model. However, it turns out the collected data is highly skewed: due to the historical discriminatory policies such as redlining in the city of Chicago, the racial/ethnic minorities have disproportionate (lack of) access to high-quality breast cancer care.
+                    This, in turn, has resulted in the under-representation of  non-white patients in the data, which needs to get resolved in responsible data collection. 
+                    On the other hand, a partnership between Chicago healthcare and research institutions has been established by companies such as CAPriCORN to integrate health data from multiple sources, each of which has its own skew, for reasons such as those described above. A question here is how to responsibly integrate data to find a data set that not only is complete and correct, but also contains enough informative and unbiased features for building the model, and adequately represents the non-white patients. 
+                </div>
+        </div>
+            <p>
+                Responsible AI introduces new challenges and requirements for data integration, that require revisiting different tasks in the pipeline of data integration to make sure these needs are satisfied.
+            </p>
+        </div>
+      </div>
+      <div>&nbsp;</div>
+
+    </div>
+    <!-- Your code ends here -->
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
