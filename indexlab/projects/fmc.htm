@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="icon" href="imgs/InDeXLab.gif"/>
+    <title>Responsible Data Integration: Next-generation Challenges</title>
+    <link rel="stylesheet" type="text/css" href="ppl.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="js/myobjects.js"></script>
+    <script type="text/javascript" src="js/indexstart.js"></script>
+    <link rel="stylesheet" type="text/css" href="tutorial22/pubstyle.css" />
+    <script src="tutorial22/pub.js"></script>
+    <script type="text/javascript">
+        function init() {
+            header();
+        }
+    </script>
+</head>
+
+<body onload='init()'>
+    <div id="headerDiv"></div>
+    <!-- Your code starts here -->
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid text-center">
+        <h1 class="display-4">Responsible Data Integration: Next-generation Challenges</h1>
+        <div class="person fn" onmouseover="setup(this,'fn')"></div>
+            <div class="person abol" onmouseover="setup(this,'abol')"></div>
+            <div class="person jag" onmouseover="setup(this,'jag')"></div>
+            <p class="lead">Tutorial at SIGMOD 2022</p>
+            <hr class="my-4">
+            <dl class="lead" style="text-align: left;padding-left: 10pt;">
+              <dt>Abstract:</dt>
+                <dd>
+                  Data integration has been extensively studied by the data management community and is a core task in the data pre-processing step of ML  pipelines. When the integrated data is used for analysis and model training, responsible data science requires addressing concerns about data quality and bias. We present a tutorial on data integration and responsibility, highlighting the existing efforts in responsible data integration along with research opportunities and challenges.  In this tutorial, we encourage the community to audit  data integration tasks  with responsibility measures and develop integration techniques that optimize the requirements of responsible data science. 
+                  We focus on three critical aspects: (1) the requirements to be considered for evaluating and auditing data integration tasks for quality and bias;  (2) the data integration tasks that elicit attention to data  responsibility measures and methods to satisfy these requirements;  and, (3) techniques, tasks, and open problems  in data integration that help achieve data responsibility. 
+                </dd> 
+              <dt>Cite as:</dt>
+                <dd>Fatemeh Nargesian, Abolfazl Asudeh, H. V. Jagadish. In proceedings of the 2022 International Conference on Management of Data (SIGMOD '22), June 12--17, 2022, Philadelphia, PA, USA.</dd>
+                <dd>DOI: <a target="_blank" href="https://doi.org/10.1145/3514221.3522567">https://doi.org/10.1145/3514221.3522567</a></dd> 
+              <dt>Link to PDF:</dt>
+                <dd><a target="_blank" href="tutorial22/Responsible_Data_Integration_Next_generation_Challenges.pdf">Responsible Data Integration: Next-generation Challenges</a></dd>
+                <dt>Link to Slides:</dt>
+                <dd><a target="_blank" href="tutorial22/sigmod22-tutorial-fdi.pdf">SIGMOD-Slides</a></dd>
+              <dt>Tutorial Organization:</dt>
+                <dd>Part 1: next-generation requirements of responsible AI</dd>
+                <dd>Part 2: revisiting data integration</dd>
+                <dd>Part 3: fairness-aware data integration</dd>
+                <dd>Part 4: open problems</dd>
+              
+            </dl>
+      </div>
+      <div class="contentBox" id='fillit'></div>
+      <script type="text/javascript">
+        ReadBib('tutorial22/ref.bib','fillit');
+      </script>
+    </div>
+    <!-- Your code ends here -->
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

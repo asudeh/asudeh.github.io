@@ -12,10 +12,14 @@ st += '  <ul class="navbar-nav mr-auto"> ';
 st += '    <li class="nav-item active"> ';
 st += '      <a class="nav-link" href="'+path+'index.htm">Home <span class="sr-only">(current)</span></a> ';
 st += '    </li> ';
+st += '  <ul class="navbar-nav mr-auto"> ';
+st += '    <li class="nav-item active"> ';
+st += '      <a class="nav-link" href="'+path+'projects.htm">Projects<span class="sr-only">(current)</span></a> ';
+st += '    </li> ';
 //st += '    <li class="nav-item active"> ';
 //st += '      <a class="nav-link" href="'+path+'team.htm">People <span class="sr-only">(current)</span></a> ';
 //st += '    </li> ';
-st+= '     <li class="nav-item dropdown">';
+/*st+= '     <li class="nav-item dropdown">';
 st+= '        <a class="nav-link dropdown-toggle" href="'+path+'projects.htm" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
 st+= '          Projects';
 st+= '        </a>';
@@ -29,7 +33,7 @@ st+= '          <a class="dropdown-item" href="'+path+'orca.htm">Orca: Solving P
 st+= '          <a class="dropdown-item" href="'+path+'ml.htm">Data Management for AI&ML</a>';
 st+= '          <a class="dropdown-item" href="'+path+'webdb.htm">Web Data Exploration</a>';
 st+= '        </div>';
-st += '    </li> ';
+st += '    </li> ';*/
 st+= '     <li class="nav-item dropdown">';
 st+= '        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
 st+= '          Presentations';

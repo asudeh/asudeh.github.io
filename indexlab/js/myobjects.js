@@ -77,7 +77,7 @@ switch(name){
 	case "nan":
 		return "Nan Zhang";
 	case "azade":
-		return "Azade Nazi";
+		return "Azade Nova";
 	case "julia":
 		return "Julia Stoyanovich";
 	case "gerome":
