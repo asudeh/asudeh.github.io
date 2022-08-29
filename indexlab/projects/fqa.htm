@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="icon" href="imgs/InDeXLab.gif"/>
+    <title>Fairness-aware Query Answering</title>
+    <link rel="stylesheet" type="text/css" href="ppl.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="js/myobjects.js"></script>
+    <script type="text/javascript" src="js/MyFunctions.js"></script>
+    <script type="text/javascript" src="js/myobjects.js"></script>
+    <script type="text/javascript" src="js/indexstart.js"></script>
+    <script type="text/javascript">
+        function init() {
+            header();
+        }
+    </script>
+</head>
+
+<body onload='init()'>
+    <div id="headerDiv"></div>
+    <!-- Your code starts here -->
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid text-center" style="padding-block-start: 10pt;">
+        <h3 class="display-4">Fairness-aware Query Answering</h3>        
+        <img class="roundphoto" src="assets/frq.png" height="220pt" />
+            <hr class="my-4">
+            <dl class="lead" style="text-align: left;padding-left: 10pt;">
+            <dt>Collaboration:</dt>
+                <dd>
+                  This is a joint project with the DBXLAB@UTA.
+                </dd>
+              <dt>Publications:</dt>
+              <dd>[1] Suraj Shetiya, Ian Swift, Abolfazl Asudeh, Gautam Das. <a href="https://www.cs.uic.edu/~asudeh/pubs/Fairness_aware_range_queries_ICDE.pdf" target="_blank" rel="noopener">Fairness-Aware Range Queries for Selecting Unbiased Data</a>. ICDE, 2022.</dd>           
+              <dt>Abstract:</dt>
+              <dd>
+                Since an algorithm is only as good as the data it works with, biases in the data can significantly amplify unfairness issues. Our vision in this project is towards <b>integrating fairness conditions into database query processing</b> and data management systems.
+              </dd>
+            </dl>     
+      </div>
+
+      <div id="cherrypicking"></div>
+
+      <div>&nbsp;</div>
+    <div class="card contentBoxNB">
+        <div class="card-header">Description</div>
+        <div class="card-body">
+            <p>
+              In the era of big data and advanced computation models, we are all constantly being judged by the analysis, algorithmic outcomes, and AI models generated using data about us. Such analysis are valuable as they assist decision makers take wise and just actions. For example, the abundance of large amounts of data has enabled building extensive big data systems to fight COVID-19, such as controlling the spread of the disease, or in finding effective factors, decisions, and policies. Similar examples can be found in almost all corners of human life including resource allocation and city policies, policing, judiciary system, college admission, credit scoring, breast cancer prediction, job interviewing, hiring, and promotion, to name a few. In particular, let us consider the following as a running example:
+            </p>
+            <div class="card">
+              <div class="card-header text-center">EXAMPLE 1 (Part 1)</div>
+              <div class="card-body">
+                Consider a company that would like to make a policy decision, targeted at its ``profitable'' employees.
+                Following our real experiment, suppose the company has around  $150K employees. Using salary as an indicator of how profitable an employee is, the business management office of the company considers the query <b>SELECT * FROM EMP WHERE salary<=$65K</b>, which includes around 18% of employees.
+                Surveying this group, the company wants to develop some mechanisms to motivate and retain these employees.
+              </div>
+            </div>
+            <p>
+              Looking at these analyses through the lens of fairness, algorithmic decisions look promising as they seem to eliminate human biases. However, ``an algorithm is only as good as the data it works with''.
+              In fact, the use of data in all aforementioned applications have been highly  criticised for being discriminatory, racist, sexist, and unfair.
+              Probably the main reason is that real-life social data is almost always ``biased''. Using biased data for algorithmic decisions create fairness dilemmas such as impossibility and inherent trade-offs of fairness.
+              Besides historical biases and false stereotypes reflected in data, other sources such as <b>selection bias</b> can amplify unfairness issues.
+              To highlight a real example, let us continue with Example 1:
+            </p>
+            <div class="card">
+              <div class="card-header text-center">EXAMPLE 1 (Part 2)</div>
+              <div class="card-body">
+                It turns out the company has more female employees than male. Still, due to the known historical discrimination, the selected group of employees contain noticeably more males. As a result, targeting this group for the analysis, the company will end up favoring the preferences of the male employees, which is unfair to female employees and will, in a feedback loop, result in losing more of the ``profitable'' female candidates.
+              </div>
+            </div>
+            <p>
+              Despite extensive efforts within the database community, there is still a need to integrate fairness requirements with database systems. To address this need, as our first attempt, we consider range queries and pay attention to the facts: (i) the conditions in the range query may be selected intuitively by the human user. For instance, in Example 1 the user could have chosen $65K as the query bound because it was (roughly) a good choice that would make sense for them; (ii) considering the ethical obligations and consequences, the user might be interested in accepting a ``similar enough'' query to their initial choice, if it returns a ``fair'' outcome.
+            </p>
+            <p>
+              In Example 1, we note that the company could, for instance, in a post-query processing step, remove some male employees from the selected group, or it could add some females to the selected pool, even though they do not belong to the query result. While such fixes are technically easy, those are illegal in many jurisdictions, because those amount to disparate-treatment discrimination: ``when the decisions an individual user receives change with changes to her sensitive attribute information''. For instance, one cannot simply increase or decrease the grade of a student, because of their race or gender. Instead, they should design a ``fair rubric'' that is not discriminatory. Therefore, instead of practicing disparate treatment, we propose to adjusting the range to find a range (similar to finding a rubric for grading) with a fair output. Our system allows the user to specify the fairness and similarity constraints (in a declarative manner) along with the selection conditions, and we return an output range that satisfies these conditions. To further clarify this, let us continue with Example 1 in the following.
+            </p>
+            <div class="card">
+              <div class="card-header text-center">EXAMPLE 1 (Part 3)</div>
+              <div class="card-body">
+                Being aware of the historical discrimination, ethical obligations, and the potential negative impacts on the company, besides knowing that the choice of salary lower-bound has been fuzzy, the business management office would like to find a query whose output is similar enough to the initial query and the number of male employees returned is at most 1000 (around 5%) more than the females. Using our system, they can issue a SQL query to find such a set. Our system returns the most similar fair range as <b>SELECT * FROM EMP WHERE \$60K<=salary<=$152K</b>. Its outcome is 75% similar to the initial range query, and satisfies the fairness requirement. Observing the high Jaccard similarity between these two sets, the company now has the option to use this for their analysis, to make sure they are not discriminating against their female employees, hence not losing their valuable candidates.
+              </div>
+            </div>
+            <p>
+              Our system provides <b>an alternative</b> to the initial query provided by the user. This is useful since often the choice of filtering ranges is ad-hoc, hence our system helps the user responsibly tune their range. If the discovered range is not satisfactory to the user, they can change the fairness and similarity requirements and explore different choices until they select the final result in a responsible manner.
+            </p>
+        </div>
+      </div>
+      <div>&nbsp;</div>
+
+    </div>
+    <!-- Your code ends here -->
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
