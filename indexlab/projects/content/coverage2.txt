@@ -1,0 +1,72 @@
+<div class="card">
+<div class="card-header">Coverage over ordinal Continuous-Valued Attributes</div>
+<div class="card-body">
+<ul class="nav nav-tabs" id="cov2" role="tablist">
+	<li class="nav-item"><a class="nav-link active" id="cov2A-tab" data-toggle="tab" href="#cov2Abstract" role="tab" aria-controls="home" aria-selected="true">Abstract</a></li>
+	<li class="nav-item"><a class="nav-link" id="cov2I-tab" data-toggle="tab" href="#cov2Intro" role="tab" aria-controls="profile" aria-selected="false">Extended Description</a></li>
+	<li class="nav-item"><a class="nav-link" id="cov2P-tab" data-toggle="tab" href="#cov2Pubs" role="tab" aria-controls="contact" aria-selected="false">Publications</a></li>
+	<li class="nav-item"><a class="nav-link" id="cov2C-tab" data-toggle="tab" href="#cov2Col" role="tab" aria-controls="contact" aria-selected="false">External Collaborators</a></li>
+	<li class="nav-item"><a class="nav-link" id="cov2V-tab" data-toggle="tab" href="#cov2Video" role="tab" aria-controls="contact" aria-selected="false">Presentation Video</a></li>
+</ul>
+<div class="tab-content" id="cov2Content">
+	<div class="tab-pane active" id="cov2Abstract" role="tabpanel" aria-labelledby="cov2A-tab">
+		Appropriate training data is a requirement for building good machine-learned models.  In this paper, we study the notion of {\em coverage} for ordinal and continuous-valued attributes, by formalizing the intuition that the learned model can accurately predict only at data points for which there are "enough" similar data points in the training data set.
+		<br>
+		We develop an efficient algorithm to identify uncovered regions in low-dimensional attribute feature space, by making a connection to Voronoi diagrams.
+		We also develop a randomized approximation algorithm for use in high-dimensional attribute space.  
+		We evaluate our algorithms through extensive experiments on real datasets.
+	</div>
+	<div class="tab-pane " id="cov2Intro" role="tabpanel" aria-labelledby="cov2I-tab">
+		<p>
+            Machine learning (ML) and predictive analytics are shaping every corner of human life, from  autonomous vehicles to healthcare, and even in predictive policing and data-driven sentencing.
+			A critical question for the decision maker, especially in applications that may impact human life, is how much to trust the outcome of the model.<br>
+			It is easy to see that the accuracy of ML model prediction depends on the data used for training: after all, the model learns the phenomena that training data represent.
+			As a first step, we may desire that the data should represent the underlying data distribution from which the production data will be drawn.
+			But that is not enough, since it only tells us about model performance in the aggregate.
+			For any query point, what we want is that the training data should include enough examples similar to it.  
+			Otherwise, the model predicts the query point according to points not similar to the query.
+			If the ``behavior'' of the query point is similar to the training data, the model (luckily) may provide a good outcome.
+			Even so, the model outcome is not trustworthy in these situations, at least for critical decision making.
+        </p>
+		<p>
+			To consider one recent example in the news, Amazon developed software to screen employment applications based on predicted success.  Because the training data set had so few successful women in it, the program would downgrade women in its predictions.  While the model may have worked well for male applicants, it was clearly unsuited for women applicants, and was ultimately not used by Amazon in production.
+			Similarly, using a real dataset of criminals, an ML model with more than 75\% overall accuracy had a performance worse than random guess for Hispanic Females (because the training data did not contain enough samples from this category).
+			In short, given a query point, we may not trust the output (such as prediction or classification) of an ML model about this point only if it has proper coverage, i.e., there are not enough points in the training data set for the ML model that are "similar" to the query point.<br>
+			Poor coverage does not necessarily imply poor models.
+			In a classification setting, for instance, having poor coverage in regions far from the boundary is likely to be immaterial since those points may not contribute to refining the boundary.
+			However, as we show experimentally, poor coverage creates a risk that there may be a poor model. 
+			More specific analyses may be able to assess this risk, given additional information. However, the results become specific to the type of model being considered. Our goal here is to investigate datasets independent of the type of model being constructed.
+			Furthermore, we note that poor model performance could be due to reasons (e.g. poorly labeled data for a minority group) other than lack of coverage.
+		</p>
+		<p>
+			In this paper, we extend this concept to the more challenging context of continuous-valued attributes.
+			Returning to the example of Amazon's model for scoring job applicants, the detected bias was on a simple low-cardinality discrete attribute: sex.  It is possible that the model also discriminates based on age, since most tech workers, and job applicants, are young.  Simple solutions like binning age into "young" and "old" can lead to coarse groupings that are sensitive to thresholds chosen.  For example, it may be inappropriate to treat a 35-yo as young but a 36-yo as old.
+		</p>
+		<p>
+			In short, we may not trust the result of a given query if the query point is not covered by the training data.
+			One can make a pass over the training data to check if the given query point is covered. But this requires (i) access to the full training data set and (ii) the time to verify the coverage based on it, neither of which may be feasible.
+			Therefore, our challenge is to mark out in advance, for every possible query point, whether it is covered.  We propose to address this challenge by identifying, in advance, the uncovered region in the feature-vector space, and to encode these in a manner that makes it inexpensive to determine which region any query point is in.
+		</p>
+		<p>
+			Identifying uncovered region up-front enables crucial benefits and two action items.
+			First, uncovered region shows potential deficiencies in the (training) data set. 
+			<i>Annotating</i> a data set with coverage information informs the data scientist about the uncovered regions when the model is being constructed as a signal to investigate the fitness of data for the model.
+			Second, at query time, it <i>generates a warning</i> that the outcome might not be trustworthy when a point is queried in an uncovered region.  Whether to consider the outcome and how to take action is left to the model user. 
+		</p>
+	</div>
+	<div class="tab-pane " id="cov2Pubs" role="tabpanel" aria-labelledby="cov2P-tab">
+			<li>Abolfazl Asudeh, <b>Nima Shahbazi</b>, Zhongjun Jin, H. V. Jagadish. <a target="_blank" href="https://doi.org/10.1145/3448016.3457315">Identifying Insufficient Data Coverage for Ordinal Continuous-Valued Attributes</a>. SIGMOD, 2021.</li>
+	</div>
+	<div class="tab-pane " id="cov2Col" role="tabpanel" aria-labelledby="cov2C-tab">
+		<ul>
+			<li>H.V. Jagadish, University of Michigan</li>
+			<li>Zhongjun Jin, University of Michigan</li>
+		</ul>
+	</div>
+	<div class="tab-pane " id="cov2Video" role="tabpanel" aria-labelledby="cov2V-tab">
+		<p class="text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R-jXjsL0hxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+	</div>
+</div>
+</div><!-- class="card" -->

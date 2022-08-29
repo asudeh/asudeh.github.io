@@ -1,0 +1,51 @@
+<div class="card">
+<div class="card-header">Nutritional Labels for Rankings (Demo)</div>
+<div class="card-body">
+<ul class="nav nav-tabs" id="NeuL1" role="tablist">
+	<li class="nav-item"><a class="nav-link active" id="NL2A-tab" data-toggle="tab" href="#NL2Abstract" role="tab" aria-controls="home" aria-selected="true">Abstract</a></li>
+	<li class="nav-item"><a class="nav-link" id="NL2P-tab" data-toggle="tab" href="#NL2Pubs" role="tab" aria-controls="contact" aria-selected="false">Publications</a></li>
+	<li class="nav-item"><a class="nav-link" id="NL2C-tab" data-toggle="tab" href="#NL2Col" role="tab" aria-controls="contact" aria-selected="false">Collaborators</a></li>
+</ul>
+<div class="tab-content" id="NL2Content">
+	<div class="tab-pane active" id="NL2Abstract" role="tabpanel" aria-labelledby="NL2A-tab">
+		Algorithmic decisions often result in scoring and ranking individuals
+		to determine credit worthiness, qualifications for college
+		admissions and employment, and compatibility as dating partners.
+		While automatic and seemingly objective, ranking algorithms can
+		discriminate against individuals and protected groups, and exhibit
+		low diversity. Furthermore, ranked results are often unstable —
+		small changes in the input data or in the ranking methodology may
+		lead to drastic changes in the output, making the result uninformative
+		and easy to manipulate. Similar concerns apply in cases
+		where items other than individuals are ranked, including colleges,
+		academic departments, or products.
+		<br>
+		In this demonstration we present Ranking Facts, a Web-based
+		application that generates a “nutritional label” for rankings. Ranking
+		Facts is made up of a collection of visual widgets that implement
+		our latest research results on fairness, stability, and transparency for
+		rankings, and that communicate details of the ranking methodology,
+		or of the output, to the end user. We will showcase Ranking Facts
+		on real datasets from different domains, including college rankings,
+		criminal risk assessment, and financial services.
+		<br>
+		[This project was lead by Prof. Stoyanovich at NYU]
+		<a target="_blank" href="http://demo.dataresponsibly.com/rankingfacts/">[link to demo]</a>
+	</div>
+	<div class="tab-pane " id="NL2Pubs" role="tabpanel" aria-labelledby="NL2P-tab">
+		<li>Ke Yang, Julia Stoyanovich, Abolfazl Asudeh, Bill Howe, HV Jagadish, Gerome Miklau. <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3183713.3193568">A nutritional label for rankings</a>. SIGMOD (Demo), 2018, ACM.</li>
+	</div>
+	<div class="tab-pane " id="NL2Col" role="tabpanel" aria-labelledby="NL2C-tab">
+		<ul>
+			<li>Julia Stoyanovich, New York University</li>
+			<li>Bill Howe, University of Washington</li>
+			<li>H.V. Jagadish, University of Michigan</li>
+			<li>Gerome University of Massachusetts Amherst</li>
+		</ul>
+		Students
+		<ul>
+			<li>Ke Yang, New York University</li>
+		</ul>
+	</div>
+</div>
+</div><!-- class="card" -->

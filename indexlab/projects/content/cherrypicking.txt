@@ -1,0 +1,76 @@
+<div class="card">
+<div class="card-header">Cherry-picked Trendlines</div>
+<div class="card-body">
+<ul class="nav nav-tabs" id="ChP" role="tablist">
+	<li class="nav-item"><a class="nav-link active" id="ChPA-tab" data-toggle="tab" href="#ChPAbstract" role="tab" aria-controls="home" aria-selected="true">Abstract</a></li>
+	<li class="nav-item"><a class="nav-link" id="ChPI-tab" data-toggle="tab" href="#ChPIntro" role="tab" aria-controls="profile" aria-selected="false">Extended Description</a></li>
+	<li class="nav-item"><a class="nav-link" id="ChPC-tab" data-toggle="tab" href="#ChPCol" role="tab" aria-controls="contact" aria-selected="false">Collaborators</a></li>
+</ul>
+<div class="tab-content" id="ChPContent">
+	<div class="tab-pane active" id="ChPAbstract" role="tabpanel" aria-labelledby="ChPA-tab">
+		Poorly supported stories can be told based on data by cherry-picking the data points included.  While such stories may be technically accurate, they are misleading. 
+		In this paper, we build a system for detecting cherry-picking, with a focus on trendlines extracted from temporal data. 
+		We define a <i> support</i> metric for detecting such trendlines.
+		Given a dataset and a statement made based on a trendline, we compute a support score that indicates how cherry-picked it is.
+		Studying different types of trendlines and formalizing terms, we propose efficient and effective algorithms for computing the support measure.
+		We also study the problem of discovering the most supported statements.
+		Besides theoretical analysis, we conduct extensive experiments on real-world data, that demonstrate the validity of our proposed techniques.
+	</div>
+	<div class="tab-pane" id="ChPIntro" role="tabpanel" aria-labelledby="ChPI-tab">
+		<p>
+                Fake news is receiving much attention today.  Sometimes fake news may be a complete fabrication.  More often, it is based on a grain of truth, such as a fact reported out of context or analysis on cherry-picked data~\cite{wardle2017fake}.
+				In fact, cherry-picking is prevalent in almost every controversial domain from tax policy to climate change.
+				<br>
+				Partisans on one side of an argument look for statements they can make about trends that support their position.  
+				They would like not to be caught blatantly lying, so they cherry-pick the factual basis for their conclusion. 
+				That is, the points based on which a {\em statement} is made are carefully selected to show a misleading {\em ``trendline''} that is not a ``reasonable'' representation of the situation.
+				Even though the trendline is not fake, in that it is supported by the selected data points, it is misleading.
+				In this paper, we study such cherry-picked trendlines.
+				But first, let us look at a couple of examples.
+        </p>
+		<div class="card">
+                <div class="card-header text-center">EXAMPLE</div>
+                <div class="card-body">
+                    John Mason explains <a href="www.skepticalscience.com/cherrypicking-guide.html}{www.skepticalscience.com/cherrypicking-guide.html" target="_blank">here</a> how cherry-picking short time-frames can distort the reality of global warming. He uses the monthly climate data of the year 2012 to support the fantasy-like claim that the Northern Hemisphere summers are colder than winters.
+					Such a statement can be made by selecting two specific time/days in summer and winter, as well as specific locations in Northern Hemisphere, and comparing the temperatures of the selected locations in selected time/days:
+					summer was colder than winter in 2012 as, for example, the (average) temperature\footnote{based on www.wunderground.com} of Ann Arbor (MI, USA) on Aug. 18 (a summer day) was 58^F degrees, whereas its temperature in Mar. 15 (a winter day) was 66^F.
+                </div>
+        </div>
+		<p>
+			The end points considered for a trendline may not be readily available as data points.  Instead, they may need to be aggregated over a period, which could itself be cherry-picked, as we see in the next example.  In fact, even in the example above, the average daily temperature may not so neatly have been materialized, leaving us to average individual temperature readings, taken ever minutes, over a period of our choice.
+		</p>
+		<div class="card">
+                <div class="card-header text-center">EXAMPLE</div>
+                <div class="card-body">
+                    In the 2007 Republican presidential candidates' debate, Rudy Giuliani claimed that ``adoptions went up 65 to 70 percent'' in New York City ``when he was the mayor''. The claim considered the total number of adoptions during 1996-2001 v.s. 1990-1995, while Giuliani actually was in office in 1994-2001.
+                </div>
+        </div>
+		<p>
+			In this paper, we focus on trends derived by comparing a pair of points in data to make a statement. As we can see from the examples above, such statements are quite common. 
+			There are other, potentially more robust, methods to find a trendline, such as line fitting with least squared error. 
+			Our focus is restricted to trendlines based on selected endpoints.
+			The question we ask is whether the chosen points gives us a ``reasonable'' trend. 
+			<br>
+			Note that the trendlines are technically ``not fake'' in that they are derived from actual data points: our task is to determine whether the data points were cherry-picked, whether intentionally or by accident.
+			To this end, we ask what other data points could have been chosen for a similar analysis. We can then look at the trendlines obtained from all such alternative pairs of points.
+			The trend observed over these alternatives should not differ by much from the reported trend if it is stable.
+			In contrast, a trendline is presumed to be cherry-picked, if it differs greatly from most alternatives considered.  Even if it is not intentionally chosen to mislead, there is no question that it does mislead its consumers about the observed trend.
+			<br>
+			Of course, this begs the question of what alternatives to consider for the start and end points of a trend line.  In the simplest, and most common case, there are no additional constraints, and we can define a region around the original start and end points.  However, in other problems, we may have constraints.  For example, we may need the distance between begin and end points to be exactly one year, or we may need the start point always to be a Monday.  We formally define a rich set of constraints, covering most examples we have seen in practice.
+
+			The set of possible choices can be very large for each end-point.  Therefore, the number of pairs to consider can become impractical, as in a full cartesian product.  
+			We develop efficient algorithms for computing the support of statements.
+			For unconstrained trendlines, we design an exact linearithmic algorithm. 
+			Similarly, for constrained trendlines, we design the proper data structure and an exact linearithmic algorithm.
+			Next, we use Monte-Carlo methods and design sampling-based approximation algorithms for computing support in scale. Providing a negative result, we also propose a randomized heuristic, effective in practice.
+		</p>
+	</div>
+	<div class="tab-pane " id="ChPCol" role="tabpanel" aria-labelledby="ChPC-tab">
+		<ul>
+			<li>H.V. Jagadish, University of Michigan</li>
+			<li>You (Will) Wu, Google Research</li>
+			<li>Cong Yu, Google Research</li>
+		</ul>
+	</div>
+</div>
+</div><!-- class="card" -->

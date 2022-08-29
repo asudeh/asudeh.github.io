@@ -23,10 +23,21 @@
 <body onload='init()'>
   <div id="headerDiv"></div>
   <!-- Your code starts here -->
+  
+
   <div class="container">
+    <!--<div class="card contentBoxNB">
+      <div class="card-header">Projects</div>
+      <div class="card-body">
+        <ul>
+          <li><a href="#dataequity">Data Equity Systems</a></li>
+          <li><a href="#factchecking">Computational Fact Checking and Bias in Data Presentation</a></li>
+        </ul>
+      </div>
+    </div>-->
     <div>&nbsp;</div>
     <div class="jumbotron jumbotron-fluid text-center" style="padding-block-start: 10pt;">
-      <img class="roundphoto" src="imgs/Equity.png"/>
+      <img id="dataequity" class="roundphoto" src="imgs/Equity.png"/>
       <h3 class="display-4">Data Equity Systems</h3>
       <p class="lead">Projects related to Responsible Data Science and Algorithmic Fairness</p>
       <hr class="my-4">
@@ -61,7 +72,7 @@
     <h1>Bias in Data</h1>
     <div class="row">
       <div class="col-sm-4"><div class="contentBox col-sm-10 text-center">
-        <h4><a href="projects/fmc.htm">Representation Bias</a></h4>
+        <h4><a href="projects/coverage.htm">Representation Bias</a></h4>
         <p><i>Data Coverage</i></p>
         <p><img src="projects/assets/coverage.png" height="250pt"/></p>
       </div></div>
@@ -90,8 +101,8 @@
   </div>
 
     <div class="jumbotron jumbotron-fluid text-center" style="padding-block-start: 10pt;">
-      <img class="roundphoto" src="imgs/factke.jpg"/>
-      <h3 class="display-4"><a href="FactChecking.htm">Fact Checking</a></h3>
+      <img id="factchecking" class="roundphoto" src="imgs/factke.jpg"/>
+      <h3 class="display-4"><a href="FactChecking.htm">Computational Fact Checking and Bias in Data Presentation</a></h3>
       <p class="lead">Projects related to Computational Fact Checking</p>
       <hr class="my-4">
       <div class="text-left" style="padding: 1%;">
@@ -122,7 +133,7 @@
     </div>
 
     <div class="jumbotron jumbotron-fluid text-center" style="padding-block-start: 10pt;">
-      <img class="roundphoto" src="imgs/CH.jpg"/>
+      <img id="ranking" class="roundphoto" src="imgs/CH.jpg"/>
       <h3 class="display-4"><a href="">Ranking & Representatives</a></h3>
             <p class="lead">Projects related to Ranking and Top-k query processing; Skyline and Regret-Minimizing sets</p>
             <hr class="my-4">

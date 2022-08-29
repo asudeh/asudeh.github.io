@@ -1,0 +1,89 @@
+<div class="card">
+<div class="card-header">MithraLabel: Flexible Dataset Nutritional Labels (Demo)</div>
+<div class="card-body">
+<ul class="nav nav-tabs" id="NeuL1" role="tablist">
+	<li class="nav-item"><a class="nav-link active" id="NL1A-tab" data-toggle="tab" href="#NL1Abstract" role="tab" aria-controls="home" aria-selected="true">Abstract</a></li>
+	<li class="nav-item"><a class="nav-link" id="NL1I-tab" data-toggle="tab" href="#NL1Intro" role="tab" aria-controls="profile" aria-selected="false">Extended Description</a></li>
+	<li class="nav-item"><a class="nav-link" id="NL1P-tab" data-toggle="tab" href="#NL1Pubs" role="tab" aria-controls="contact" aria-selected="false">Publications</a></li>
+	<li class="nav-item"><a class="nav-link" id="NL1C-tab" data-toggle="tab" href="#NL1Col" role="tab" aria-controls="contact" aria-selected="false">Collaborators</a></li>
+</ul>
+<div class="tab-content" id="NL1Content">
+	<div class="tab-pane active" id="NL1Abstract" role="tabpanel" aria-labelledby="NL1A-tab">
+		Using inappropriate datasets for data science tasks can be harmful, especially for  applications that impact humans.
+		Targeting data ethics, we demonstrate MithraLabel, a system for generating
+		task-specific information about a dataset, in the form of
+		a set of visual widgets, as a flexible "nutritional label" that provides a user with information to determine the fitness of the dataset for the task at hand.
+		<a target="_blank" href="http://mithra.eecs.umich.edu/demo/label/">[link to demo]</a>
+	</div>
+	<div class="tab-pane " id="NL1Intro" role="tabpanel" aria-labelledby="NL1I-tab">
+		<p>
+            Given the proliferation of available datasets, data scientists and machine learning experts often struggle to choose among alternative datasets for a given task. A data scientist must evaluate each candidate dataset to determine its fitness for use.
+            For example, a linear regression task implies normality assumptions about the measurement error, and any prediction task assumes that the sample is representative of the overall population. These assumptions can be evaluated with statistical tests, but this level of rigor is rarely applied in practice, with serious consequences.
+        </p>
+        <p>
+            <a target="_blank" href="https://www.businessinsider.com/google-tags-black-people-as-gorillas-2015-7"><img src="../../assets/googlegorilla2.png" class="rounded float-right" style="padding-left: 10px;" /></a>
+            These cases, unfortunately, are not rare. An example is <a target="_blank" href="https://www.businessinsider.com/google-tags-black-people-as-gorillas-2015-7">Google's  gorilla incident</a>.
+            An early image tagging algorithm released by Google mistook people with dark skin for animals, incurring significant representational harms for a legally-protected demographic group.
+            The cause was the scarcity of dark-skinned faces in the dataset used for training.
+            In other words, the problem was caused by the dataset's lack of fitness for the given task.
+        </p>
+        <p>
+                The effects of using inappropriate training dataset may become tragic when it comes to applications that cause <i>allocative harms</i> [S. Barocas, SIGCIS 2017] in domains such as employment, health care, and criminal justice. 
+                For example, judges in many jurisdictions consider risk scores assigned to individuals by risk assessment software, based on their criminal record and their background, as guidance when deciding on bail and sentencing.
+                <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" target="_blank">ProPublica</a> showed that these scores exhibit systemic racial bias --- black defendants were twice as likely as whites to be incorrectly judged high-risk for recidivism yet not re-offend (false positives), while white defendants were twice as likely to be judged low-risk compared to blacks, yet go on to re-offend (false negatives).
+                These racial disparities are in part due to historical discrimination in the criminal justice system encoded in the training and validation datasets.  Importantly, because of concerns of disparate treatment --- explicitly treating individuals differently based on legally-protected characteristics such as race, disability status or gender --- race is not one of the inputs to the software.  However, this <i>blinding</i> does not help counteract racial disparities in prediction, due to  correlations between race and other attributes in the data.                
+        </p>
+        <p>
+            Properties a data scientist may care about include:  1) Representativeness: Is the sample drawn from the desired population?
+            A facial recognition task should behave similarly for the entire population, but may be trained on a sample of "people who take selfies and upload them to Flickr" --- the sample is biased.  2) Correctness: Do all records in the dataset satisfy the conditions required by my method?  For example, missing training labels may generate unexpected errors, or some records may not be of people.  
+            3) Application-specific variables: Does the dataset include sufficient attributes for the given task?  For example, we may hypothesize that prior experience  predicts hiring potential, but find that we lack access to complete work history.
+            For such cases, feature engineering may be required to transform the available information into suitable proxies for the desired information.
+            Similarly, some input attributes to the model may need extra attention based on special requirements. For instance, a predictive policing model may be required to not reinforce, or even correct for, systemic biases against African Americans, implying that the data should be checked for biases with respect to a specific value of the race attribute.
+        </p>
+        <p>
+            Fitness for use is not monotonic with increasing use cases: A dataset with high fitness for tasks A and B may exhibit low fitness for task C, while another dataset may be fit for A and C but not B.  Therefore, we cannot just tune a dataset to improve fitness for all uses.  Rather, fitness for use of a dataset has to be determined by the data scientist based upon a specific intended use, although many of the uses make similar assumptions.
+        </p>
+        <p>
+            Datasets may come equipped with basic metadata or <a target="_blank" href="https://www.morganclaypool.com/doi/abs/10.2200/S00878ED1V01Y201810DTM052">data profiling</a> information: the number of records, the arity of the schema, the cardinality of an attribute, etc. However, fitness for use for a specific task requires additional statistical tests to be run and presented for interpretation, as discussed above; these tests are outside the scope of typical task-agnostic profiling tools.
+            Orthogonal to data profiling, <a target="_blank" href="https://dl.acm.org/citation.cfm?id=2731084">data exploration techniques</a> provide tools for the user to explore the data and find interesting patterns. Unlike data profiling, these techniques provide dynamic content, however, they are not task-aware and put the data exploration burden to the user.
+        </p>
+        <p>
+            Inspired by nutritional labels found on packaged foods, <a href="https://dl.acm.org/citation.cfm?id=3193568" target="_blank">RankingFacts</a> proposes to use the metaphor of a nutritional label to make data and models interpretable.
+            In particular, it defines a nutritional label as a set of automatically constructed visual <i>widgets</i>, and shows how this kind of a standardized representation can convey information for the output of a ranking process.
+        </p>
+        <p>
+            <span class="bg-success">We propose a nutritional label as a set of visual widgets over a dataset.</span>
+            Considering the dataset as a collection of items over a set of attributes, each widget provides specific information (such as functional dependencies) about the whole dataset or some selected part of it.
+            For example, if a data scientist is considering the use of a number-of-prior-arrests attribute to predict likelihood of recidivism, she should know that the number of prior arrests is highly correlated with the likelihood of reoffending, but that the number of prior arrests is much higher for African Americans than for other races due to policing practices and segregation effects in poor neighborhoods.
+            Some widgets that can appear in the nutritional label for this (prior arrests) attribute are:  count of missing values,  correlation with the predicted attribute or a protected attribute, and the distribution of values.
+        </p>
+        <p>
+                One could ask: Why not provide all possible information about a dataset?  However, that could be overwhelming.
+                Furthermore, the available space is limited, and the label needs to be compact.
+                This is further complicated by the fact that data scientists may need different information about the dataset to be able to make decisions about its fitness for different uses.
+                The ``label selection'' problem is to identify an optimal set of widgets for a given task, within a limited space budget.  Given a specific task, each widget provides some information (profit) and takes some space in the label (cost). In this paper, we consider equal costs for all widgets and hence transform the problem to <i>selecting the top-k widgets for a given task</i>.
+        </p>
+        <p>
+                In the design of our system, we put an emphasize on flexibility and automatic learning of profits.
+                Since different users have different needs, even an optimal system is unlikely to satisfy every user completely.  Therefore, we make the interface customizable: 
+                the users can select the widgets manually, and can also decide on $k$, the number of widgets to be included in the label. 
+                This task is different from open-ended data exploration since there is a finite number of widgets: the user is only choosing within a menu of options rather than specifying queries for exploratory data analysis.
+                They can also start with the system default, and then add or delete widgets as desired.  User interaction provides hints to the systems about which widgets are valued by the user.
+        </p>
+	</div>
+	<div class="tab-pane " id="NL1Pubs" role="tabpanel" aria-labelledby="NL1P-tab">
+			<li>Chenkai Sun, Abolfazl Asudeh, H. V. Jagadish, Bill Howe, Julia Stoyanovich. <a target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3357384.3357853">MithraLabel: Flexible Dataset Nutritional Labels for Responsible Data Science</a>. CIKM (Demo), 2019, ACM.</li>
+	</div>
+	<div class="tab-pane " id="NL1Col" role="tabpanel" aria-labelledby="NL1C-tab">
+		<ul>
+			<li>H.V. Jagadish, University of Michigan</li>
+			<li>Bill Howe, University of Washington</li>
+			<li>Julia Stoyanovich, New York University</li>
+		</ul>
+		Students
+		<ul>
+			<li>Chenkai Sun, University of Michigan</li>
+		</ul>
+	</div>
+</div>
+</div><!-- class="card" -->
