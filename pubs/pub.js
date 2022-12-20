@@ -38,7 +38,7 @@ function Format()
         if('pages' in pub) st+=', pages '+ pub['pages'];
         if('year' in pub) st+=', '+ pub['year'];
         if('publisher' in pub) st+=', '+ pub['publisher']+'.';
-        
+        if('code' in pub) st+='<a class="pubaward" target="_blank" href="'+ pub['code']+'">[code]</a>';
         if('award' in pub)
             for(j=0;j<pub['award'].length;j++)
                 st+='&nbsp;&#x1F3C6;<span class="pubaward">'+ pub['award'][j]+' </span>';
@@ -97,6 +97,8 @@ function Parse(st, divToFill)
                     case 'topic': pub['topic'] = spl[1].trim().split(";");
                     break;
                     case 'type': pub['type']= spl[1];
+                    break;
+                    case 'code': pub['code']= spl[1];
                     break;
                     case 'award': pub['award'] = spl[1].trim().split(";");
                 }
