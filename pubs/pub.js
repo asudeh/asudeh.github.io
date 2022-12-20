@@ -27,6 +27,7 @@ function Format()
         if(!('author' in pub)) continue;
         st = '<li>';
         if('type' in pub) st+='&nbsp;<span class="pubtype">('+ pub['type']+')</span>';
+        if('code' in pub) st+='&nbsp;<span class="coderepo"><a target="_blank" href="'+ pub['code']+'">[code]</a></span>';
         st+=pub['author']+'. ';
         if('url' in pub)  st+='<a target="_blank" href="'+ pub['url']+'">';
         st+=pub['title'];
@@ -38,7 +39,6 @@ function Format()
         if('pages' in pub) st+=', pages '+ pub['pages'];
         if('year' in pub) st+=', '+ pub['year'];
         if('publisher' in pub) st+=', '+ pub['publisher']+'.';
-        if('code' in pub) st+='<a class="pubaward" target="_blank" href="'+ pub['code']+'">[code]</a>';
         if('award' in pub)
             for(j=0;j<pub['award'].length;j++)
                 st+='&nbsp;&#x1F3C6;<span class="pubaward">'+ pub['award'][j]+' </span>';
