@@ -15,7 +15,9 @@
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	color: whitesmoke;
-	background-color:#9370DB;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	background-color:#e7f12f;
 }
 .pubaward
 {
