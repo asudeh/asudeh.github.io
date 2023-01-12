@@ -9,24 +9,15 @@ function setup(ele,name)
 
 function getURL(name){
 switch(name){
-	case "abol":
-		return "https://www.cs.uic.edu/~asudeh/";
-	case "fn":
-			return "https://fnargesian.com/";
-	case "gautam":
-		return "http://ranger.uta.edu/~gdas/";
-	case "jag":
-		return "http://web.eecs.umich.edu/~jag/";
-	case "nan":
-		return "https://faculty.ist.psu.edu/nan/";
-	case "azade":
-		return "https://sites.google.com/site/azadenazi/";
-	case "julia":
-		return "https://engineering.nyu.edu/faculty/julia-stoyanovich";
-	case "gerome":
-		return "https://people.cs.umass.edu/~miklau/";
-	case "bill":
-		return "https://faculty.washington.edu/billhowe/";
+	case "abol": return "https://www.cs.uic.edu/~asudeh/";
+	case "fn": return "https://fnargesian.com/";
+	case "gautam": return "http://ranger.uta.edu/~gdas/";
+	case "jag": return "http://web.eecs.umich.edu/~jag/";
+	case "nan": return "https://faculty.ist.psu.edu/nan/";
+	case "azade": return "https://sites.google.com/site/azadenazi/";
+	case "julia": return "https://engineering.nyu.edu/faculty/julia-stoyanovich";
+	case "gerome": return "https://people.cs.umass.edu/~miklau/";
+	case "bill": return "https://faculty.washington.edu/billhowe/";
 	default:
 		return "#";
 	}
@@ -34,31 +25,21 @@ switch(name){
 
 function getaff(name){
 switch(name){
-	case "abol":
-		return "University of Illinois Chicago";
-	case "fn":
-			return "University of Rochester";
+	case "abol": return "University of Illinois Chicago";
+	case "fn": return "University of Rochester";
 	case "gautam":
-	case "suraj":
-		return "University of Texas at Arlington";
-	case "nan":
-		return "Penn State University";
-	case "azade":
-		return "Google Brain";
+	case "suraj": return "University of Texas at Arlington";
+	case "nan": return "Penn State University";
+	case "azade": return "Google Brain";
 	case "julia":
-	case "ke":
-		return "New York University";
-	case "gerome":
-		return "University of Massachusetts, Amherst";
-	case "bill":
-		return "University of Washington";
+	case "ke": return "New York University";
+	case "gerome": return "University of Massachusetts, Amherst";
+	case "bill": return "University of Washington";
 	case "jag":
 	case "mark":
 	case "yifan":
-	case "pranav":
-		return "University of Michigan";
-	case "yeshwanth":
-		return "Google";
+	case "pranav": return "University of Michigan";
+	case "yeshwanth": return "Google";
 	default:
 		return "University of Illinois Chicago";
 	}
@@ -66,53 +47,33 @@ switch(name){
 
 function getname(name){
 switch(name){
-	case "abol":
-		return "Abolfazl Asudeh";
-	case "fn":
-			return "Fatemeh Nargesian";
-	case "gautam":
-		return "Gautam Das";
-	case "jag":
-		return "H. V. Jagadish";
-	case "nan":
-		return "Nan Zhang";
-	case "azade":
-		return "Azade Nova";
-	case "julia":
-		return "Julia Stoyanovich";
-	case "gerome":
-		return "Gerome Miklau";
-	case "bill":
-		return "Bill Howe";
-	case "ke":
-		return "Ke Yang";
-	case "mark":
-		return "Zhongjun (Mark) Jin";
-	case "chenkai":
-		return "Chenkai Sun";
-	case "yifan":
-		return "Yifan Guan";
-	case "pranav":
-		return "Pranav Mayuram";
-	case "hasti":
-		return "Hasti Sharifi";
-	case "danyal":
-		return "Danyal Saeed";
-	case "ian":
-		return "Ian Swift";
-	case "nima":
-		return "Nima Shahbazi";
-	case "ainaz":
-		return "Ainaz Jamshidi";
-	case "matteo":
-			return "Matteo Corain";
+	case "abol": return "Abolfazl Asudeh";
+	case "fn": return "Fatemeh Nargesian";
+	case "gautam": return "Gautam Das";
+	case "jag": return "H. V. Jagadish";
+	case "nan": return "Nan Zhang";
+	case "azade": return "Azade Nova";
+	case "julia": return "Julia Stoyanovich";
+	case "gerome": return "Gerome Miklau";
+	case "bill": return "Bill Howe";
+	case "ke": return "Ke Yang";
+	case "mark": return "Zhongjun (Mark) Jin";
+	case "chenkai": return "Chenkai Sun";
+	case "yifan": return "Yifan Guan";
+	case "pranav": return "Pranav Mayuram";
+	case "hasti": return "Hasti Sharifi";
+	case "danyal": return "Danyal Saeed";
+	case "ian": return "Ian Swift";
+	case "nima": return "Nima Shahbazi";
+	case "ainaz": return "Ainaz Jamshidi";
+	case "matteo": return "Matteo Corain";
 	case "yeshwanth": return "Yeshwanth D. Gunasekaran";
 	case "suraj": return "Suraj S Shetiya";
 	case "niccolo": return "Niccolo Spagnuolo";
 	case "melika": return "Melika Mousavi";
 	case "sana": return "Sana Ebrahimi";
 	case "rishi": return "Rishi Advani";
-	default:
-		return "";
+	case "aliF": return "Ali Farajzadeh";
+	default: return "";
 	}
 }		

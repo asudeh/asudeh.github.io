@@ -39,7 +39,7 @@ switch(name){
 function getaff(name){
 switch(name){
 	case "gautam":
-		return "University of Illinois at Chicago";
+		return "University of Illinois Chicago";
 	case "gautam":
 		return "University of Texas at Arlington";
 	case "nan":
@@ -55,7 +55,7 @@ switch(name){
 	case "ke":
 		return "Drexel University";
 	default:
-		return "University of Michigan";
+		return "University of Chicago Illinois";
 	}
 }	
 
