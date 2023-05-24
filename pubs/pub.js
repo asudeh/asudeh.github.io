@@ -31,7 +31,7 @@ function Format()
         if('url' in pub)  st+='<a target="_blank" href="'+ pub['url']+'">';
         st+=pub['title'];
         if('url' in pub)  st+='</a>';
-        st+='. <b>'+ pub['venue']+'</b>';
+        st+='. In <b>'+ pub['venue']+'</b>';
         //st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
         if('volume' in pub) st+=', Vol. '+ pub['volume'];
         if('number' in pub) st+='('+ pub['number']+')';
