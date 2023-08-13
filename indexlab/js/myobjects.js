@@ -18,6 +18,11 @@ switch(name){
 	case "julia": return "https://engineering.nyu.edu/faculty/julia-stoyanovich";
 	case "gerome": return "https://people.cs.umass.edu/~miklau/";
 	case "bill": return "https://faculty.washington.edu/billhowe/";
+	case "mohsen": return "https://linkedin.com/in/mohsen-dehghankar-b92788158";
+	case "nima": return "https://scholar.google.com/citations?user=Q4P6b34AAAAJ";
+	case "rishi": return "https://rishi-advani.com/";
+	case "sana": return "https://www.linkedin.com/in/sana-ebrahimi-872382131";
+	case "mahdi": return "https://www.linkedin.com/in/merfanian/";
 	default:
 		return "#";
 	}
@@ -74,6 +79,8 @@ switch(name){
 	case "sana": return "Sana Ebrahimi";
 	case "rishi": return "Rishi Advani";
 	case "aliF": return "Ali Farajzadeh";
+	case "mohsen": return "Mohsen Dehghankar";
+	case "mahdi": return "Mohammad Mahdi Erfanian";
 	default: return "";
 	}
 }		
