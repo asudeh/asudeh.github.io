@@ -39,6 +39,7 @@ function Format()
         if('year' in pub) st+=', '+ pub['year'];
         if('publisher' in pub) st+=', '+ pub['publisher']+'.';
         if('code' in pub) st+='&nbsp;<span class="coderepo"><a target="_blank" href="'+ pub['code']+'">[code]</a></span>';
+        if('slides' in pub) st+='&nbsp;<span class="slides"><a target="_blank" href="'+ pub['slides']+'">[slides]</a></span>';
         if('award' in pub)
             for(j=0;j<pub['award'].length;j++)
                 st+='&nbsp;&#x1F3C6;<span class="pubaward">'+ pub['award'][j]+' </span>';

@@ -19,6 +19,16 @@
 	font-weight: bold;
 	background-color:#e7f12f;
 }
+.slides
+{
+    border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: whitesmoke;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	background-color:#2faaf1;
+}
 .pubaward
 {
     border-radius: 5px;
