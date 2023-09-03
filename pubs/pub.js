@@ -99,9 +99,11 @@ function Parse(st, divToFill)
                     break;
                     case 'type': pub['type']= spl[1];
                     break;
-                    case 'code': pub['code']= spl[1]+":"+spl[2];
-                    break;
+                    //case 'code': pub['code']= spl[1]+":"+spl[2];
+                    //break;
                     case 'award': pub['award'] = spl[1].trim().split(";");
+                    break;
+                    default: pub[spl[0].toLowerCase()]= spl[1]+":"+spl[2];
                 }
                 continue;
             }
