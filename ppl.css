@@ -11,6 +11,17 @@
     display: inline-block;
 }
 
+.photobox {
+	background-size:  cover;	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 20px;
+	padding: 0px;
+	text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
 .person .persontext {
     visibility: hidden;
     width: 200px;
