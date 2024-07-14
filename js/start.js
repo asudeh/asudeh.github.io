@@ -24,7 +24,7 @@ st += '    </li> ';
 //st += '      <a class="nav-link" target="_blank" href="https://medium.com/@a.asudeh">Research Blog<span class="sr-only">(current)</span></a> ';
 //st += '    </li> ';
 st += '    <li class="nav-item active"> ';
-st += '      <a class="nav-link" href=href="'+path+'teaching/archive.html">Teaching<span class="sr-only">(current)</span></a> ';
+st += '      <a class="nav-link" href="'+path+'teaching/archive.html">Teaching<span class="sr-only">(current)</span></a> ';
 st += '    </li> ';
 //st+= '     <li class="nav-item dropdown">';
 //st+= '        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
