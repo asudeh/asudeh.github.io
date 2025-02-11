@@ -150,6 +150,15 @@ h1, h3{
     background-color: #000;
   }
 
+  .publication-btn {
+    background-color: #28a745;
+    color: white;
+  }
+
+  .publication-btn:hover {
+    background-color: #1e7e34;
+  }
+
   .install-instructions {
     margin-top: 12px;
     font-size: 14px;
