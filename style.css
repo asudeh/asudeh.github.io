@@ -115,3 +115,52 @@ h1, h3{
     position: relative;
     display: inline-block;
 }
+
+.project-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .project-btn {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .project-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .github-btn {
+    background-color: #333;
+    color: white;
+  }
+
+  .github-btn:hover {
+    background-color: #000;
+  }
+
+  .install-instructions {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+
+  .install-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .install-link:hover {
+    text-decoration: underline;
+  }
