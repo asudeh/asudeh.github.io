@@ -173,3 +173,12 @@ h1, h3{
   .install-link:hover {
     text-decoration: underline;
   }
+
+  .youtube-btn {
+    background-color: #ff0000;
+    color: white;
+}
+
+.youtube-btn:hover {
+    background-color: #cc0000;
+}
