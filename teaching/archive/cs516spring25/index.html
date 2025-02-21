@@ -4,6 +4,26 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    .extended-notes {
+      color: #d9534f; 
+      text-decoration: none;
+    }
+  
+    .extended-notes:hover {
+      text-decoration: underline;
+      color: #c9302c; 
+    }
+    .class-notes {
+      color: #0275d8; 
+      text-decoration: none;
+    }
+  
+    .class-notes:hover {
+      text-decoration: underline;
+      color: #025aa5; 
+    }
+  </style>
 </head>
 <body>
     <div class="container">
@@ -54,7 +74,7 @@
                     <br> A <a href="https://www.youtube.com/watch?v=-a739VjqdSI" target="_blank">crash course on Utilitarianism</a>
                     <br> A. Asudeh. <a href="https://wp.sigmod.org/?p=3174" target="_blank">"Enabling Responsible Data Science in Practice"</a>. In ACM SIGMOD Blog, 2021.
                   </td>
-                  <td><a href="CS516_LectureNote_1.pdf">Extended Lecture Notes (Marzieh Hosseini, Nastaran Darabi)</a></td>
+                  <td><a href="CS516-01-15.pdf" class="extended-notes">📘 Extended Lecture Notes (Marzieh Hosseini, Nastaran Darabi)</a></td>
               </tr>
       
               <tr>
@@ -69,101 +89,157 @@
                   <td>Throught the lens of Fairness: An overview of Data Analytics System</td>
                   <td>Barocas, Solon, and Andrew D. Selbst. "Big data's disparate impact." Calif. L. Rev. 104 (2016): 671.</td>
                   <td>
-                    (1) <a href="CS516-Scribe 01.22.2025.pdf">Extended Lecture Notes (Sina Tayebati, Yashith Reddy Enamala)</a>
-                    <br>(2) <a href="Overview of data systems.pdf">Class Notes</a></td>
+                    <a href="CS516-01-22.pdf" class="extended-notes">📘 Extended Lecture Notes (Sina Tayebati, Yashith Reddy Enamala)</a>
+                    <br><a href="Overview of data systems.pdf" class="class-notes">📖 Class Notes</a></td>
               </tr>
       
               <tr>
                   <td>Monday, January 27, 2025</td>
-                  <td>Fairness Definitions</td>
-                  <td>Barocas, Solon, Moritz Hardt, and Arvind Narayanan. ``Fairness in machine learning. Limitations and Opportunities''. ISBN 9780262048613, December 19, 2023. The MIT Press (Free Online: <a href="https://fairmlbook.org/" target="_blank">https://fairmlbook.org/</a>).</td>
+                  <td>Throught the lens of Fairness (continued);
+                    <br>Fairness Definitions: Individual Fairness</td>
+                  <td>Dwork, Cynthia, et al. "Fairness through awareness." Proceedings of the 3rd innovations in theoretical computer science conference. 2012.
+                    </td>
                   <td>
-                    <a href="CS516_LectureNote3.pdf">Extended Lecture Notes (Ranit Debnath Akash, Mohammed Abdul Hadi)</a>
+                    <a href="CS516-01-27.pdf" class="extended-notes">📘 Extended Lecture Notes (Ranit Debnath Akash, Mohammed Abdul Hadi)</a>
                   </td>
               </tr>
       
               <tr>
                   <td>Wednesday, January 29, 2025</td>
-                  <td>Fairness Definitions</td>
-                  <td><a href="https://fairmlbook.org/classification.html" target="_blank">https://fairmlbook.org/classification.html</a></td>
+                  <td>Fairness Definitions: Group Fairness</td>
+                  <td>Barocas, Solon, Moritz Hardt, and Arvind Narayanan. ``Fairness in machine learning. Limitations and Opportunities''. ISBN 9780262048613, December 19, 2023. The MIT Press (Free Online: <a href="https://fairmlbook.org/" target="_blank">https://fairmlbook.org/</a>).
+                    </td>
                   <td>
-                    <a href="FairnessDef.pdf">Class Notes (Fairness Definitions)</a>
+                    <a href="CS516-01-29.pdf" class="extended-notes">📘 Extended Lecture Notes (Adithya Reddy Chidirala, Hemanth Srinivas Reddy Chennur)</a>
                   </td>
               </tr>
       
               <tr>
                   <td>Monday, February 3, 2025</td>
-                  <td>Impossibility Theorems; Fairness Interventions;</td>
-                  <td></td>
-                  <td></td>
+                  <td>Fairness Definitions: Definition Categories; Impossibility Theorems</td>
+                  <td><a href="https://fairmlbook.org/classification.html" target="_blank">https://fairmlbook.org/classification.html</a></td>
+                  <td>
+                    <a href="CS516-02-03.pdf" class="extended-notes">📘 Extended Lecture Notes (Sanjna Chippalaturthi, Asritha Pidikiti)</a>
+                    <br><a href="FairnessDef.pdf" class="class-notes">📖 Class Notes (Fairness Definitions)</a>
+                </td>
               </tr>
       
               <tr>
                   <td>Wednesday, February 5, 2025</td>
-                  <td>Fair ML: Preprocess Interventions</td>
+                  <td>Impossibility Theorems (continued)
+                    <br><br>Measuring Unfairness</td>
                   <td>
-                    [1] Mehrabi, Ninareh, et al. "A survey on bias and fairness in machine learning." ACM computing surveys (CSUR) 54.6 (2021): 1-35. 
+                    <span class="badge badge-info">Additional References for Fairness in Machine Learning:</span>
+                    <br> [1] Mehrabi, Ninareh, et al. "A survey on bias and fairness in machine learning." ACM computing surveys (CSUR) 54.6 (2021): 1-35. 
                     <br>[2] Caton, Simon, and Christian Haas. "Fairness in machine learning: A survey." ACM Computing Surveys 56.7 (2024): 1-38. 
                     <br>[3] Pessach, Dana, and Erez Shmueli. "A review on fairness in machine learning." ACM Computing Surveys (CSUR) 55.3 (2022): 1-44.
                   </td>
                   <td>
                     <span class="badge badge-warning">Project Proposal Deadline</span><br>
-                    <a href="PreprocessInterventions.pdf">Class Notes (Preprocess Interventions)</a>
+                    <a href="CS516-02-05.pdf" class="extended-notes">📘 Extended Lecture Notes (Nandini Satyanarayan1 Jirobe, Parikha Goyanka)</a>
                   </td>
               </tr>
             
               <tr>
                   <td>Monday, February 10, 2025</td>
-                  <td>Fair ML: Inprocess Interventions; Fair ML: Causal Fairness</td>
-                  <td>[1] <a href="https://fairmlbook.org/pdf/causal.pdf" target="_blank">https://fairmlbook.org/pdf/causal.pdf</a>
-                  <br> [2] Guo, R., Cheng, L., Li, J., Hahn, P. R., & Liu, H. (2020). A survey of learning causality with data: Problems and methods. ACM Computing Surveys (CSUR), 53(4), 1-37.
+                  <td>
+                    Fair ML: Preprocess interventions
                   </td>
+                  <td>
+                    [1] Kamiran, Faisal, and Toon Calders. "Data preprocessing techniques for classification without discrimination." Knowledge and information systems 33.1 (2012): 1-33.
+                    <br> [2] Calmon, Flavio, et al. "Optimized pre-processing for discrimination prevention." Advances in neural information processing systems 30 (2017).
+                    <br> [3] Feldman, Michael, et al. "Certifying and removing disparate impact." proceedings of the 21th ACM SIGKDD international conference on knowledge discovery and data mining. 2015.
+                    </td>
                   <td>
                     <span class="badge badge-success">Programming Assignment 1 posted</span>
+                    <br> 
+                    <a href="PreprocessInterventions.pdf" class="class-notes">📖 Class Notes (Preprocess Interventions)</a>
                   </td>
               </tr>
-      
               <tr>
-                  <td>Wednesday, February 12, 2025</td>
-                  <td>Fair Ranking -- Part I: Score-based Ranking</td>
-                  <td>[1] Zehlike, Meike, Ke Yang, and Julia Stoyanovich. "Fairness in ranking, part i: Score-based ranking." ACM Computing Surveys 55.6 (2022): 1-36. <br>[2] Pitoura, Evaggelia, Kostas Stefanidis, and Georgia Koutrika. "Fairness in rankings and recommendations: an overview." The VLDB Journal (2022): 1-28.</td>
-                  <td>
-
-                  </td>
-              </tr>
-      
-              <tr>
-                  <td>Monday, February 17, 2025</td>
-                  <td>Fair Ranking -- Part II: Learned Ranking</td>
-                  <td>Zehlike, Meike, Ke Yang, and Julia Stoyanovich. "Fairness in ranking, part ii: Learning-to-rank and recommender systems." ACM Computing Surveys 55.6 (2022): 1-41.</td>
-                  <td>
-                    <span class="badge badge-warning">Programming Assignment 1 Deadline</span>
-                  </td>
-              </tr>
-      
-              <tr>
+                <td>Wednesday, February 12, 2025</td>
+                <td>Fair ML: Inprocess Interventions; </td>
+                <td>
+                    [1] Zafar, Muhammad Bilal, et al. "Fairness constraints: Mechanisms for fair classification." Artificial intelligence and statistics. PMLR, 2017.
+                    <br> [2] Agarwal, Alekh, et al. "A reductions approach to fair classification." International conference on machine learning. PMLR, 2018.
+                </td>
+                <td>
+                    <a href="CS516-02-12.pdf" class="extended-notes">📘 Extended Lecture Notes (Srinath Bellamkonda, Murali Krishna Prodduturi)</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Monday, February 17, 2025</td>
+                <td>
+                    Fair ML: Price of Fairness; Pareto-Optimality in Fairness
+                    <br><br>Causalality: a double-edged sword</td>
+                <td>[1] <a href="https://fairmlbook.org/pdf/causal.pdf" target="_blank">https://fairmlbook.org/pdf/causal.pdf</a>
+                    <br> [2] Guo, R., Cheng, L., Li, J., Hahn, P. R., & Liu, H. (2020). A survey of learning causality with data: Problems and methods. ACM Computing Surveys (CSUR), 53(4), 1-37.</td>
+                <td>
+                  <span class="badge badge-warning">Programming Assignment 1 Deadline</span>
+                  <br> <a href="InprocessInterventions.pdf" class="class-notes">📖 Class Notes (InProcess Interventions;PoF;Pareto-Optimality)</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Wednesday, February 19, 2025</td>
+                <td>Causalality (continued)</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!--
+            <tr>
                   <td>Wednesday, February 19, 2025</td>
-                  <td>Fair Recommendation. Bias in Data: Different Sources&Types of Bias</td>
-                  <td>[1] Li, Yunqi, et al. "Fairness in recommendation: A survey." arXiv preprint arXiv:2205.13619 (2022). <br>[2] Mehrabi, Ninareh, et al. "A survey on bias and fairness in machine learning." ACM computing surveys (CSUR) 54.6 (2021): 1-35.</td>
+                  <td>Fair Recommendation</td>
+                  <td>[1] Li, Yunqi, et al. "Fairness in recommendation: A survey." arXiv preprint arXiv:2205.13619 (2022). </td>
                   <td></td>
-              </tr>
+            </tr>
+            -->
       
               <tr>
                   <td>Monday, February 24, 2025</td>
-                  <td>Bias in Data: Representation Bias</td>
-                  <td>Shahbazi, Nima, et al. "Representation bias in data: A survey on identification and resolution techniques." ACM Computing Surveys 55.13s (2023): 1-39.</td>
                   <td>
-                    <span class="badge badge-success">Programming Assignment 2 posted</span>
+                    Causalality (continued);
+                     <br><br>Fair Ranking -- Part I: Score-based Ranking
+                  </td>
+                  <td>
+                    [1] Zehlike, Meike, Ke Yang, and Julia Stoyanovich. "Fairness in ranking, part i: Score-based ranking." ACM Computing Surveys 55.6 (2022): 1-36. <br>[2] Pitoura, Evaggelia, Kostas Stefanidis, and Georgia Koutrika. "Fairness in rankings and recommendations: an overview." The VLDB Journal (2022): 1-28.</td>
+                  <td>
+                    <span class="badge badge-warning">Programming Assignment 2 posted</span><br>
                   </td>
               </tr>
       
               <tr>
                   <td>Wednesday, February 26, 2025</td>
-                  <td>Bias in Data: Data-centric Warnings Fairness-aware Data Curation: Data Imputation</td>
-                  <td>[1] Shahbazi, Nima, and Abolfazl Asudeh. "Reliability evaluation of individual predictions: a data-centric approach." The VLDB Journal (2024): 1-28. <br>[2] Feng, Raymond, Flavio Calmon, and Hao Wang. "Adapting fairness interventions to missing values." Advances in Neural Information Processing Systems 36 (2024)</td>
-                  <td></td>
+                  <td>
+                    Fair Ranking -- Part II: Learned Ranking
+                   </td>
+                  <td>Zehlike, Meike, Ke Yang, and Julia Stoyanovich. "Fairness in ranking, part ii: Learning-to-rank and recommender systems." ACM Computing Surveys 55.6 (2022): 1-41.</td>
+                  <td>
+                  </td>
               </tr>
       
+              <tr>
+                  <td>Monday, March 3, 2025</td>
+                  <td>Bias in Data: Different Sources&Types of Bias; Representation Bias</td>
+                  <td>
+                    [1] Mehrabi, Ninareh, et al. "A survey on bias and fairness in machine learning." ACM computing surveys (CSUR) 54.6 (2021): 1-35. 
+                    <br>[2] Shahbazi, Nima, et al. "Representation bias in data: A survey on identification and resolution techniques." ACM Computing Surveys 55.13s (2023): 1-39.</td>
+                  <td><span class="badge badge-warning">Programming Assignment 2 Deadline</span><br>
+                  </td>
+              </tr>
+      
+              <!--
+              <tr>
+                  <td>Wednesday, February 26, 2025</td>
+                  <td>
+                    Bias in Data: Representation Bias; Data-centric Warnings Fairness-aware 
+                    <br>Data Curation: Data Imputation
+                  </td>
+                  <td>
+                    [1] Shahbazi, Nima, and Abolfazl Asudeh. "Reliability evaluation of individual predictions: a data-centric approach." The VLDB Journal (2024): 1-28.
+                    <br>[2] Feng, Raymond, Flavio Calmon, and Hao Wang. "Adapting fairness interventions to missing values." Advances in Neural Information Processing Systems 36 (2024)
+                  </td>
+                  <td></td>
+              </tr>
               <tr>
                   <td>Monday, March 3, 2025</td>
                   <td>Data Curation: Data Integration; Entity Matching</td>
@@ -186,6 +262,31 @@
                   <td>Erfanian, Mahdi, H. V. Jagadish, and Abolfazl Asudeh. "Chameleon: Foundation models for fairness-aware multi-modal data augmentation to enhance coverage of minorities." arXiv preprint arXiv:2402.01071 (2024).</td>
                   <td></td>
               </tr>
+              -->
+
+              <tr>
+                <td>Wednesday, March 5, 2025</td>
+                <td>Data Curation: Data Integration; Query Rewriting; Entity Matching</td>
+                <td>
+                    [1] Nargesian, Fatemeh, Abolfazl Asudeh, and H. V. Jagadish. "Tailoring data source distributions for fairness-aware data integration." Proceedings of the VLDB Endowment 14.11 (2021): 2519-2532.
+                    <br>[2] Shetiya, Suraj, et al. "Fairness-aware range queries for selecting unbiased data." In ICDE, 2022. 
+                    <br>[3] Shahbazi, Nima, et al. "Through the Fairness Lens: Experimental Analysis and Evaluation of Entity Matching." Proceedings of the VLDB Endowment 16.11 (2023): 3279-3292. 
+                    <br>[4] Shahbazi, Nima, et al. "FairEM360: A Suite for Responsible Entity Matching." Proceedings of the VLDB Endowment (2024) -- Demo Track.
+                <td></td>
+            </tr>
+    
+            <tr>
+                <td>Monday, March 10, 2025</td>
+                <td>
+                    Data Curation: Minority Mining
+                    <br><br>GenAI for Data Curation: Chameleon; Entity Matching</td>
+                <td>
+                    [1] Dehghankar, Mohsen, and Abolfazl Asudeh. "Mining the Minoria: Unknown, Under-represented, and Under-performing Minority Groups." Proceedings of the VLDB Endowment (2025).
+                    <br>[2] Erfanian, Mahdi, H. V. Jagadish, and Abolfazl Asudeh. "Chameleon: Foundation models for fairness-aware multi-modal data augmentation to enhance coverage of minorities." Proceedings of the VLDB Endowment (2024).
+                </td>
+                <td></td>
+            </tr>
+              
       
               <tr>
                   <td>Wednesday, March 12, 2025</td>
@@ -224,7 +325,7 @@
       
               <tr>
                   <td>Monday, April 7, 2025</td>
-                  <td>Bias In (Cherry-picked) Data Presentation: Ranking; Trendlines; News Ordering</td>
+                  <td>Masking through Cherry-picked Data Presentation: Ranking; Trendlines; News Ordering</td>
                   <td>Asudeh, Abolfazl, et al. "Perturbation-based Detection and Resolution of Cherry-picking." A Quarterly bulletin of the Computer Society of the IEEE Technical Committee on Data Engineering 45.3 (2021).</td>
                   <td></td>
               </tr>
