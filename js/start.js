@@ -31,7 +31,9 @@ st+= '        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" r
 st+= '          Teaching';
 st+= '        </a>';
 st+= '        <div class="dropdown-menu" aria-labelledby="navbarDropdown">';
-st+= '          <a class="dropdown-item" href="'+path+'teaching/archive/cs516spring25/index.html" target="_blank">CS516 Spring 2025</a>';
+st+= '          <a class="dropdown-item" href="'+path+'teaching/archive/cs516spring25/index.html" target="_blank">CS516 (Algorithmic Fairness) Spring 2025</a>';
+st+= '          <hr>';
+st+= '          <a class="dropdown-item" href="'+path+'teaching/archive/cs501fall21/index.html" target="_blank">CS501  (Algorithms II) Fall 2021</a>';
 st+= '          <hr>';
 st+= '          <a class="dropdown-item" href="'+path+'teaching/archive.html" target="_blank">Archive</a>';
 st+= '        </div>';
