@@ -1,7 +1,7 @@
 function header(path='') {
 st = '<nav class="navbar navbar-expand-lg navbar-light bg-light"> ';
 st += '<a class="navbar-brand" href="index.htm" style="color:#ffcb05;"> ';
-st += '        <img src="'+path+'imgs/home.ico" height="40pt" alt="Home!">';
+st += '        <img src="'+path+'imgs/InDeXLab.gif" height="40pt" alt="Home!">';
 //st += '        <img src="'+path+'imgs/InDeXLab2.gif" height="40pt" alt="Home!">';
 st += '</a> ';
 st += '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> ';
