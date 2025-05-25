@@ -18,6 +18,35 @@
             header();
         }
     </script>
+    <style>
+        .publication-list {
+            line-height: 1.8;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            color: #1a1a1a;
+        }
+
+        .publication-list li {
+            margin-bottom: 1.5em;
+        }
+
+        .code-link {
+            font-weight: 500;
+            color: #2980b9;
+            text-decoration: none;
+            font-size: 0.8em;
+        }
+
+        .code-link:hover {
+            text-decoration: underline;
+        }
+
+        .pub-venue {
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+
+    </style>
 </head>
 
 <body onload='init()'>
@@ -86,116 +115,122 @@
         <div class="card contentBoxNB">
             <div class="card-header">Recent Publications (Since 2024) -- see <a href="pub.htm"> publications</a> for the complete list.</div>
             <div class="card-body" style="height: 700pt; overflow-y: scroll;">
-                <ul style="line-height:1.7">
+                <ul class="publication-list" style="line-height:1.7">
                     <li>
                         <a href="https://arxiv.org/abs/2411.06360" target="_blank">An Efficient Matrix Multiplication Algorithm for Accelerating Inference in Binary and Ternary Neural Networks</a>.
-                        <br>[<a href="https://github.com/UIC-InDeXLab/RSR">Code</a>] <span class="badge badge-primary">LLM</span><span class="badge badge-info">Algorithms</span><span class="badge badge-warning">MachineLearning</span>
-                        <br><a href="https://mohsendehghankar.github.io/" target="_blank">Mohsen Dehghankar</a>, <a href="http://merfanian.github.io/" target="_blank">Mahdi Erfanian</a>, Abolfazl Asudeh. 
-                        <br> In ICML 2025.
+                        <br>[<a class="code-link" href="https://github.com/UIC-InDeXLab/RSR">Code</a>] <span class="badge badge-primary">LLM</span><span class="badge badge-info">Algorithms</span><span class="badge badge-warning">MachineLearning</span>
+                        <br><a href="https://mohsendehghankar.github.io/" target="_blank">Mohsen Dehghankar</a>, <a href="http://merfanian.github.io/" target="_blank">Mahdi Erfanian</a>, Abolfazl Asudeh.
+                        <br> <span class="pub-venue">In ICML 2025.</span>
                     </li>
                     <li>
                         <a href="https://arxiv.org/abs/2412.00546" target="_blank">Rank It, Then Ask It: Input Reranking for Maximizing the Performance of LLMs on Symmetric Tasks</a>.
-                        <br>[<a href="https://github.com/UIC-InDeXLab/prompt-reranking">Code</a>] <span class="badge badge-info">LLM</span><span class="badge badge-warning">MachineLearning</span>
+                        <br>[<a class="code-link" href="https://github.com/UIC-InDeXLab/prompt-reranking">Code</a>] <span class="badge badge-info">LLM</span><span class="badge badge-warning">MachineLearning</span>
                         <br><a href="https://mohsendehghankar.github.io/" target="_blank">Mohsen Dehghankar</a>, Abolfazl Asudeh. 
-                        <br> In KDD 2025.
+                        <br> <span class="pub-venue">In KDD 2025.</span>
                     </li>
                     <li>
                         <a href="https://www.vldb.org/pvldb/vol18/p1453-dehghankar.pdf" target="_blank">Mining the Minoria: Unknown, Under-represented, and Under-performing Minority Groups</a>.
-                        <br>[<a href="https://github.com/UIC-InDeXLab/Mining_U3Ms">Code</a>] <span class="badge badge-success">Responsible Data</span><span class="badge badge-info">Data-centric AI</span>
+                        <br>[<a class="code-link" href="https://github.com/UIC-InDeXLab/Mining_U3Ms">Code</a>] <span class="badge badge-success">Responsible Data</span><span class="badge badge-info">Data-centric AI</span>
                          <br><a href="https://mohsendehghankar.github.io/" target="_blank">Mohsen Dehghankar</a>, Abolfazl Asudeh.
-                         <br> In VLDB, 2025.
+                         <br> <span class="pub-venue">In VLDB, 2025.</span>
                     </li>
                     <li>
                         <a href="https://arxiv.org/abs/2405.11639" target="_blank">Fair Set Cover</a>.
-                        <br>[<a href="https://github.com/UIC-InDeXLab/fair_set_cover" target="_blank">Code</a>] <span class="badge badge-info">Algorithms</span><span class="badge badge-warning">Fairness</span>
+                        <br>[<a class="code-link" href="https://github.com/UIC-InDeXLab/fair_set_cover" target="_blank">Code</a>] <span class="badge badge-info">Algorithms</span><span class="badge badge-warning">Fairness</span>
                          <br><a href="https://mohsendehghankar.github.io/" target="_blank">Mohsen Dehghankar</a>, Rahul Raychaudhury, Stavros Sintos, Abolfazl Asudeh.
-                         <br> In KDD, 2025.
+                         <br> <span class="pub-venue">In KDD, 2025.</span>
                     </li>
                     <li>
-                        <a href="https://github.com/neemashahbazi/Fair-Count-Min/blob/main/technical_report.pdf" target="_blank">Fair-Count-Min: Frequency Estimation under Equal Group-wise Approximation Factor</a>. (Preprint)
+                        <a href="https://github.com/neemashahbazi/Fair-Count-Min/blob/main/technical_report.pdf" target="_blank">Fair-Count-Min: Frequency Estimation under Equal Group-wise Approximation Factor</a>.
                         <br><span class="badge badge-info">Data-structure</span><span class="badge badge-warning">Fairness</span>
                         <br><a href="https://neemashahbazi.github.io/" target="_blank">Nima Shahbazi</a>, Stavros Sintos, Abolfazl Asudeh.
+                        <br> <span class="pub-venue">Preprint (2025)</span>
                     </li>
                     <li>
-                        <a href="https://arxiv.org/abs/2412.00639" target="_blank">Needle: A Generative-AI Powered Monte Carlo Method for Answering Complex Natural Language Queries on Multi-modal Data</a>. (Preprint)
-                        <br>[<a href="https://github.com/UIC-InDeXLab/Needle">Code</a>] <span class="badge badge-primary">Image Databases</span><span class="badge badge-info">LLM4Data</span><span class="badge badge-warning">MachineLearning</span>
+                        <a href="https://arxiv.org/abs/2412.00639" target="_blank">Needle: A Generative-AI Powered Monte Carlo Method for Answering Complex Natural Language Queries on Multi-modal Data</a>.
+                        <br>[<a class="code-link" href="https://github.com/UIC-InDeXLab/Needle">Code</a>] <span class="badge badge-primary">Image Databases</span><span class="badge badge-info">LLM4Data</span><span class="badge badge-warning">MachineLearning</span>
                         <br><a href="http://merfanian.github.io/" target="_blank">Mahdi Erfanian</a>, <a href="https://mohsendehghankar.github.io/" target="_blank">Mohsen Dehghankar</a>, Abolfazl Asudeh. 
+                        <br> <span class="pub-venue">Preprint (2024)</span>
                     </li>
                     <li>
                         <a href="https://doi.org/10.48786/edbt.2025.15" target="_blank">Evaluating the Feasibility of Sampling-Based Techniques for Training Multilayer Perceptrons.</a> 
-                        <br>[<a href="files/EDBT25-asudeh.pdf">Slides</a>] [<a href="https://github.com/UIC-InDeXLab/LargeScale_Training">Code</a>]
+                        <br>[<a class="code-link" href="files/EDBT25-asudeh.pdf">Slides</a>] 
+                        [<a class="code-link" href="https://github.com/UIC-InDeXLab/LargeScale_Training">Code</a>]
                         <span class="badge badge-info">Computation at Scale</span><span class="badge badge-warning">Machine Learning</span>
                         <br><a href="https://scholar.google.com/citations?user=-RDRcqAAAAAJ" target="_blank">Sana Ebrahimi</a>, <a href="https://rishi-advani.com/" target="_blank">Rishi Advani</a>, Abolfazl Asudeh. 
-                        <br> In EDBT, 2025
+                        <br> <span class="pub-venue">In EDBT, 2025</span>
                     </li>
                     <li>
                         <a href="https://www.vldb.org/pvldb/vol17/p3470-erfanian.pdf" target="_blank">Chameleon: Foundation Models for Fairness-aware Multi-modal Data Augmentation to Enhance Coverage of Minorities</a>. 
-                        <br>[<a href="files/Chameleon-asudeh.pdf">Slides</a>][<a href="https://youtu.be/h4jnPs3ylOQ" target="_blank">Video</a>] [<a href="https://github.com/UIC-InDeXLab/Chameleon">Code</a>] <span class="badge badge-primary">LLM4Data</span>
+                        <br>[<a class="code-link" href="files/Chameleon-asudeh.pdf">Slides</a>]
+                        [<a class="code-link" href="https://youtu.be/h4jnPs3ylOQ" target="_blank">Video</a>] 
+                        [<a class="code-link" href="https://github.com/UIC-InDeXLab/Chameleon">Code</a>] <span class="badge badge-primary">LLM4Data</span>
                         <br><a href="http://merfanian.github.io/" target="_blank">Mahdi Erfanian</a>, H. V. Jagadish, Abolfazl Asudeh. 
-                        <br> In VLDB, 2024.
+                        <br> <span class="pub-venue">In VLDB, 2024.</span>
                     </li>   
                     <li>
                         <a href="https://dl.acm.org/doi/10.1145/3654939" target="_blank" >FairHash: A Fair and Memory/Time-efficient Hashmap.</a>
-                        <br>[<a href="files/FairHash-asudeh.pdf">Slides</a>]
-                        [<a href="https://github.com/UIC-InDeXLab/fairHashmap">Code</a>]
+                        <br>[<a class="code-link" href="files/FairHash-asudeh.pdf">Slides</a>]
+                        [<a class="code-link" href="https://github.com/UIC-InDeXLab/fairHashmap">Code</a>]
                         <span class="badge badge-info">Data-structure</span><span class="badge badge-warning">Fairness</span> 
                         <br><a href="https://neemashahbazi.github.io/" target="_blank">Nima Shahbazi</a>, Stavros Sintos, Abolfazl Asudeh. 
-                        <br>In SIGMOD, 2024
+                        <br><span class="pub-venue">In SIGMOD, 2024</span>
                     </li>
                     <li>
                         <a href="https://aclanthology.org/2024.findings-naacl.37/" target="_blank">Requal-LM: Reliability and Equity through Aggregation in Large Language Models.</a> 
-                        <br>[<a href="files/RequalLM-asudeh.pdf">Slides</a>]<span class="badge badge-info">LLM</span><span class="badge badge-warning">Fairness</span><span class="badge badge-primary">Reliability</span>
+                        <br>[<a class="code-link" href="files/RequalLM-asudeh.pdf">Slides</a>]<span class="badge badge-info">LLM</span><span class="badge badge-warning">Fairness</span><span class="badge badge-primary">Reliability</span>
                         <br><a href="https://scholar.google.com/citations?user=-RDRcqAAAAAJ" target="_blank">Sana Ebrahimi</a>, <a href="https://neemashahbazi.github.io/" target="_blank">Nima Shahbazi</a>, Abolfazl Asudeh. 
-                        <br> In NAACL (Findings), 2024
+                        <br> <span class="pub-venue">In NAACL (Findings), 2024</span>
                     </li>
                     <li>
                         <a href="https://ieeexplore.ieee.org/abstract/document/10884307" target="_blank">AXOLOTL: Fairness through Assisted Self-Debiasing of Large Language Model Outputs</a>. 
-                        <br>[<a href="files/AXOLOTL_ICKG.pdf">Slides</a>]<span class="badge badge-info">LLM</span><span class="badge badge-warning">Fairness</span>
+                        <br>[<a class="code-link" href="files/AXOLOTL_ICKG.pdf">Slides</a>]<span class="badge badge-info">LLM</span><span class="badge badge-warning">Fairness</span>
                         <br><a href="https://scholar.google.com/citations?user=-RDRcqAAAAAJ" target="_blank">Sana Ebrahimi</a>, Kaiwen Chen, Abolfazl Asudeh, Gautam Das, Nick Koudas. 
-                        <br>In ICKG, 2024
+                        <br><span class="pub-venue">In ICKG, 2024</span>
                     </li>
                     <li>
                         <a href="https://link.springer.com/article/10.1007/s00778-024-00857-w" target="_blank">Reliability Evaluation of Individual Predictions: A Data-centric Approach.</a> 
                         <br><span class="badge badge-info">Data-centric AI</span><span class="badge badge-primary">Reliability</span>
                         <br><a href="https://neemashahbazi.github.io/" target="_blank">Nima Shahbazi</a>, Abolfazl Asudeh. 
-                        <br>In VLDB Journal, 2024
+                        <br><span class="pub-venue">In VLDB Journal, 2024</span>
                     </li>
                     <li>
                         <a href="http://sites.computer.org/debull/A24mar/A24MAR-CD.pdf#page=5" target="_blank">Coverage-based Data-centric Approaches for Responsible and Trustworthy AI.</a> 
                         (Invited paper)
                         <br><span class="badge badge-info">Data-centric AI</span><span class="badge badge-success">Responsible Data</span>
                         <br><a href="https://neemashahbazi.github.io/" target="_blank">Nima Shahbazi</a>, <a href="http://merfanian.github.io/" target="_blank">Mahdi Erfanian</a>, Abolfazl Asudeh. 
-                        <br>Data Engineering Bulletin 48(1), Special Issue on Data-centric Responsible AI, 2024</li>
+                        <br><span class="pub-venue">Data Engineering Bulletin 48(1), Special Issue on Data-centric Responsible AI, 2024</span>
+                    </li>
                     <li>
                         <a href="https://arxiv.org/abs/2306.13868" target="_blank" >Data Coverage for Detecting Representation Bias in Image Data Sets: A Crowdsourcing Approach.</a> 
-                        <br> [<a href="https://github.com/melimou/ImageDataCvgCrwd">Code</a>]
+                        <br> [<a class="code-link" href="https://github.com/melimou/ImageDataCvgCrwd">Code</a>]
                         <span class="badge badge-success">Responsible Data</span>
                         <br>Melika Mousavi, <a href="https://neemashahbazi.github.io/" target="_blank">Nima Shahbazi</a>, Abolfazl Asudeh.
-                        <br>In EDBT, 2024
+                        <br><span class="pub-venue">In EDBT, 2024</span>
                     </li>
                     <li>
                         <a href="https://openproceedings.org/2024/conf/edbt/paper-172.pdf" target="_blank">Shapley Values for Explanation in Two-sided Matching Applications.</a>
-                        <br> [<a href="https://github.com/UIC-InDeXLab/ExplainMatchTopK">Code</a>]
+                        <br> [<a class="code-link" href="https://github.com/UIC-InDeXLab/ExplainMatchTopK">Code</a>]
                         <span class="badge badge-info">Matching</span><span class="badge badge-warning">Explainability</span>
                         <br>Suraj Shetiya, Ian Swift, Abolfazl Asudeh, Gautam Das. 
-                        <br>In EDBT, 2024
+                        <br><span class="pub-venue">In EDBT, 2024</span>
                     </li>
                     <li>
                         <a href="https://link.springer.com/article/10.1007/s00778-024-00849-w" target="_blank">Data Distribution Tailoring Revisited: Cost-Efficient Integration of Representative Data.</a> 
                         <br><span class="badge badge-success">Responsible Data</span>
                         <br>Jiwon Chang, Bohan Cui, Fatemeh Nargesian, Abolfazl Asudeh, H. V. Jagadish. 
-                        <br>In VLDB Journal, 2024
+                        <br><span class="pub-venue">In VLDB Journal, 2024</span>
                     </li>
                     <li>
                         <a href="https://www.vldb.org/pvldb/vol17/p4417-shahbazi.pdf" target="_blank">FairEM360: A Suite for Responsible Entity Matching</a>. 
                         (Demo paper) 
                         <br>
-                        [<a href="https://github.com/UIC-InDeXLab/FairEMDemo">Demo Code</a>]
-                        [<a href="https://github.com/UIC-InDeXLab/fair_entity_matching">EMFairness Code</a>]
-                        [<a href="https://youtu.be/euNuleF2P94?si=Gv7RoNbvo61xS_lp">Video</a>]
+                        [<a class="code-link" href="https://github.com/UIC-InDeXLab/FairEMDemo">Demo Code</a>]
+                        [<a class="code-link" href="https://github.com/UIC-InDeXLab/fair_entity_matching">EMFairness Code</a>]
+                        [<a class="code-link" href="https://youtu.be/euNuleF2P94?si=Gv7RoNbvo61xS_lp">Video</a>]
                         <span class="badge badge-success">ResponsibleData</span><span class="badge badge-info">Entity Matching</span>
                         <br><a href="https://neemashahbazi.github.io/" target="_blank">Nima Shahbazi</a>, <a href="http://merfanian.github.io/" target="_blank">Mahdi Erfanian</a>, Abolfazl Asudeh, Fatemeh Nargesian, Divesh Srivastava.
-                        <br>In VLDB, 2024
+                        <br><span class="pub-venue">In VLDB, 2024</span>
                         <span class="badge badge-warning"><a href="https://youtu.be/euNuleF2P94?si=Gv7RoNbvo61xS_lp" target="_blank"> presentation video</a></span>
                     </li>
                 </ul>   
