@@ -33,7 +33,7 @@ function Format()
         else st+='. ';
         if('type' in pub)
             if(pub['type'].trim()!='Full paper') 
-                st+='&nbsp;<span class="pubtype">('+ pub['type']+')</span>';
+                st+='&nbsp;<span class="pubtype">('+ pub['type'].trim()+')</span>';
         st+='<br>'+pub['author']+'. ';
         st+='In <b>'+ pub['venue']+'</b>';
         //st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
