@@ -27,7 +27,8 @@ function Format()
         if(!('author' in pub)) continue;
         st = '<li>';
         if('type' in pub)
-            if(pub['type']!='Full paper') st+='&nbsp;<span class="pubtype">'+ pub['type']+'</span>';
+            if(pub['type'].trim()!='Full paper') 
+                st+='&nbsp;<span class="pubtype">'+ pub['type']+'</span>';
         if('url' in pub)  st+='<a target="_blank" href="'+ pub['url']+'">';
         st+='<i>'+pub['title']+'</i>';
         if('url' in pub)  st+='</a>';
