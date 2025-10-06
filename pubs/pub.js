@@ -31,11 +31,12 @@ function Format()
         if('url' in pub) 
             st+='</a>. ';
         else st+='. ';
+        if (pub['venue'].trim()!='CoRR')
+            st+='In <b>'+ pub['venue']+'</b>.';
         if('type' in pub)
             if(pub['type'].trim()!='Full paper') 
                 st+='&nbsp;<span class="pubtype">('+ pub['type'].trim()+')</span>';
         st+='<br>'+pub['author']+'. ';
-        st+='In <b>'+ pub['venue']+'</b>';
         //st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
         if('volume' in pub) st+=', Vol. '+ pub['volume'];
         if('number' in pub) st+='('+ pub['number']+')';
