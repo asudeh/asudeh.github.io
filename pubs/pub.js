@@ -32,7 +32,7 @@ function Format()
             st+='</a>.<br>';
         else st+='.<br>';
         if (pub['venue'].trim()!='CoRR'){
-            st+='In <b>'+ pub['venue'];
+            st+='In <b>'+ pub['venue']+'<b>';
             if('volume' in pub) st+=', Vol. '+ pub['volume'];
             if('number' in pub) st+='('+ pub['number']+')';
             if('pages' in pub) st+=', pages '+ pub['pages'];
