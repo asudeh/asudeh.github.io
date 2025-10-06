@@ -41,7 +41,7 @@ function Format()
         if('type' in pub)
             if(pub['type'].trim()!='Full paper') 
                 st+='&nbsp;<span class="pubtype">('+ pub['type'].trim()+')</span>';
-        if('year' in pub) st+= pub['year']+'.';
+        if('year' in pub) st+= ' '+ pub['year']+'.';
         st+='<br>'+pub['author']+'. ';
         //st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
         if('slides' in pub) st+='&nbsp;<span class="coderepo"><a target="_blank" href="'+ pub['slides']+'">[slides]</a></span>';
