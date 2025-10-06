@@ -31,18 +31,19 @@ function Format()
         if('url' in pub) 
             st+='</a>. ';
         else st+='. ';
-        if (pub['venue'].trim()!='CoRR')
-            st+='In <b>'+ pub['venue']+'</b>.';
+        if (pub['venue'].trim()!='CoRR'){
+            st+='In <b>'+ pub['venue'];
+            if('volume' in pub) st+=', Vol. '+ pub['volume'];
+            if('number' in pub) st+='('+ pub['number']+')';
+            if('pages' in pub) st+=', pages '+ pub['pages'];
+            if('publisher' in pub) st+=', '+ pub['publisher'];
+        }
+        if('year' in pub) st+=', '+ pub['year']+'.';
         if('type' in pub)
             if(pub['type'].trim()!='Full paper') 
                 st+='&nbsp;<span class="pubtype">('+ pub['type'].trim()+')</span>';
         st+='<br>'+pub['author']+'. ';
         //st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
-        if('volume' in pub) st+=', Vol. '+ pub['volume'];
-        if('number' in pub) st+='('+ pub['number']+')';
-        if('pages' in pub) st+=', pages '+ pub['pages'];
-        if('year' in pub) st+=', '+ pub['year'];
-        if('publisher' in pub) st+=', '+ pub['publisher']+'.';
         if('slides' in pub) st+='&nbsp;<span class="coderepo"><a target="_blank" href="'+ pub['slides']+'">[slides]</a></span>';
         if('code' in pub) st+='&nbsp;<span class="coderepo"><a target="_blank" href="'+ pub['code']+'">[code]</a></span>';
         if('video' in pub) st+='&nbsp;<span class="coderepo"><a target="_blank" href="'+ pub['video']+'">[video]</a></span>';
