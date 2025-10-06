@@ -29,8 +29,8 @@ function Format()
         if('url' in pub)  st+='<a target="_blank" href="'+ pub['url']+'">';
         st+='<i>'+pub['title']+'</i>';
         if('url' in pub) 
-            st+='</a>. ';
-        else st+='. ';
+            st+='</a>.<br>';
+        else st+='.<br>';
         if (pub['venue'].trim()!='CoRR'){
             st+='In <b>'+ pub['venue'];
             if('volume' in pub) st+=', Vol. '+ pub['volume'];
@@ -38,10 +38,10 @@ function Format()
             if('pages' in pub) st+=', pages '+ pub['pages'];
             if('publisher' in pub) st+=', '+ pub['publisher'];
         }
-        if('year' in pub) st+=', '+ pub['year']+'.';
         if('type' in pub)
             if(pub['type'].trim()!='Full paper') 
                 st+='&nbsp;<span class="pubtype">('+ pub['type'].trim()+')</span>';
+        if('year' in pub) st+= pub['year']+'.';
         st+='<br>'+pub['author']+'. ';
         //st+=pub['author']+'. '+ pub['title']+'. <i>'+ pub['venue']+'</i>';
         if('slides' in pub) st+='&nbsp;<span class="coderepo"><a target="_blank" href="'+ pub['slides']+'">[slides]</a></span>';
