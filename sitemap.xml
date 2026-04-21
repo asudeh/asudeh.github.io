@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-	<loc>pub.htm</loc> 
-	<loc>awards.htm</loc>
-  <loc>services.htm</loc> 
-	<loc>teaching/archive.html</loc> 
-  <loc>teaching/archive/cs516spring25/index.html</loc> 
-  <loc>teaching/archive/cs501fall21/index.html</loc> 
+    <loc>https://asudeh.github.io/</loc>
+  </url>
+  <url>
+    <loc>https://asudeh.github.io/pub.htm</loc>
+  </url>
+  <url>
+    <loc>https://asudeh.github.io/awards.htm</loc>
+  </url>
+  <url>
+    <loc>https://asudeh.github.io/services.htm</loc>
+  </url>
+  <url>
+    <loc>https://www.cs.uic.edu/~indexlab/</loc>
+  </url>
+  <url>
+    <loc>https://www.cs.uic.edu/~indexlab/nsf-iis-2348919/index.html</loc>
+  </url>
+  <url>
+    <loc>https://asudeh.github.io/teaching/archive.html</loc>
+  </url>
+  <url>
+    <loc>https://asudeh.github.io/teaching/archive/cs516spring25/index.html</loc>
+  </url>
+  <url>
+    <loc>https://asudeh.github.io/teaching/archive/cs501fall21/index.html</loc>
+  </url>
+  <url>
+    <loc>https://asudeh.github.io/teaching/archive/cs480fall25/index.html</loc>
   </url>
 </urlset>

@@ -1,3 +1,51 @@
+const sitePagesForSitemap = [
+  '',
+  'pub.htm',
+  'awards.htm',
+  'services.htm',
+  'teaching/archive.html',
+  'teaching/archive/cs516spring25/index.html',
+  'teaching/archive/cs501fall21/index.html',
+  'teaching/archive/cs480fall25/index.html'
+];
+
+const mainNavLinks = [
+  { href: 'index.htm', label: 'Home' },
+  { href: 'pub.htm', label: 'Publications' },
+  { href: 'https://www.cs.uic.edu/~indexlab/', label: 'InDeX Lab', absolute: true }
+];
+
+const projectDropdownLinks = [
+  {
+    href: 'https://www.cs.uic.edu/~indexlab/nsf-iis-2348919/index.html',
+    label: 'NSF IIS-2348919 | Fairness-aware Data Structures',
+    absolute: true
+  }
+];
+
+const teachingDropdownLinks = [
+  { href: 'teaching/archive/cs516spring25/index.html', label: 'CS516 (Algorithmic Fairness) Spring 2025' },
+  { href: 'teaching/archive/cs501fall21/index.html', label: 'CS501  (Algorithms II) Fall 2021' },
+  { href: 'teaching/archive/cs480fall25/index.html', label: 'CS480  (Database Systems) Fall 2025' }
+];
+
+const secondaryNavLinks = [
+  { href: 'awards.htm', label: 'Awards' },
+  { href: 'services.htm', label: 'Services' }
+];
+
+function navItem(link, path) {
+  const href = link.absolute ? link.href : path + link.href;
+  return '    <li class="nav-item active"> '
+    + '      <a class="nav-link" href="' + href + '">' + link.label + '<span class="sr-only">(current)</span></a> '
+    + '    </li> ';
+}
+
+function dropdownItem(link, path) {
+  const href = link.absolute ? link.href : path + link.href;
+  return '          <a class="dropdown-item" href="' + href + '" target="_blank">' + link.label + '</a>';
+}
+
 function header(path='') {
 st = '<nav class="navbar navbar-expand-lg navbar-light bg-light"> ';
 st += '<a class="navbar-brand" href="https://www.cs.uic.edu/~indexlab/" style="color:#ffcb05;"> ';
@@ -9,14 +57,9 @@ st += '  <span class="navbar-toggler-icon"></span> ';
 st += '</button> ';
 st += '<div class="collapse navbar-collapse" id="navbarSupportedContent"> ';
 st += '  <ul class="navbar-nav mr-auto"> ';
-st += '    <li class="nav-item active"> ';
-st += '      <a class="nav-link" href="'+path+'index.htm">Home <span class="sr-only">(current)</span></a> ';
-st += '    </li> ';
-st += '      <a class="nav-link" href="'+path+'pub.htm">Publications <span class="sr-only">(current)</span></a> ';
-st += '    </li> ';
-st += '    <li class="nav-item active"> ';
-st += '      <a class="nav-link" href="https://www.cs.uic.edu/~indexlab/">InDeX Lab <span class="sr-only">(current)</span></a> ';
-st += '    </li> ';
+for (const link of mainNavLinks) {
+st += navItem(link, path);
+}
 //st += '    <li class="nav-item active"> ';
 //st += '      <a class="nav-link" href="https://www.cs.uic.edu/~indexlab/projects.htm">Projects <span class="sr-only">(current)</span></a> ';
 //st += '    </li> ';
@@ -31,7 +74,9 @@ st+= '        <a class="nav-link dropdown-toggle" id="fundedProjectsDropdown" ro
 st+= '          Projects';
 st+= '        </a>';
 st+= '        <div class="dropdown-menu" aria-labelledby="fundedProjectsDropdown">';
-st+= '          <a class="dropdown-item"  target="_blank" href="https://www.cs.uic.edu/~indexlab/nsf-iis-2348919/index.html">NSF IIS-2348919 | Fairness-aware Data Structures</a>';
+for (const link of projectDropdownLinks) {
+st+= dropdownItem(link, path);
+}
 st+= '        </div>';
 st += '    </li> ';
 st+= '     <li class="nav-item dropdown">';
@@ -39,19 +84,16 @@ st+= '        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" r
 st+= '          Teaching';
 st+= '        </a>';
 st+= '        <div class="dropdown-menu" aria-labelledby="navbarDropdown">';
-st+= '          <a class="dropdown-item" href="'+path+'teaching/archive/cs516spring25/index.html" target="_blank">CS516 (Algorithmic Fairness) Spring 2025</a>';
-st+= '          <a class="dropdown-item" href="'+path+'teaching/archive/cs501fall21/index.html" target="_blank">CS501  (Algorithms II) Fall 2021</a>';
-st+= '          <a class="dropdown-item" href="'+path+'teaching/archive/cs480fall25/index.html" target="_blank">CS480  (Database Systems) Fall 2025</a>';
+for (const link of teachingDropdownLinks) {
+st+= dropdownItem(link, path);
+}
 st+= '          <hr>';
 st+= '          <a class="dropdown-item" href="'+path+'teaching/archive.html" target="_blank">Archive</a>';
 st+= '        </div>';
 st += '    </li> ';
-st += '    <li class="nav-item active"> ';
-st += '      <a class="nav-link" href="'+path+'awards.htm">Awards<span class="sr-only">(current)</span></a> ';
-st += '    </li> ';
-st += '    <li class="nav-item active"> ';
-st += '      <a class="nav-link" href="'+path+'services.htm">Services<span class="sr-only">(current)</span></a> ';
-st += '    </li> ';
+for (const link of secondaryNavLinks) {
+st += navItem(link, path);
+}
 st += '  </ul> ';
 st += '</div> ';
 st += '</nav> ';
