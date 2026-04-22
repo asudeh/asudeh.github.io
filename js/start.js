@@ -20,6 +20,11 @@ const projectDropdownLinks = [
     href: 'https://www.cs.uic.edu/~indexlab/nsf-iis-2348919/index.html',
     label: 'NSF IIS-2348919 | Fairness-aware Data Structures',
     absolute: true
+  },
+  {
+    href: 'https://www.cs.uic.edu/~indexlab/efficient-on-device-llm-inference/index.html',
+    label: 'Efficient and Private On-device LLM Inference',
+    absolute: true
   }
 ];
 
