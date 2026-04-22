@@ -22,8 +22,8 @@ const projectDropdownLinks = [
     absolute: true
   },
   {
-    href: 'https://www.cs.uic.edu/~indexlab/efficient-on-device-llm-inference/index.html',
-    label: 'Efficient and Private On-device LLM Inference',
+    href: 'https://www.cs.uic.edu/~indexlab/efficient-llm-inference/index.html',
+    label: 'Efficient LLM Inference',
     absolute: true
   },
   {
