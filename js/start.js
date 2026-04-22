@@ -76,7 +76,7 @@ st += navItem(link, path);
 //st += '    </li> ';
 st+= '     <li class="nav-item dropdown">';
 st+= '        <a class="nav-link dropdown-toggle" id="fundedProjectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
-st+= '          Projects';
+st+= '          Active Projects';
 st+= '        </a>';
 st+= '        <div class="dropdown-menu" aria-labelledby="fundedProjectsDropdown">';
 for (const link of projectDropdownLinks) {
