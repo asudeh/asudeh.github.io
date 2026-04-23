@@ -33,7 +33,7 @@ const projectDropdownLinks = [
   },
   {
     href: 'https://www.cs.uic.edu/~indexlab/genai4dm/index.html',
-    label: 'Generative AI for Data Management',
+    label: 'Generative AI for Multimodal Data Management',
     absolute: true
   }
 ];
