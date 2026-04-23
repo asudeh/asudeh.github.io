@@ -35,6 +35,11 @@ const projectDropdownLinks = [
     href: 'https://www.cs.uic.edu/~indexlab/genai4dm/index.html',
     label: 'Generative AI for Multimodal Data Management',
     absolute: true
+  },
+  {
+    href: 'https://www.cs.uic.edu/~indexlab/vectordb/index.html',
+    label: 'VectorDB | Theoretically-sound and Practically-efficient Vector Data Retrieval',
+    absolute: true
   }
 ];
 
