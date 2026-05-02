@@ -18,7 +18,7 @@ const mainNavLinks = [
 const projectDropdownLinks = [
   {
     href: 'https://www.cs.uic.edu/~indexlab/nsf-iis-2348919/index.html',
-    label: 'NSF IIS-2348919 | Fairness-aware Data Structures',
+    label: 'Fairness-aware Data Structures',
     absolute: true
   },
   {
@@ -38,7 +38,7 @@ const projectDropdownLinks = [
   },
   {
     href: 'https://www.cs.uic.edu/~indexlab/vectordb/index.html',
-    label: 'VectorDB | Theoretically-sound and Practically-efficient Vector Data Retrieval',
+    label: 'Vector Data Retrieval',
     absolute: true
   }
 ];
