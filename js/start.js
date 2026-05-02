@@ -38,7 +38,7 @@ const projectDropdownLinks = [
   },
   {
     href: 'https://www.cs.uic.edu/~indexlab/vectordb/index.html',
-    label: 'Vector Data Retrieval',
+    label: 'VectorDB: Efficient Vector Data Retrieval',
     absolute: true
   }
 ];
