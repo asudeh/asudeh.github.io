@@ -11,6 +11,7 @@
     <title>A. Asudeh - Home page</title>
     <link rel="stylesheet" type="text/css" href="ppl.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <script type="text/javascript" src="js/myobjects.js"></script>
     <script type="text/javascript" src="js/start.js"></script>
     <script type="text/javascript">
@@ -18,97 +19,91 @@
             header();
         }
     </script>
-    <style>
-        .code-link {
-            font-weight: 500;
-            color: #2980b9;
-            text-decoration: none;
-            font-size: 0.8em;
-        }
-
-        .code-link:hover {
-            text-decoration: underline;
-        }
-
-        .pub-venue {
-            color: #7f8c8d;
-            font-weight: 500;
-        }
-
-    </style>
 </head>
 
 <body onload='init()'>
     <div id="headerDiv"></div>
     <!-- Your code starts here -->
-    <div class="container">
+    <div class="container page-shell">
 
-        <div class="row no-gutters">
-            <div class="col-md-2 text-center">
-              <!--<img class="person abol card-img"/>-->
-              <p></p>
-              <img width="100%" src="imgs/abol1.jpg" class="photobox"/>
+        <div class="intro-grid">
+            <div class="intro-sidebar">
+                <!--<img class="person abol card-img"/>-->
+                <div class="profile-photo-frame">
+                    <img src="imgs/abol1.jpg" class="photobox profile-photo" alt="Abolfazl Asudeh"/>
+                </div>
+                <div class="intro-card contact-block">
+                    <div class="card-body">
+                        <div class="contact-line">
+                            850 W. Taylor Street, CDRLC 5452, Chicago, IL 60607
+                        </div>
+                        <div class="contact-line">(312) 413-8028</div>
+                        <div class="contact-line"><i>asudeh[AT]uic.edu</i></div>
+                        <a target="_blank" href="https://www.cs.uic.edu/~indexlab/"><img src="https://www.cs.uic.edu/~indexlab/imgs/InDeXLab2.gif" class="lab-logo" alt="InDeX Lab"/></a>
+                        <div class="profile-links">
+                            <a href="https://scholar.google.com/citations?user=cJXIgasAAAAJ&amp;sortby=pubdate" target="_blank"><img src="imgs/logos/scholar.png" title="Google Scholar" alt="Google Scholar" /></a>
+                            <a href="https://dblp.uni-trier.de/pers/hd/a/Asudeh:Abolfazl" target="_blank"><img src="imgs/logos/dblp.png" title="DBLP" alt="DBLP" /></a>
+                            <a href="https://orcid.org/0000-0002-5251-6186" target="_blank"><img src="imgs/logos/orcid.png" title="ORCID" alt="ORCID" /></a>
+                            <a href="https://www.linkedin.com/in/asudeh/" target="_blank"><img src="imgs/logos/linkedin.png" title="Linkedin" alt="Linkedin" /></a>
+                            <!--<a href="https://twitter.com/ab_asudeh" target="_blank"><img src="imgs/logos/twitter.png" title="Twitter" alt="Twitter" /></a>
+                            <a href="https://github.com/asudeh" target="_blank"><img src="imgs/logos/github.png" title="Github" alt="Github" /></a>-->
+                            <!--<a href="https://www.researchgate.net/profile/Abolfazl_Asudeh" target="_blank"><img src="imgs/logos/researchgate.png" title="ResearchGate" alt="ResearchGate" /></a>
+                            <a href="https://medium.com/@a.asudeh" target="_blank"><img src="imgs/logos/medium.png" title="Medium" alt="Medium" /></a>-->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-10">
-              <div class="card-body">
-                  <div>
-                      <h4>Abolfazl Asudeh
-                      <a href="https://namedrop.io/abolfazlasudeh" target="_blank">
-                        🔊</a></h4>
-                      <h6>Associate Professor</h6>
-                      <h6><a href="http://cs.uic.edu/" target="_blank">Department of Computer Science</a></h6>
-                      <h6><a href="http://www.uic.edu" target="_blank">University of Illinois Chicago</a></h6>
-                  </div>
-                  <div>
-                      <a target="_blank" href="https://www.cs.uic.edu/~indexlab/"><img src="https://www.cs.uic.edu/~indexlab/imgs/InDeXLab2.gif" width="20%" alt="InDeX Lab"/></a>
-                  </div>
-                  <hr/>
-                  <div>
-                      <h6>Contact</h6>
-                      850 W. Taylor Street, Computer Design Research and Learning Center (CDRLC), Room 5452, Chicago, IL 60607 <br>
-                      &#x260F;: (312) 413-8028
-                      &#9993;: <i style="line-height:2">asudeh[AT]uic[DOT]edu</i><br>
-                      <a href="https://scholar.google.com/citations?user=cJXIgasAAAAJ&sortby=pubdate" target="_blank"><img height="30pt" src="imgs/logos/scholar.png" title="Google Scholar" /></a>
-                      <a href="https://dblp.uni-trier.de/pers/hd/a/Asudeh:Abolfazl" target="_blank"><img height="30pt" src="imgs/logos/dblp.png" title="DBLP" /></a>
-                      <a href="https://orcid.org/0000-0002-5251-6186" target="_blank"><img height="30pt" src="imgs/logos/orcid.png" title="ORCID" /></a>
-                      <a href="https://www.linkedin.com/in/asudeh/" target="_blank"><img height="30pt" src="imgs/logos/linkedin.png" title="Linkedin" /></a>
-                      <!--<a href="https://twitter.com/ab_asudeh" target="_blank"><img height="30pt" src="imgs/logos/twitter.png" title="Twitter" /></a>
-                      <a href="https://github.com/asudeh" target="_blank"><img height="30pt" src="imgs/logos/github.png" title="Github" /></a>-->
-                      <a href="https://www.researchgate.net/profile/Abolfazl_Asudeh" target="_blank"><img height="30pt" src="imgs/logos/researchgate.png" title="ResearchGate" /></a>
-                      <a href="https://medium.com/@a.asudeh" target="_blank"><img height="30pt" src="imgs/logos/medium.png" title="Medium" /></a>
-                  </div>
-              </div>
-            </div>
-        <!--<div class="contentBox" style="padding-left: 5pt;">
-            <p class="lead"> -->
-        <div class="card contentBoxNB">
-            <!--<div class="card-header">Short Bio</div>-->
-                <div class="card-body">
-                A. Asudeh is an Associate Professor of <a href="http://cs.uic.edu/" target="_blank">Computer Science</a> at the <a href="http://www.uic.edu" target="_blank">University of Illinois Chicago</a> and the director of <a href="http://www.cs.uic.edu/~indexlab" target="_blank">Innovative Data Exploration Laboratory (InDeX Lab)</a>. 
-                <br>
-                His research focus is on <strong>Algorithm Design for Data and AI problems</strong>. He designs efficient, accurate, and responsible solutions that leverage Approximation, Randomized, and Computational Geometry Algorithms.  
-                His research interests include the interplay of Data/Algorithms/AI, Responsible Data Science, and Ranking and Approximate Nearest Neighbor Problems, among others.
-                <br>
-                Asudeh is a senior member of ACM and a senior member of IEEE.
-                He serves as an Associate Editor for the IEEE Transactions on Knowledge and Data Engineering (<a href="https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=69">TKDE</a>), is a regular PC member of Data Management and AI flagship venues, and served as a VLDB Ambassador and the VLDB Endowment's Liaison to NSF.
-                <br>
-                His research is supported by NSF and has received recognitions, including
-                    the Communications of the ACM's (CACM) Research Highlight,
-                    Google's Research Scholar Award,
-                    SIGMOD 2019 Research Highlight Award, 
-                    “Best of VLDB” 2020 (the special issue of VLDBJ), and
-                    SIGMOD 2017 Reproducibility Award. <br>                    
-                <!--Some of his thoughts about <a href="http://wp.sigmod.org/?p=3174" target="_blank">"Enabling Responsible Data Science in Practice"</a> has been featured by the <a target="_blank" href="http://wp.sigmod.org/">ACM SIGMOD Blog</a>.	-->
+
+            <div class="intro-main">
+                <div class="intro-card identity-card">
+                    <div class="card-body">
+                        <div class="identity-block">
+                            <h1>Abolfazl Asudeh
+                                <a href="https://namedrop.io/abolfazlasudeh" target="_blank">🔊</a>
+                            </h1>
+                            <p class="role-line">Associate Professor, <a href="http://cs.uic.edu/" target="_blank">Department of Computer Science</a>, <a href="http://www.uic.edu" target="_blank">University of Illinois Chicago</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="intro-card bio-card">
+                    <div class="card-body">
+                        <p>
+                            A. Asudeh is an Associate Professor of <a href="http://cs.uic.edu/" target="_blank">Computer Science</a> at the <a href="http://www.uic.edu" target="_blank">University of Illinois Chicago</a> and the director of <a href="http://www.cs.uic.edu/~indexlab" target="_blank">Innovative Data Exploration Laboratory (InDeX Lab)</a>.
+                        </p>
+                        <p>
+                            His research focus is on <strong>Algorithm Design for Data and AI problems</strong>. He designs efficient, accurate, and responsible solutions that leverage Approximation, Randomized, and Computational Geometry Algorithms.
+                            His research interests include the interplay of Data/Algorithms/AI, Responsible Data Science, and Ranking and Approximate Nearest Neighbor Problems, among others.
+                        </p>
+                        <p>
+                            Asudeh is a senior member of ACM and a senior member of IEEE.
+                            He serves as an Associate Editor for the IEEE Transactions on Knowledge and Data Engineering (<a href="https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=69">TKDE</a>), is a regular PC member of Data Management and AI flagship venues, and served as a VLDB Ambassador and the VLDB Endowment's Liaison to NSF.
+                        </p>
+                        <p>
+                            His research is supported by NSF and has received recognitions, including
+                            the Communications of the ACM's (CACM) Research Highlight,
+                            Google's Research Scholar Award,
+                            SIGMOD 2019 Research Highlight Award,
+                            “Best of VLDB” 2020 (the special issue of VLDBJ), and
+                            SIGMOD 2017 Reproducibility Award.
+                        </p>
+                        <!--Some of his thoughts about <a href="http://wp.sigmod.org/?p=3174" target="_blank">"Enabling Responsible Data Science in Practice"</a> has been featured by the <a target="_blank" href="http://wp.sigmod.org/">ACM SIGMOD Blog</a>.	-->
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div>&nbsp;</div>
-        <div class="card contentBoxNB">
-            <div class="card-header">Major Active Projects</div>
+        <div class="section-card featured-projects-card">
+            <div class="section-header featured-projects-header">
+                <div>
+                    Active Projects
+                </div>
+                <span>Current lab directions.</span>
+            </div>
             <div class="card-body">
-                <ul style="line-height:1.7">
+                <ul class="project-list">
                     <li>
-                        <a href="https://www.cs.uic.edu/~indexlab/nsf-iis-2348919/index.html" target="_blank">Fairness-aware Data Structures (NSF IIS-2348919)</a>
+                        <a href="https://www.cs.uic.edu/~indexlab/nsf-iis-2348919/index.html" target="_blank">Fairness-aware Data Structures</a>
                     </li>
                     <li>
                         <a href="https://www.cs.uic.edu/~indexlab/efficient-llm-inference/index.html" target="_blank">Efficient LLM Inference</a>
@@ -126,11 +121,10 @@
             </div>
         </div>
 
-        <div>&nbsp;</div>
-        <div class="card contentBoxNB">
-            <div class="card-header">Selected Publications (Since 2025) -- see <a href="pub.htm"> Publications</a> for the complete list.</div>
-            <div class="card-body" style="height: 700pt; overflow-y: scroll;">
-                <ul style="line-height:1.7">
+        <div class="section-card">
+            <div class="section-header">Selected Publications <span>See <a href="pub.htm">Publications</a> for the complete list.</span></div>
+            <div class="card-body publications-scroll">
+                <ul class="publication-list">
                     <li>
                         <a href="https://arxiv.org/pdf/2505.18919" target="_blank">Fair-Count-Min: Frequency Estimation under Equal Group-wise Approximation Factor</a>.
                         <br><span class="badge badge-info">Data-structure</span><span class="badge badge-warning">Fairness</span>
@@ -303,76 +297,54 @@
             </div>
         </div>
 
-        <div>&nbsp;</div>
-        <div class="card contentBoxNB">
-            <div class="card-header"> 📌 Pinned Systems and Repositories 📌</div>
-            <div class="card-body">
-            <div class="row no-gutters">
-                <div class="col-md-3 text-center">
-                      <!--<img class="person abol card-img"/>-->
-                      <p></p>
-                      <img width="90%" src="imgs/needlelogo.png"/>
+        <div class="section-card">
+            <div class="section-header">Pinned Systems and Repositories</div>
+            <div class="systems-list">
+                <div class="system-card">
+                    <div class="system-media">
+                        <img src="imgs/needlelogo.png" alt="Needle project logo"/>
                     </div>
-                    <div class="col-md-9">
-                      <div class="card-body">
-                        <b>Needle🪡🔍</b> is a <i>deployment-ready</i> open-source image retrieval database with high accuracy that can handle <b>complex queries in natural language</b>. 
-                        It is <strong>Fast</strong>, <strong>Efficient</strong>, and <strong>Precise</strong>, outperforming state-of-the-art methods. 
-                        Born from high-end research, Needle is designed to be accessible to everyone while delivering top-notch performance. 
-                        Whether you are a researcher, developer, or an enthusiast, Needle opens up innovative ways to explore your image datasets. ✨
-                      <div class="project-links">
-                        <a href="https://www.cs.uic.edu/~indexlab/Needle" class="btn project-btn" target="_blank">
-                          🌐 Visit Project
-                        </a>
-                        <a href="https://github.com/UIC-InDeXLab/Needle" class="btn github-btn" target="_blank">
-                          🛠️ View on GitHub
-                        </a>
-                        <a href="https://arxiv.org/abs/2412.00639" class="btn publication-btn" target="_blank">
-                            📄 Read Publication (Preprint)
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=n-SXX_ry9-0" class="btn youtube-btn" target="_blank">
-                            ▶️ Watch on YouTube
-                        </a>
-                      </div>
-                      <p class="install-instructions">
-                        📖 <strong>Detailed installation instructions:</strong>  
-                        <a href="https://www.cs.uic.edu/~indexlab/Needle/getting-started.html" target="_blank" class="install-link">
-                          Getting Started
-                        </a>. </p>
+                    <div class="system-copy">
+                        <h3>Needle</h3>
+                        <p>
+                            <strong>Needle</strong> is a deployment-ready open-source image retrieval database with high accuracy for complex natural-language queries.
+                            It is fast, efficient, and precise, outperforming state-of-the-art methods while staying accessible to researchers, developers, and practitioners.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://www.cs.uic.edu/~indexlab/Needle" class="btn project-btn" target="_blank">Visit Project</a>
+                            <a href="https://github.com/UIC-InDeXLab/Needle" class="btn github-btn" target="_blank">View on GitHub</a>
+                            <a href="https://arxiv.org/abs/2412.00639" class="btn publication-btn" target="_blank">Read Publication</a>
+                            <a href="https://www.youtube.com/watch?v=n-SXX_ry9-0" class="btn youtube-btn" target="_blank">Watch Video</a>
+                        </div>
+                        <p class="install-instructions">
+                            Detailed installation instructions:
+                            <a href="https://www.cs.uic.edu/~indexlab/Needle/getting-started.html" target="_blank" class="install-link">Getting Started</a>.
+                        </p>
                     </div>
                 </div>
-            </div>
-            <hr/>
-            <div class="row no-gutters">
-                <div class="col-md-3 text-center">
-                    <p></p>
-                    <img width="90%" src="imgs/rsr.png"/>
-                  </div>
-                  <div class="card-body col-md-9">
-                        <h6><b>RSR 🧮</b>: Efficient Matrix Multiplication for Accelerating Inference in Binary and Ternary Neural Networks</h6>
-                        This project aims to provide a fast and efficient approach to low-bit matrix multiplication.
-                        The code repository implements Redundant Segment Reduction (RSR), a fast matrix multiplication algorithm designed for matrices in binary and ternary networks. 
-                        The RSR method optimizes computation efficiency by a log(n) factor, making it particularly useful for applications in low-bit deep learning and efficient inference.
-                        The codebase provides ready-to-use <b>C++</b> and <b>NumPy</b>-based implementations, as well as <b>PyTorch</b> implementations with both <b>CPU</b> and <b>GPU</b> support, enabling scalable and optimized matrix operations in deep learning environments. 
-                        It includes sample experiments on various `1.58bit` models and LLMs.✨
+
+                <div class="system-card">
+                    <div class="system-media">
+                        <img src="imgs/rsr.png" alt="RSR project graphic"/>
+                    </div>
+                    <div class="system-copy">
+                        <h3>RSR: Efficient Matrix Multiplication for Low-bit Neural Networks</h3>
+                        <p>
+                            RSR provides a fast approach to low-bit matrix multiplication for binary and ternary neural networks.
+                            The repository includes C++, NumPy, and PyTorch implementations with CPU and GPU support, plus sample experiments on 1.58-bit models and LLMs.
+                        </p>
                         <div class="project-links">
-                            <a href="https://github.com/UIC-InDeXLab/RSR/" class="btn github-btn" target="_blank">
-                            🛠️ View on GitHub
-                            </a>
-                            <a href="https://arxiv.org/abs/2411.06360" class="btn publication-btn" target="_blank">
-                                📄 Read Publication (Preprint)
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=YzPmBoSsnks" class="btn youtube-btn" target="_blank">
-                            ▶️ Watch on YouTube
-                        </a>
+                            <a href="https://github.com/UIC-InDeXLab/RSR/" class="btn github-btn" target="_blank">View on GitHub</a>
+                            <a href="https://arxiv.org/abs/2411.06360" class="btn publication-btn" target="_blank">Read Publication</a>
+                            <a href="https://www.youtube.com/watch?v=YzPmBoSsnks" class="btn youtube-btn" target="_blank">Watch Video</a>
                         </div>
-                  </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div>&nbsp;</div>
-        <div class="card contentBoxNB">
-            <div class="card-header"><span class="badge badge-warning" style="font-size: large;"><b>Prospective Students</b></span></div>
+        <div class="section-card">
+            <div class="section-header">Prospective Students</div>
             <div class="card-body">
                 Every year, I look for a small number of motivated, smart, and hard-working <i>PhD students</i>.
                 In particular, I look for students with <i>a strong background in <b>Algorithms</b></i> who are interested in finding algorithmic solutions for data problems and AI (recently <i>LLMs and Foundation Models</i> have enabled an exceptional phenomenon for such research). 
@@ -381,7 +353,7 @@
                 If interested and qualified, please apply <a href="https://cs.uic.edu/graduate/admissions/" target="_blank">here</a> and <i>mention my name in your application</i>.
                 <br>
                 Due to the large number of emails, I may not be able to respond to them all. 
-                If you email me, please use ``<b>Prospective PhD Student</b>'' as the subject and attach your <b>CV and transcripts</b>. <i>Describe your skills, interests, research experience, and how those may fit <a href="https://www.cs.uic.edu/~indexlab/" target="_blank">InDeX Lab</a>.
+                If you email me, please use ``<b>Prospective PhD Student</b>'' as the subject and attach your <b>CV and transcripts</b>. <i>Describe your skills, interests, research experience, and how those may fit <a href="https://www.cs.uic.edu/~indexlab/" target="_blank">InDeX Lab</a>.</i>
             </div>
 
             <!--<div class="card-header">M.S. Thesis/Project, B.S. Capstone Project</div>
@@ -391,11 +363,10 @@
             </div>-->
         </div>
 
-        <div>&nbsp;</div>
-        <div class="card contentBoxNB">
-            <div class="card-header">Sponsors</div>
+        <div class="section-card">
+            <div class="section-header">Sponsors</div>
             <div class="card-body">
-                <ul style="line-height:1.7">
+                <ul class="comfortable-list">
                     <li> 
                         <a target="_blank" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2348919">NSF IIS-2348919</a> (2024 - 2027): 
                         <i>III: Small: Fairness-aware Data Structures for Approximate Query Processing</i>. 
@@ -412,13 +383,13 @@
                         A. Asudeh.
                     </li>
                 </ul>   
-                <br />
-        <a href="https://www.nsf.gov/" target="_blank"><img src="imgs/nsf.png" width="20%" alt="National Science Foundation" /></a>
-        <a href="https://research.google/" target="_blank"><img src="imgs/Research-at-google.png" width="16%" alt="Google Research" /></a>
-        <a href="https://www.cloudbank.org" target="_blank"><img src="imgs/cloudbank.png" width="15%" alt="CloudBank" /></a>
+                <div class="sponsor-logos">
+                    <a href="https://www.nsf.gov/" target="_blank"><img src="imgs/nsf.png" alt="National Science Foundation" /></a>
+                    <a href="https://research.google/" target="_blank"><img src="imgs/Research-at-google.png" alt="Google Research" /></a>
+                    <a href="https://www.cloudbank.org" target="_blank"><img src="imgs/cloudbank.png" alt="CloudBank" /></a>
+                </div>
             </div>
         </div>
-        <p></p>
     </div>
     <!-- Your code ends here -->
 	<!-- Optional JavaScript -->
