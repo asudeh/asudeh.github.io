@@ -498,7 +498,7 @@ a:hover {
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 639.98px) {
     .page-shell {
         width: calc(100% - 24px);
         max-width: 640px;
