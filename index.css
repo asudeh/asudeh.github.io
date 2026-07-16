@@ -472,10 +472,17 @@ a:hover {
     border-top: 1px solid #edf0f5;
 }
 
-.sponsor-logos img {
+.sponsor-logos-img-normal {
     width: auto;
     max-width: 170px;
     max-height: 58px;
+    object-fit: contain;
+}
+
+.sponsor-logos-img-main {
+    width: auto;
+    max-width: 300px;
+    max-height: 130px;
     object-fit: contain;
 }
 
