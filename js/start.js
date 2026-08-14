@@ -44,6 +44,7 @@ const projectDropdownLinks = [
 ];
 
 const teachingDropdownLinks = [
+  { href: 'teaching/archive/cs594fall26/index.html', label: 'CS594 (Vector Databases) Fall 2026' },
   { href: 'teaching/archive/cs516spring25/index.html', label: 'CS516 (Algorithmic Fairness) Spring 2025' },
   { href: 'teaching/archive/cs501fall21/index.html', label: 'CS501  (Algorithms II) Fall 2021' },
   { href: 'teaching/archive/cs480fall25/index.html', label: 'CS480  (Database Systems) Fall 2025' }

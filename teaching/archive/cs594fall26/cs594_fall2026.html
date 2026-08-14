@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>CS 594 -- Fall 2026</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+<div class="container">
+<div class="jumbotron jumbotron-fluid text-center">
+<h1 class="display-4">CS 594: Vector Databases</h1>
+<p class="lead">Fall 2026: M-W 9:30 am -- 10:45 am, CDRLC 1409</p>
+<hr class="my-4">
+
+<dl class="lead" style="text-align: left;padding-left: 10pt;">
+<dt>Instructor:</dt>
+<dd>Abolfazl Asudeh</dd>
+<dd><i>Office:</i> CDRLC 5452 (<a href="mailto:asudeh@uic.edu">email</a>, <a href="https://www.cs.uic.edu/~asudeh/">home page</a>)</dd>
+<dd><i>Office Hours:</i> M, 1:00 pm-3:00 pm.</dd>
+</dl>
+
+<hr class="my-4">
+<div class="lead" style="text-align: left;padding-left: 10pt;">
+<b>Course Description:</b>
+<p>
+The rapid rise of large language models (LLMs) and Retrieval-Augmented Generation (RAG) for tasks such as information retrieval, question answering, and knowledge-intensive reasoning, together with the increasing prevalence of large-scale unstructured data, has driven the emergence of vector database management systems. These systems are designed to extend traditional database architectures by efficiently storing, indexing, and querying vector representations such as embeddings, which are central to modern machine learning and AI-driven applications.
+</p>
+<p>
+This course explores advanced topics in Vector Databases and Retrieval-Augmented Generation (RAG), with a focus on the underlying data structures, algorithms, and system designs. Students will learn about information retrieval fundamentals, embedding models, vector database architectures, indexing techniques for high-dimensional data, and modern approaches for efficient query processing in vector databases. The course also covers other data models, such as knowledge graphs, and a practical implementation of RAG pipelines using vector databases.
+</p>
+</div>
+</div>
+</div>
+
+<div class="container">
+<h3 class="alert alert-info" role="alert"> Course Schedule</h3>
+<table class="table">
+<thead>
+<tr>
+<th scope="col">Week</th>
+<th scope="col">Date</th>
+<th scope="col">Topic</th>
+<th scope="col">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr><th scope="row">1</th><td>M. 8/24</td><td>Course Introduction; What is a Vector Database?</td><td><a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vldbj2024-vectordb.pdf" target="_blank">Pan, Wang & Li: Survey of Vector Database Management Systems</a>; <a href="https://arxiv.org/abs/2310.11703" target="_blank">Han, Liu & Wang: Vector Database Survey</a>; <a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vdbms-tutorial2024.pdf" target="_blank">VDBMS Tutorial Slides</a></td></tr>
+<tr><th scope="row"></th><td>W. 8/26</td><td>Vector Representations and Similarity Measures</td><td><a href="https://nlp.stanford.edu/IR-book/information-retrieval-book.html" target="_blank">Stanford IR Book, Ch. 6</a>; <a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vldbj2024-vectordb.pdf" target="_blank">Pan, Wang & Li: VDBMS Survey</a></td></tr>
+
+<tr><th scope="row">2</th><td>M. 8/31</td><td>Embedding Models: Text, Image, and Multimodal Embeddings</td><td><a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank">SLP Ch. 5: Embeddings</a>; <a href="https://nlp.stanford.edu/projects/glove/" target="_blank">GloVe</a>; <a href="https://arxiv.org/abs/1301.3781" target="_blank">word2vec</a></td></tr>
+<tr><th scope="row"></th><td>W. 9/2</td><td>Embedding Quality, Dimensionality, and Retrieval Evaluation</td><td><a href="https://nlp.stanford.edu/IR-book/information-retrieval-book.html" target="_blank">Stanford IR Book, Ch. 8</a></td></tr>
+
+<tr class="table-light"><th scope="row">3</th><td>M. 9/7</td><td><b>Labor Day Holiday -- No Class</b></td><td></td></tr>
+<tr><th scope="row"></th><td>W. 9/9</td><td>Exact Nearest-Neighbor Search and the Curse of Dimensionality</td><td><a href="https://arxiv.org/abs/2310.11703" target="_blank">Han, Liu & Wang: Vector Database Survey</a></td></tr>
+
+<tr><th scope="row">4</th><td>M. 9/14</td><td>Approximate Nearest-Neighbor Search: Problem Formulation and Guarantees</td><td><a href="https://arxiv.org/abs/2310.11703" target="_blank">Han, Liu & Wang: Vector Database Survey</a></td></tr>
+<tr><th scope="row"></th><td>W. 9/16</td><td>Locality-Sensitive Hashing (LSH)</td><td><a href="https://www.vldb.org/conf/1999/P49.pdf" target="_blank">Gionis, Indyk & Motwani: Similarity Search in High Dimensions via Hashing</a></td></tr>
+
+<tr><th scope="row">5</th><td>M. 9/21</td><td>Tree- and Partition-Based ANN Indexes</td><td><a href="https://doi.org/10.1145/602259.602266" target="_blank">Guttman: R-trees</a>; <a href="https://arxiv.org/abs/2310.11703" target="_blank">Han, Liu & Wang: Vector Database Survey</a></td></tr>
+<tr><th scope="row"></th><td>W. 9/23</td><td>Inverted File Indexes (IVF) and Clustering-Based Search</td><td><a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vldbj2024-vectordb.pdf" target="_blank">Pan, Wang & Li: VDBMS Survey</a></td></tr>
+
+<tr><th scope="row">6</th><td>M. 9/28</td><td>Vector Quantization and Product Quantization</td><td><a href="https://pubmed.ncbi.nlm.nih.gov/21088323/" target="_blank">J&eacute;gou et al.: Product Quantization</a>; <a href="https://people.csail.mit.edu/kaiming/publications/pami13opq.pdf" target="_blank">Ge et al.: Optimized Product Quantization</a>; <a href="https://arxiv.org/abs/2310.11703" target="_blank">Han, Liu & Wang: Vector Database Survey</a></td></tr>
+<tr><th scope="row"></th><td>W. 9/30</td><td>Graph-Based ANN Search</td><td><a href="https://arxiv.org/abs/1603.09320" target="_blank">Malkov & Yashunin: HNSW</a>; <a href="https://www.vldb.org/pvldb/vol12/p461-fu.pdf" target="_blank">Fu et al.: NSG</a>; <a href="https://arxiv.org/abs/2505.17368" target="_blank">Dehghankar & Asudeh: HENN</a></td></tr>
+
+<tr><th scope="row">7</th><td>M. 10/5</td><td>HNSW: Construction, Search, and Design Tradeoffs</td><td><a href="https://arxiv.org/abs/1603.09320" target="_blank">HNSW paper</a>; <a href="https://arxiv.org/pdf/1810.07355" target="_blank">k-NN graph indexing optimization</a>; <a href="https://arxiv.org/abs/2505.17368" target="_blank">Dehghankar & Asudeh: HENN</a></td></tr>
+<tr><th scope="row"></th><td>W. 10/7</td><td>Disk-Based and Memory-Efficient ANN Search</td><td><a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/09853c7fb1d3f8ee67a61b6bf4a7f8e6-Paper.pdf" target="_blank">DiskANN</a>; <a href="https://www.vldb.org/pvldb/vol14/p1964-wang.pdf" target="_blank">Graph-based ANN survey</a></td></tr>
+
+<tr><th scope="row">8</th><td>M. 10/12</td><td>Vector Database Architecture: Storage, Indexing, and Query Execution</td><td><a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vldbj2024-vectordb.pdf" target="_blank">Pan, Wang & Li: VDBMS Survey</a>; <a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vdbms-tutorial2024.pdf" target="_blank">VDBMS Tutorial Slides</a></td></tr>
+<tr><th scope="row"></th><td>W. 10/14</td><td>Vector Database Systems and Design Tradeoffs</td><td><a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vldbj2024-vectordb.pdf" target="_blank">Pan, Wang & Li: VDBMS Survey</a>; <a href="https://arxiv.org/abs/2310.11703" target="_blank">Han, Liu & Wang: Vector Database Survey</a></td></tr>
+
+<tr><th scope="row">9</th><td>M. 10/19</td><td>Vector Query Models and Top-k Similarity Search</td><td><a href="https://nlp.stanford.edu/IR-book/information-retrieval-book.html" target="_blank">Stanford IR Book, Chs. 6, 11, 12</a>; <a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vldbj2024-vectordb.pdf" target="_blank">Pan, Wang & Li: VDBMS Survey</a></td></tr>
+<tr><th scope="row"></th><td>W. 10/21</td><td>Filtered and Constrained ANN Search</td><td><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/32e41d6b0a51a63a9a90697da19d235d-Abstract-Conference.html" target="_blank">ANN Search with Attribute Constraint</a>; <a href="https://harsha-simhadri.org/pubs/Filtered-DiskANN23.pdf" target="_blank">Filtered-DiskANN</a>; <a href="https://doi.org/10.1145/3654923" target="_blank">ACORN</a>; <a href="https://www.arxiv.org/abs/2508.16263" target="_blank">Filtering study</a></td></tr>
+
+<tr><th scope="row">10</th><td>M. 10/26</td><td>Hybrid Search: Combining Structured Filters and Vector Similarity</td><td><a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vldbj2024-vectordb.pdf" target="_blank">Pan, Wang & Li: VDBMS Survey</a></td></tr>
+<tr><th scope="row"></th><td>W. 10/28</td><td>Query Planning and Optimization for Vector Search</td><td><a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vldbj2024-vectordb.pdf" target="_blank">Pan, Wang & Li: VDBMS Survey</a>; <a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vdbms-tutorial2024.pdf" target="_blank">VDBMS Tutorial Slides</a></td></tr>
+
+<tr><th scope="row">11</th><td>M. 11/2</td><td>Retrieval-Augmented Generation (RAG): Architecture and Retrieval Pipeline</td><td><a href="https://arxiv.org/abs/2312.10997" target="_blank">Gao et al.: Retrieval-Augmented Generation for Large Language Models: A Survey</a></td></tr>
+<tr><th scope="row"></th><td>W. 11/4</td><td>RAG Retrieval: Chunking, Embeddings, Reranking, and Context Selection</td><td><a href="https://arxiv.org/abs/2312.10997" target="_blank">Gao et al.: RAG Survey</a></td></tr>
+
+<tr><th scope="row">12</th><td>M. 11/9</td><td>Building RAG Systems on Vector Databases</td><td><a href="https://arxiv.org/abs/2312.10997" target="_blank">Gao et al.: RAG Survey</a></td></tr>
+<tr><th scope="row"></th><td>W. 11/11</td><td>Evaluating Vector Retrieval and RAG Systems</td><td></td></tr>
+
+<tr><th scope="row">13</th><td>M. 11/16</td><td>Knowledge Graphs and Graph-Based Retrieval</td><td></td></tr>
+<tr><th scope="row"></th><td>W. 11/18</td><td>Knowledge Graphs + Vector Databases; Hybrid Semantic Retrieval</td><td></td></tr>
+
+<tr><th scope="row">14</th><td>M. 11/23</td><td>Research Directions in Vector Databases and Unstructured Data Processing</td><td><a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/vldbj2024-vectordb.pdf" target="_blank">Pan, Wang & Li: VDBMS Survey</a>; <a href="https://arxiv.org/abs/2310.11703" target="_blank">Han, Liu & Wang: Vector Database Survey</a></td></tr>
+<tr class="table-light"><th scope="row"></th><td>W. 11/25</td><td><b>Student Wellness Day -- No Class</b></td><td></td></tr>
+
+<tr><th scope="row">15</th><td>M. 11/30</td><td>Student Project Presentations / Research Discussions</td><td></td></tr>
+<tr><th scope="row"></th><td>W. 12/2</td><td>Student Project Presentations / Course Wrap-up</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
