@@ -23,7 +23,7 @@ const projectDropdownLinks = [
   },
   {
     href: 'https://www.cs.uic.edu/~indexlab/efficient-llm-inference/index.html',
-    label: 'Efficient LLM Inference',
+    label: 'LLM Efficiency through Inference Data Structures',
     absolute: true
   },
   {
